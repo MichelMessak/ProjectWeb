@@ -4,13 +4,925 @@
 
 -- Dumped from database version 9.2.4
 -- Dumped by pg_dump version 9.2.2
--- Started on 2013-10-26 12:58:53
+-- Started on 2013-10-26 13:07:41
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
+
+--
+-- TOC entry 7 (class 2615 OID 17428)
+-- Name: common; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA common;
+
+
+ALTER SCHEMA common OWNER TO postgres;
+
+--
+-- TOC entry 8 (class 2615 OID 17429)
+-- Name: period; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA period;
+
+
+ALTER SCHEMA period OWNER TO postgres;
+
+--
+-- TOC entry 2023 (class 0 OID 0)
+-- Dependencies: 8
+-- Name: SCHEMA period; Type: COMMENT; Schema: -; Owner: postgres
+--
+
+COMMENT ON SCHEMA period IS 'standard public schema';
+
+
+--
+-- TOC entry 184 (class 3079 OID 11727)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2027 (class 0 OID 0)
+-- Dependencies: 184
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'pl/pgsql procedural language';
+
+
+SET search_path = common, pg_catalog;
+
+--
+-- TOC entry 197 (class 1255 OID 17431)
+-- Name: close_current_schema(text); Type: FUNCTION; Schema: common; Owner: postgres
+--
+
+CREATE FUNCTION close_current_schema(curr_year text) RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+declare 
+sch_name varchar(16);
+new_year varchar(4);
+present_year varchar(4);
+begin
+present_year := (select per_id from common.periods where per_status = 'P' limit 1);
+if (select cast(present_year as integer) <> cast(curr_year as integer)) then
+	raise 'El año actual no coincide con el año almacenado, actualice la página e intente de nuevo';
+	return FALSE;
+else
+new_year := (select cast((select cast(present_year as integer)+1) as varchar(4)));
+sch_name := 'period_' || new_year;
+	-- If not exists next schema
+      if(select 0 = count(*) FROM information_schema.schemata where schema_name = sch_name) then
+         perform common.create_schema();
+         raise notice 'El esquema % no existía, se ha creado',sch_name;
+      end if;
+      update common.periods set per_status = 'P' where per_id = new_year;      
+      update common.periods set per_status = 'C' where per_id = present_year;
+      raise info 'Operación completada: % -> CERRADO, % -> PRESENTE','period_'||present_year,sch_name;
+      return true;
+end if;
+end;
+$$;
+
+
+ALTER FUNCTION common.close_current_schema(curr_year text) OWNER TO postgres;
+
+--
+-- TOC entry 198 (class 1255 OID 17432)
+-- Name: create_schema(); Type: FUNCTION; Schema: common; Owner: postgres
+--
+
+CREATE FUNCTION create_schema() RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+declare 
+sch_name varchar(16);
+new_year varchar(49);
+curr_year varchar(4);
+begin
+curr_year := (select per_id from common.periods where per_status = 'P' limit 1);
+new_year := (select cast((select cast(curr_year as integer)+1) as varchar(4)));
+sch_name := 'period_' || new_year;
+      -- Si el schema que se creará NO existe
+      if(select 0 = count(*) FROM information_schema.schemata where schema_name = sch_name) then
+         execute 'CREATE SCHEMA "' || sch_name || '";
+ALTER SCHEMA "' || sch_name || '" OWNER TO "postgres";
+-- Name: SCHEMA "' || sch_name || '"; Type: COMMENT; Schema: -; Owner: postgres
+COMMENT ON SCHEMA "' || sch_name || '" IS ''standard public schema'';
+SET search_path = "' || sch_name || '", pg_catalog;
+SET default_tablespace = '''';
+SET default_with_oids = false;
+-- Name: activities; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "activities" (
+    "act_id" integer NOT NULL,
+    "user_id" character varying(40) NOT NULL,
+    "act_date" "date" NOT NULL,
+    "act_time" time without time zone NOT NULL,
+    "act_description" "text" NOT NULL,
+    "act_ip_address" character varying(15)
+);
+ALTER TABLE "' || sch_name || '"."activities" OWNER TO "postgres";
+-- Name: activities_act_id_seq; Type: SEQUENCE; Schema: ' || sch_name || '; Owner: postgres
+CREATE SEQUENCE "activities_act_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+ALTER TABLE "' || sch_name || '"."activities_act_id_seq" OWNER TO "postgres";
+-- Name: activities_act_id_seq; Type: SEQUENCE OWNED BY; Schema: ' || sch_name || '; Owner: postgres
+ALTER SEQUENCE "activities_act_id_seq" OWNED BY "activities"."act_id";
+-- Name: document_events; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "document_events" (
+    "emp_id" character varying(40) NOT NULL,
+    "dty_id" character varying(40) NOT NULL,
+    "dst_id" character varying(40) NOT NULL,
+    "doc_id" character varying(40) NOT NULL,
+    "evt_id" integer NOT NULL,
+    "evt_date" "date" NOT NULL,
+    "evt_time" time without time zone NOT NULL,
+    "evt_err_code" integer NOT NULL,
+    "evt_err_severity" integer NOT NULL,
+    "evt_err_description" character varying NOT NULL,
+    "evt_err_stack" "text"
+);
+ALTER TABLE "' || sch_name || '"."document_events" OWNER TO "postgres";
+-- Name: document_events_evt_id_seq; Type: SEQUENCE; Schema: ' || sch_name || '; Owner: postgres
+CREATE SEQUENCE "document_events_evt_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+ALTER TABLE "' || sch_name || '"."document_events_evt_id_seq" OWNER TO "postgres";
+-- Name: document_events_evt_id_seq; Type: SEQUENCE OWNED BY; Schema: ' || sch_name || '; Owner: postgres
+ALTER SEQUENCE "document_events_evt_id_seq" OWNED BY "document_events"."evt_id";
+-- Name: document_files; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "document_files" (
+    "emp_id" character varying(40) NOT NULL,
+    "dty_id" character varying(40) NOT NULL,
+    "dst_id" character varying(40) NOT NULL,
+    "doc_id" character varying(40) NOT NULL,
+    "file_id" integer NOT NULL,
+    "path" character varying(260),
+    "filename" character varying(260)
+)
+WITH (fillfactor=75);
+ALTER TABLE "' || sch_name || '"."document_files" OWNER TO "postgres";
+-- Name: COLUMN "document_files"."emp_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "document_files"."emp_id" IS ''id empresa duena del documento'';
+-- Name: COLUMN "document_files"."dty_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "document_files"."dty_id" IS ''tipo de documento. '';
+-- Name: COLUMN "document_files"."dst_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "document_files"."dst_id" IS ''subtipo de documento'';
+-- Name: COLUMN "document_files"."doc_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "document_files"."doc_id" IS ''id de documento'';
+-- Name: COLUMN "document_files"."file_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "document_files"."file_id" IS ''id de archivo'';
+-- Name: document_files_file_id_seq; Type: SEQUENCE; Schema: ' || sch_name || '; Owner: postgres
+CREATE SEQUENCE "document_files_file_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+ALTER TABLE "' || sch_name || '"."document_files_file_id_seq" OWNER TO "postgres";
+-- Name: document_files_file_id_seq; Type: SEQUENCE OWNED BY; Schema: ' || sch_name || '; Owner: postgres
+ALTER SEQUENCE "document_files_file_id_seq" OWNED BY "document_files"."file_id";
+-- Name: documents; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "documents" (
+    "emp_id" character varying(40) NOT NULL,
+    "dty_id" character varying(40) NOT NULL,
+    "dst_id" character varying(40) NOT NULL,
+    "doc_id" character varying(100) NOT NULL,
+    "doc_creation_date" "date",
+    "doc_creation_time" time with time zone,
+    "doc_last_mod_date" "date",
+    "doc_last_mod_time" time with time zone,
+    "emp_id_from" character varying(40),
+    "doc_status" character varying(1) NOT NULL
+)
+WITH (fillfactor=75);
+ALTER TABLE "' || sch_name || '"."documents" OWNER TO "postgres";
+-- Name: TABLE "documents"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON TABLE "documents" IS ''Archivos pertenecientes a un documento'';
+-- Name: COLUMN "documents"."emp_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."emp_id" IS ''id empresa duena del documento'';
+-- Name: COLUMN "documents"."dty_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."dty_id" IS ''tipo de documento. '';
+-- Name: COLUMN "documents"."dst_id"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."dst_id" IS ''id de documento'';
+-- Name: COLUMN "documents"."doc_creation_date"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."doc_creation_date" IS ''fecha de creacion del documento'';
+-- Name: COLUMN "documents"."doc_creation_time"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."doc_creation_time" IS ''hora de creacion del documento'';
+-- Name: COLUMN "documents"."doc_last_mod_date"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."doc_last_mod_date" IS ''ultima fecha de modificacion del documento'';
+-- Name: COLUMN "documents"."doc_last_mod_time"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."doc_last_mod_time" IS ''ultima hora de modificacion del documento'';
+-- Name: COLUMN "documents"."emp_id_from"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "documents"."emp_id_from" IS ''remitente'';
+-- Name: dtype_cfd; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "dtype_cfd" (
+    "emp_id" character varying(40) NOT NULL,
+    "dty_id" character varying(40) NOT NULL,
+    "dst_id" character varying(40) NOT NULL,
+    "doc_id" character varying(100) NOT NULL,
+    "cfd_id2" character varying(40),
+    "cfd_folio" numeric(20,0),
+    "cfd_type" character varying(16) NOT NULL,
+    "cfd_currency" character(3) NOT NULL,
+    "cfd_total" double precision NOT NULL,
+    "cfd_status" character varying(16) NOT NULL,
+    "cfd_serie" character varying(24)
+);
+ALTER TABLE "' || sch_name || '"."dtype_cfd" OWNER TO "postgres";
+-- Name: COLUMN "dtype_cfd"."cfd_type"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "dtype_cfd"."cfd_type" IS ''{INGRESO,EGRESO,TRASLADO}'';
+-- Name: COLUMN "dtype_cfd"."cfd_status"; Type: COMMENT; Schema: ' || sch_name || '; Owner: postgres
+COMMENT ON COLUMN "dtype_cfd"."cfd_status" IS ''ACTIVO, CANCELADO'';
+-- Name: errors; Type: TABLE; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+CREATE TABLE "errors" (
+    "err_num" integer NOT NULL,
+    "err_date" "date",
+    "err_time" time with time zone,
+    "err_path" character varying(260),
+    "err_filename" character varying(260),
+    "err_code" smallint,
+    "err_description" "text",
+    "err_stack" "text"
+);
+ALTER TABLE "' || sch_name || '"."errors" OWNER TO "postgres";
+-- Name: errors_err_num_seq; Type: SEQUENCE; Schema: ' || sch_name || '; Owner: postgres
+CREATE SEQUENCE "errors_err_num_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+ALTER TABLE "' || sch_name || '"."errors_err_num_seq" OWNER TO "postgres";
+-- Name: errors_err_num_seq; Type: SEQUENCE OWNED BY; Schema: ' || sch_name || '; Owner: postgres
+ALTER SEQUENCE "errors_err_num_seq" OWNED BY "errors"."err_num";
+-- Name: act_id; Type: DEFAULT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "activities" ALTER COLUMN "act_id" SET DEFAULT "nextval"(''"activities_act_id_seq"''::"regclass");
+-- Name: evt_id; Type: DEFAULT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "document_events" ALTER COLUMN "evt_id" SET DEFAULT "nextval"(''"document_events_evt_id_seq"''::"regclass");
+-- Name: file_id; Type: DEFAULT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "document_files" ALTER COLUMN "file_id" SET DEFAULT "nextval"(''"document_files_file_id_seq"''::"regclass");
+-- Name: err_num; Type: DEFAULT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "errors" ALTER COLUMN "err_num" SET DEFAULT "nextval"(''"errors_err_num_seq"''::"regclass");
+-- Name: pk_activities; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "activities"
+    ADD CONSTRAINT "pk_activities" PRIMARY KEY ("act_id");
+-- Name: pk_document_events; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "document_events"
+    ADD CONSTRAINT "pk_document_events" PRIMARY KEY ("emp_id", "dty_id", "dst_id", "doc_id", "evt_id");
+-- Name: pk_document_files; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "document_files"
+    ADD CONSTRAINT "pk_document_files" PRIMARY KEY ("emp_id", "dty_id", "dst_id", "doc_id", "file_id");
+-- Name: pk_documents; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "documents"
+    ADD CONSTRAINT "pk_documents" PRIMARY KEY ("doc_id", "emp_id", "dty_id", "dst_id");
+-- Name: pk_dtype_cfd; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "dtype_cfd"
+    ADD CONSTRAINT "pk_dtype_cfd" PRIMARY KEY ("doc_id", "emp_id", "dty_id", "dst_id");
+-- Name: pk_errors; Type: CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres; Tablespace: 
+ALTER TABLE ONLY "errors"
+    ADD CONSTRAINT "pk_errors" PRIMARY KEY ("err_num");
+-- Name: fk_activities_user; Type: FK CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "activities"
+    ADD CONSTRAINT "fk_activities_user" FOREIGN KEY ("user_id") REFERENCES "common"."users"("user_id");
+-- Name: fk_cfd_doc; Type: FK CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "dtype_cfd"
+    ADD CONSTRAINT "fk_cfd_doc" FOREIGN KEY ("doc_id", "emp_id", "dty_id", "dst_id") REFERENCES "documents"("doc_id", "emp_id", "dty_id", "dst_id");
+-- Name: fk_docfiles_doc; Type: FK CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "document_files"
+    ADD CONSTRAINT "fk_docfiles_doc" FOREIGN KEY ("doc_id", "emp_id", "dty_id", "dst_id") REFERENCES "documents"("doc_id", "emp_id", "dty_id", "dst_id");
+-- Name: fk_documents_enterprise; Type: FK CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "documents"
+    ADD CONSTRAINT "fk_documents_enterprise" FOREIGN KEY ("emp_id") REFERENCES "common"."enterprises"("emp_id");
+-- Name: fk_errors_documents; Type: FK CONSTRAINT; Schema: ' || sch_name || '; Owner: postgres
+ALTER TABLE ONLY "document_events"
+    ADD CONSTRAINT "fk_errors_documents" FOREIGN KEY ("emp_id", "dty_id", "dst_id", "doc_id") REFERENCES "documents"("emp_id", "dty_id", "dst_id", "doc_id") ON DELETE RESTRICT;
+-- Name: ' || sch_name || '; Type: ACL; Schema: -; Owner: postgres
+REVOKE ALL ON SCHEMA "' || sch_name || '" FROM PUBLIC;
+REVOKE ALL ON SCHEMA "' || sch_name || '" FROM "postgres";
+GRANT ALL ON SCHEMA "' || sch_name || '" TO "postgres";
+GRANT ALL ON SCHEMA "' || sch_name || '" TO PUBLIC;';
+         insert into common.periods(per_id, per_status) values(new_year, 'A');        
+         raise info 'Se ha creado el esquema %',sch_name;
+         return true;
+      else
+         raise 'El esquema % ya existe',sch_name;
+         return false;
+      end if;
+end;
+$$;
+
+
+ALTER FUNCTION common.create_schema() OWNER TO postgres;
+
+--
+-- TOC entry 199 (class 1255 OID 17434)
+-- Name: is_integer(text); Type: FUNCTION; Schema: common; Owner: postgres
+--
+
+CREATE FUNCTION is_integer(text) RETURNS boolean
+    LANGUAGE sql
+    AS $_$
+SELECT $1 ~ '^[0-9]+$'
+$_$;
+
+
+ALTER FUNCTION common.is_integer(text) OWNER TO postgres;
+
+--
+-- TOC entry 200 (class 1255 OID 17435)
+-- Name: set_present_schema(text); Type: FUNCTION; Schema: common; Owner: postgres
+--
+
+CREATE FUNCTION set_present_schema(period_year text) RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+declare
+cursor_periods cursor is select * from common.periods;
+v_bucle record;
+curr_year integer;
+row_year integer;
+begin
+	if (select 0 <> count(*) FROM common.periods where per_id = period_year) then
+		curr_year := (select cast(period_year as integer));
+		FOR v_bucle IN cursor_periods LOOP
+			row_year := (select cast((v_bucle.per_id) as integer));
+			if (row_year > curr_year) then
+				update common.periods set per_status = 'A' where current of cursor_periods;
+			elsif row_year < curr_year then
+				update common.periods set per_status = 'C' where current of cursor_periods;
+			else 
+				update common.periods set per_status = 'P' where current of cursor_periods;
+			end if;
+		END LOOP;
+	return true;
+	else
+	raise 'El año indicado no existe';
+	return false;
+	end if;
+end;
+$$;
+
+
+ALTER FUNCTION common.set_present_schema(period_year text) OWNER TO postgres;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 170 (class 1259 OID 17439)
+-- Name: enterprises; Type: TABLE; Schema: common; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE enterprises (
+    emp_id character varying(40) NOT NULL,
+    emp_name character varying(80) NOT NULL,
+    emp_user character varying(40) DEFAULT "current_user"() NOT NULL
+)
+WITH (fillfactor=10);
+
+
+ALTER TABLE common.enterprises OWNER TO postgres;
+
+--
+-- TOC entry 2028 (class 0 OID 0)
+-- Dependencies: 170
+-- Name: TABLE enterprises; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON TABLE enterprises IS 'master table de empresas';
+
+
+--
+-- TOC entry 171 (class 1259 OID 17448)
+-- Name: permissions; Type: TABLE; Schema: common; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE permissions (
+    rol_id character varying(40) NOT NULL,
+    tsk_id character varying(40) NOT NULL
+);
+
+
+ALTER TABLE common.permissions OWNER TO postgres;
+
+--
+-- TOC entry 172 (class 1259 OID 17454)
+-- Name: tasks; Type: TABLE; Schema: common; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tasks (
+    tsk_id character varying(80) NOT NULL,
+    tsk_name character varying(80) NOT NULL,
+    tsk_image character varying(240),
+    tsk_url character varying(240) NOT NULL,
+    tsk_type character varying(16) NOT NULL
+);
+
+
+ALTER TABLE common.tasks OWNER TO postgres;
+
+--
+-- TOC entry 2029 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: COLUMN tasks.tsk_id; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN tasks.tsk_id IS 'id de tarea en formato xx.yy.zz.aa';
+
+
+--
+-- TOC entry 2030 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: COLUMN tasks.tsk_name; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN tasks.tsk_name IS 'descripcion de tarea';
+
+
+--
+-- TOC entry 2031 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: COLUMN tasks.tsk_image; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN tasks.tsk_image IS 'ruta de imagen';
+
+
+--
+-- TOC entry 2032 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: COLUMN tasks.tsk_url; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN tasks.tsk_url IS 'url para redireccionar a la tarea';
+
+
+--
+-- TOC entry 173 (class 1259 OID 17463)
+-- Name: users; Type: TABLE; Schema: common; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE users (
+    user_id character varying(40) NOT NULL,
+    user_name character varying(80) NOT NULL,
+    user_email character varying(80),
+    user_pwd character varying(64) NOT NULL,
+    user_status character(1) DEFAULT 'I'::bpchar NOT NULL,
+    user_pwdreset boolean DEFAULT false NOT NULL,
+    user_type character varying(40) DEFAULT "current_user"() NOT NULL
+);
+
+
+ALTER TABLE common.users OWNER TO postgres;
+
+--
+-- TOC entry 2033 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: COLUMN users.user_id; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN users.user_id IS 'id de usuario';
+
+
+--
+-- TOC entry 2034 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: COLUMN users.user_name; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN users.user_name IS 'nombre de usuario';
+
+
+--
+-- TOC entry 2035 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: COLUMN users.user_email; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN users.user_email IS 'direccion de correo';
+
+
+--
+-- TOC entry 2036 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: COLUMN users.user_pwd; Type: COMMENT; Schema: common; Owner: postgres
+--
+
+COMMENT ON COLUMN users.user_pwd IS 'digesto de password';
+
+
+SET search_path = period, pg_catalog;
+
+--
+-- TOC entry 174 (class 1259 OID 17471)
+-- Name: activities; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE activities (
+    act_id integer NOT NULL,
+    user_id character varying(40) NOT NULL,
+    act_date date NOT NULL,
+    act_time time without time zone NOT NULL,
+    act_description text NOT NULL,
+    act_ip_address character varying(15)
+);
+
+
+ALTER TABLE period.activities OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 17477)
+-- Name: activities_act_id_seq; Type: SEQUENCE; Schema: period; Owner: postgres
+--
+
+CREATE SEQUENCE activities_act_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE period.activities_act_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2037 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: activities_act_id_seq; Type: SEQUENCE OWNED BY; Schema: period; Owner: postgres
+--
+
+ALTER SEQUENCE activities_act_id_seq OWNED BY activities.act_id;
+
+
+--
+-- TOC entry 176 (class 1259 OID 17479)
+-- Name: document_events; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE document_events (
+    emp_id character varying(40) NOT NULL,
+    dty_id character varying(40) NOT NULL,
+    dst_id character varying(40) NOT NULL,
+    doc_id character varying(40) NOT NULL,
+    evt_id integer NOT NULL,
+    evt_date date NOT NULL,
+    evt_time time without time zone NOT NULL,
+    evt_err_code integer NOT NULL,
+    evt_err_severity integer NOT NULL,
+    evt_err_description character varying NOT NULL,
+    evt_err_stack text
+);
+
+
+ALTER TABLE period.document_events OWNER TO postgres;
+
+--
+-- TOC entry 177 (class 1259 OID 17485)
+-- Name: document_events_evt_id_seq; Type: SEQUENCE; Schema: period; Owner: postgres
+--
+
+CREATE SEQUENCE document_events_evt_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE period.document_events_evt_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2038 (class 0 OID 0)
+-- Dependencies: 177
+-- Name: document_events_evt_id_seq; Type: SEQUENCE OWNED BY; Schema: period; Owner: postgres
+--
+
+ALTER SEQUENCE document_events_evt_id_seq OWNED BY document_events.evt_id;
+
+
+--
+-- TOC entry 178 (class 1259 OID 17487)
+-- Name: document_files; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE document_files (
+    emp_id character varying(40) NOT NULL,
+    dty_id character varying(40) NOT NULL,
+    dst_id character varying(40) NOT NULL,
+    doc_id character varying(40) NOT NULL,
+    file_id integer NOT NULL,
+    path character varying(260),
+    filename character varying(260)
+)
+WITH (fillfactor=75);
+
+
+ALTER TABLE period.document_files OWNER TO postgres;
+
+--
+-- TOC entry 2039 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN document_files.emp_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN document_files.emp_id IS 'id empresa duena del documento';
+
+
+--
+-- TOC entry 2040 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN document_files.dty_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN document_files.dty_id IS 'tipo de documento. ';
+
+
+--
+-- TOC entry 2041 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN document_files.dst_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN document_files.dst_id IS 'subtipo de documento';
+
+
+--
+-- TOC entry 2042 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN document_files.doc_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN document_files.doc_id IS 'id de documento';
+
+
+--
+-- TOC entry 2043 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: COLUMN document_files.file_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN document_files.file_id IS 'id de archivo';
+
+
+--
+-- TOC entry 179 (class 1259 OID 17493)
+-- Name: document_files_file_id_seq; Type: SEQUENCE; Schema: period; Owner: postgres
+--
+
+CREATE SEQUENCE document_files_file_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE period.document_files_file_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2044 (class 0 OID 0)
+-- Dependencies: 179
+-- Name: document_files_file_id_seq; Type: SEQUENCE OWNED BY; Schema: period; Owner: postgres
+--
+
+ALTER SEQUENCE document_files_file_id_seq OWNED BY document_files.file_id;
+
+
+--
+-- TOC entry 180 (class 1259 OID 17495)
+-- Name: documents; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE documents (
+    emp_id character varying(40) NOT NULL,
+    dty_id character varying(40) NOT NULL,
+    dst_id character varying(40) NOT NULL,
+    doc_id character varying(100) NOT NULL,
+    doc_creation_date date,
+    doc_creation_time time with time zone,
+    doc_last_mod_date date,
+    doc_last_mod_time time with time zone,
+    emp_id_from character varying(40),
+    doc_status character varying(1) NOT NULL
+)
+WITH (fillfactor=75);
+
+
+ALTER TABLE period.documents OWNER TO postgres;
+
+--
+-- TOC entry 2045 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: TABLE documents; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON TABLE documents IS 'Archivos pertenecientes a un documento';
+
+
+--
+-- TOC entry 2046 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.emp_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.emp_id IS 'id empresa duena del documento';
+
+
+--
+-- TOC entry 2047 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.dty_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.dty_id IS 'tipo de documento. ';
+
+
+--
+-- TOC entry 2048 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.dst_id; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.dst_id IS 'id de documento';
+
+
+--
+-- TOC entry 2049 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.doc_creation_date; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.doc_creation_date IS 'fecha de creacion del documento';
+
+
+--
+-- TOC entry 2050 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.doc_creation_time; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.doc_creation_time IS 'hora de creacion del documento';
+
+
+--
+-- TOC entry 2051 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.doc_last_mod_date; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.doc_last_mod_date IS 'ultima fecha de modificacion del documento';
+
+
+--
+-- TOC entry 2052 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.doc_last_mod_time; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.doc_last_mod_time IS 'ultima hora de modificacion del documento';
+
+
+--
+-- TOC entry 2053 (class 0 OID 0)
+-- Dependencies: 180
+-- Name: COLUMN documents.emp_id_from; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN documents.emp_id_from IS 'remitente';
+
+
+--
+-- TOC entry 181 (class 1259 OID 17498)
+-- Name: dtype_cfd; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE dtype_cfd (
+    emp_id character varying(40) NOT NULL,
+    dty_id character varying(40) NOT NULL,
+    dst_id character varying(40) NOT NULL,
+    doc_id character varying(100) NOT NULL,
+    cfd_id2 character varying(40),
+    cfd_folio numeric(20,0),
+    cfd_type character varying(16) NOT NULL,
+    cfd_currency character(3) NOT NULL,
+    cfd_total double precision NOT NULL,
+    cfd_status character varying(16) NOT NULL,
+    cfd_serie character varying(24)
+);
+
+
+ALTER TABLE period.dtype_cfd OWNER TO postgres;
+
+--
+-- TOC entry 2054 (class 0 OID 0)
+-- Dependencies: 181
+-- Name: COLUMN dtype_cfd.cfd_type; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN dtype_cfd.cfd_type IS '{INGRESO,EGRESO,TRASLADO}';
+
+
+--
+-- TOC entry 2055 (class 0 OID 0)
+-- Dependencies: 181
+-- Name: COLUMN dtype_cfd.cfd_status; Type: COMMENT; Schema: period; Owner: postgres
+--
+
+COMMENT ON COLUMN dtype_cfd.cfd_status IS 'ACTIVO, CANCELADO';
+
+
+--
+-- TOC entry 182 (class 1259 OID 17501)
+-- Name: errors; Type: TABLE; Schema: period; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE errors (
+    err_num integer NOT NULL,
+    err_date date,
+    err_time time with time zone,
+    err_path character varying(260),
+    err_filename character varying(260),
+    err_code smallint,
+    err_description text,
+    err_stack text
+);
+
+
+ALTER TABLE period.errors OWNER TO postgres;
+
+--
+-- TOC entry 183 (class 1259 OID 17507)
+-- Name: errors_err_num_seq; Type: SEQUENCE; Schema: period; Owner: postgres
+--
+
+CREATE SEQUENCE errors_err_num_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE period.errors_err_num_seq OWNER TO postgres;
+
+--
+-- TOC entry 2056 (class 0 OID 0)
+-- Dependencies: 183
+-- Name: errors_err_num_seq; Type: SEQUENCE OWNED BY; Schema: period; Owner: postgres
+--
+
+ALTER SEQUENCE errors_err_num_seq OWNED BY errors.err_num;
+
+
+--
+-- TOC entry 1973 (class 2604 OID 17547)
+-- Name: act_id; Type: DEFAULT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY activities ALTER COLUMN act_id SET DEFAULT nextval('activities_act_id_seq'::regclass);
+
+
+--
+-- TOC entry 1974 (class 2604 OID 17548)
+-- Name: evt_id; Type: DEFAULT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY document_events ALTER COLUMN evt_id SET DEFAULT nextval('document_events_evt_id_seq'::regclass);
+
+
+--
+-- TOC entry 1975 (class 2604 OID 17549)
+-- Name: file_id; Type: DEFAULT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY document_files ALTER COLUMN file_id SET DEFAULT nextval('document_files_file_id_seq'::regclass);
+
+
+--
+-- TOC entry 1976 (class 2604 OID 17550)
+-- Name: err_num; Type: DEFAULT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY errors ALTER COLUMN err_num SET DEFAULT nextval('errors_err_num_seq'::regclass);
+
 
 SET search_path = common, pg_catalog;
 
@@ -746,7 +1658,195 @@ COPY errors (err_num, err_date, err_time, err_path, err_filename, err_code, err_
 SELECT pg_catalog.setval('errors_err_num_seq', 1, false);
 
 
--- Completed on 2013-10-26 12:58:55
+SET search_path = common, pg_catalog;
+
+--
+-- TOC entry 1978 (class 2606 OID 17558)
+-- Name: pk_enterprises; Type: CONSTRAINT; Schema: common; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY enterprises
+    ADD CONSTRAINT pk_enterprises PRIMARY KEY (emp_id);
+
+
+--
+-- TOC entry 1980 (class 2606 OID 17562)
+-- Name: pk_permissions; Type: CONSTRAINT; Schema: common; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY permissions
+    ADD CONSTRAINT pk_permissions PRIMARY KEY (rol_id, tsk_id);
+
+
+--
+-- TOC entry 1982 (class 2606 OID 17568)
+-- Name: pk_tasks; Type: CONSTRAINT; Schema: common; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tasks
+    ADD CONSTRAINT pk_tasks PRIMARY KEY (tsk_id);
+
+
+--
+-- TOC entry 1984 (class 2606 OID 17570)
+-- Name: pk_users; Type: CONSTRAINT; Schema: common; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY users
+    ADD CONSTRAINT pk_users PRIMARY KEY (user_id);
+
+
+SET search_path = period, pg_catalog;
+
+--
+-- TOC entry 1986 (class 2606 OID 17576)
+-- Name: pk_activities; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY activities
+    ADD CONSTRAINT pk_activities PRIMARY KEY (act_id);
+
+
+--
+-- TOC entry 1988 (class 2606 OID 17578)
+-- Name: pk_document_events; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY document_events
+    ADD CONSTRAINT pk_document_events PRIMARY KEY (emp_id, dty_id, dst_id, doc_id, evt_id);
+
+
+--
+-- TOC entry 1990 (class 2606 OID 17580)
+-- Name: pk_document_files; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY document_files
+    ADD CONSTRAINT pk_document_files PRIMARY KEY (emp_id, dty_id, dst_id, doc_id, file_id);
+
+
+--
+-- TOC entry 1992 (class 2606 OID 17582)
+-- Name: pk_documents; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY documents
+    ADD CONSTRAINT pk_documents PRIMARY KEY (doc_id, emp_id, dty_id, dst_id);
+
+
+--
+-- TOC entry 1994 (class 2606 OID 17584)
+-- Name: pk_dtype_cfd; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY dtype_cfd
+    ADD CONSTRAINT pk_dtype_cfd PRIMARY KEY (doc_id, emp_id, dty_id, dst_id);
+
+
+--
+-- TOC entry 1996 (class 2606 OID 17586)
+-- Name: pk_errors; Type: CONSTRAINT; Schema: period; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY errors
+    ADD CONSTRAINT pk_errors PRIMARY KEY (err_num);
+
+
+SET search_path = common, pg_catalog;
+
+--
+-- TOC entry 1997 (class 2606 OID 17624)
+-- Name: permissions_tsk_id_fkey; Type: FK CONSTRAINT; Schema: common; Owner: postgres
+--
+
+ALTER TABLE ONLY permissions
+    ADD CONSTRAINT permissions_tsk_id_fkey FOREIGN KEY (tsk_id) REFERENCES tasks(tsk_id);
+
+
+SET search_path = period, pg_catalog;
+
+--
+-- TOC entry 1998 (class 2606 OID 17629)
+-- Name: fk_activities_user; Type: FK CONSTRAINT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY activities
+    ADD CONSTRAINT fk_activities_user FOREIGN KEY (user_id) REFERENCES common.users(user_id);
+
+
+--
+-- TOC entry 2002 (class 2606 OID 17634)
+-- Name: fk_cfd_doc; Type: FK CONSTRAINT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY dtype_cfd
+    ADD CONSTRAINT fk_cfd_doc FOREIGN KEY (doc_id, emp_id, dty_id, dst_id) REFERENCES documents(doc_id, emp_id, dty_id, dst_id);
+
+
+--
+-- TOC entry 2000 (class 2606 OID 17639)
+-- Name: fk_docfiles_doc; Type: FK CONSTRAINT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY document_files
+    ADD CONSTRAINT fk_docfiles_doc FOREIGN KEY (doc_id, emp_id, dty_id, dst_id) REFERENCES documents(doc_id, emp_id, dty_id, dst_id);
+
+
+--
+-- TOC entry 2001 (class 2606 OID 17644)
+-- Name: fk_documents_enterprise; Type: FK CONSTRAINT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY documents
+    ADD CONSTRAINT fk_documents_enterprise FOREIGN KEY (emp_id) REFERENCES common.enterprises(emp_id);
+
+
+--
+-- TOC entry 1999 (class 2606 OID 17649)
+-- Name: fk_errors_documents; Type: FK CONSTRAINT; Schema: period; Owner: postgres
+--
+
+ALTER TABLE ONLY document_events
+    ADD CONSTRAINT fk_errors_documents FOREIGN KEY (emp_id, dty_id, dst_id, doc_id) REFERENCES documents(emp_id, dty_id, dst_id, doc_id) ON DELETE RESTRICT;
+
+
+--
+-- TOC entry 2022 (class 0 OID 0)
+-- Dependencies: 7
+-- Name: common; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA common FROM PUBLIC;
+REVOKE ALL ON SCHEMA common FROM postgres;
+GRANT ALL ON SCHEMA common TO postgres;
+GRANT ALL ON SCHEMA common TO PUBLIC;
+
+
+--
+-- TOC entry 2024 (class 0 OID 0)
+-- Dependencies: 8
+-- Name: period; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA period FROM PUBLIC;
+REVOKE ALL ON SCHEMA period FROM postgres;
+GRANT ALL ON SCHEMA period TO postgres;
+GRANT ALL ON SCHEMA period TO PUBLIC;
+
+
+--
+-- TOC entry 2026 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2013-10-26 13:07:42
 
 --
 -- PostgreSQL database dump complete
