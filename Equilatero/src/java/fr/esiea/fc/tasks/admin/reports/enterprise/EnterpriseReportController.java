@@ -30,11 +30,6 @@ public class EnterpriseReportController implements Controller {
 
         try {
 
-            /**
-             * Este controlador es llamado mas de 1 vez, por las siguientes razones:
-             * 1. Desde el menu general. Aqui debe mostrar la ventana de filtros del reporte
-             * 2. Por llamadas asincronas del grid "datatable" de jquery usando AJAX
-             */
             Report report = null;
 
             if (!SessionManager.hasSession(request)) {

@@ -13,9 +13,9 @@
 <style type="text/css" title="currentStyle">
     @import "css/reset.css";
     @import "css/datatable/demo_page.css";
-    @import "css/Ayudas/estiloAyuda.css";
+    @import "css/Help/helpStyle.css";
     @import "css/login/popup.css";
-    @import "css/login/estilopopup.css";
+    @import "css/login/popupStyle.css";
     @import "css/design.css";
     @import "css/filterDocGen/filterDocGen.css";
     @import "css/filterDocGen/form.css";
@@ -24,14 +24,13 @@
 	<link rel="stylesheet" type="text/css" href="css/filterDocGen/dhtmlxcalendar_dhx_skyblue.css"/>
 	<script type="text/javascript" src="js/filterDocGen/dhtmlxcalendar.js"></script>
     </head>
-    <body onLoad="periodo()">
+    <body>
         
         <%@ include file="header.jspf" %>
         <%@ include file="clearFilterAttrs.jspf" %>
         <center>
             <div id="mainContainer">
                <form:errors path="*" cssClass="errorBlock" element="div" />
-               <!-- El formulario usa name para hacer referencia a script y desabhilitar el boton de submit -->
                <form method="post" action="" name="form">
                    <fieldset>
                         <div class="fieldgroup">
@@ -58,7 +57,7 @@
                        </div>
                         <p id="message"></p>
                    <div class="fieldgroup">
-                        <input id="consult" name="isFilterSubmit" type="submit" value="Consult" class="submit" title="Valider">
+                        <input id="consult" name="isFilterSubmit" type="submit" value="Valider" class="submit" title="Valider">
                    </div>
                     </fieldset>
                 </form>
@@ -81,7 +80,7 @@
         <br><br><center>_________________________________________________________</center><br><br>
         <p class="normalHelp" style="padding-bottom: 20px;font-size: 15px;">Recherche par ID</p>
         <center style="max-height: 5%;"><p class="descripcionHelp" >Pour réaliser une recherche plus exacte vous pouvez completer les champs correspondants aux ID désirés.</p></center>
-        <center><p class="noteHelp"><img alt="AYUDA" class="imagesPopupHelp" src="images/Ayudas-comodin.png"></p></center>
+        <center><p class="noteHelp"><img alt="HELP" class="imagesPopupHelp" src="images/help-comodin.png"></p></center>
         <p class="descripcionHelp" style="padding-top: 30px;">Pour valider la recherche appyer sur le bouton
             <img alt="HELP" style="-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;" src="images/consult.png">
         </p>

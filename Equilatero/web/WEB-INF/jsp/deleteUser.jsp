@@ -12,12 +12,12 @@
         <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
+            @import "css/login/popupStyle.css";
             @import "css/design.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
-            @import "css/AltaUsuariosForm/form.css";
+            @import "css/Form/bootstrap.css";
+            @import "css/Form/form.css";
 	</style>
 <style type="text/css">
 input:focus
@@ -48,10 +48,10 @@ select:focus
                             <form:errors path="name" cssClass="errorBlock" element="div"  cssStyle="color:#D4763F;"/>
                     </div>
                     <div class="fieldgroup">
-                     <input type="submit" value="Delete" class="submit" title="Valider">
+                     <input type="submit" value="Valider" class="submit" title="Valider">
                     <div style="position: absolute;margin-left: 5px;">
-                        <a href="reporteGenericoUsuarios.task?isSubmit=true" >
-                            <img alt="Previous" title="Previous" src="images/back.png" style="height: 60px;width: 60px;"/>
+                        <a href="reportUser.task?isSubmit=true" >
+                            <img alt="Retour" title="Retour" src="images/back.png" style="height: 60px;width: 60px;"/>
                         </a>
                     </div>
                     </div>
@@ -68,14 +68,13 @@ select:focus
         <button id="close" onclick="javascript:closeDialog();">Fermer</button>
         <h3 align="center" style="font-size: 15px;"><p class="topHelp">Suppression d'un utilisateur</p></h3><br>
         <p class="normalHelp" style="font-size: 15px;"></p>
-        <p class="descripcionHelp" style="padding-bottom: 10px;">Proporciona ayuda para eliminar al usuario seleccionado, no podra modificar los datos, unicamente es para visualizar que usuario sera dado de baja.</p>
         <p class="descripcionHelp" style="padding-top: 30px;">
             Pour retourner au menu antérieur, appuyer sur le bouton ???
             <img alt="HELP" class="imagesPopupHelp" style="height: 35px;width: 35px;" src="images/back.png">
         </p>
         <p class="descripcionHelp" style="padding-top: 30px;">
             Puor supprimer l'utilisateur appuyez sur le boutton ???
-            <img alt="AYUDA" class="imagesPopupHelp" src="images/Eliminar.png">
+            <img alt="AYUDA" class="imagesPopupHelp" src="images/delete.png">
         </p>
         <br><br><center>_________________________________________________________</center><br><br>
      </div>

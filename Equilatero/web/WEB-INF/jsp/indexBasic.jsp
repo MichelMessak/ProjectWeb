@@ -1,8 +1,3 @@
-<%-- 
-    Document   : indexBasico.jsp
-    Created on : 28-ago-2013, 17:55:23
-    Author     : Edd
---%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@include file="include.jspf" %>
@@ -16,13 +11,13 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="css/design.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="css/login/tooltips.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="css/Ayudas/estiloAyuda.css"/>
+        <link rel="stylesheet" type="text/css" href="css/Help/helpStyle.css"/>
         <link rel="stylesheet" type="text/css" href="css/login/popup.css"/>
-        <link rel="stylesheet" type="text/css" href="css/login/estilopopup.css"/>
-        <link type='text/css' href='css/login/loginDesliza.css' rel='stylesheet' media='screen' />
-        <%--<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>--%>
+        <link rel="stylesheet" type="text/css" href="css/login/popupStyle.css"/>
+        <link type='text/css' href='css/login/loginTongue.css' rel='stylesheet' media='screen' />
+        
         <title>Equilatero</title>
-    <style>
+    <style type="text/css">
 form input[type="submit"]{
     background: none;
     border: none;
@@ -35,14 +30,6 @@ form input[type="submit"]{
 }
     </style>
 <script>
-    <%--function openDialog() {
-                Avgrund.show( "#default-popup" );
-                document.getElementById("frm").style.display="none";
-        }
-    function closeDialog() {
-                Avgrund.hide();
-                document.getElementById("frm").style.display="";
-        }--%>
 </script>
         <style>td, th {
             border: 1px solid black !important;
@@ -108,22 +95,18 @@ form input[type="submit"]{
             </c:if>
         </div>
   </div>
-    <%--<div style="position: fixed;padding: 10px;color:green; bottom: 10px; right: 10px; z-index: 1;">
-            <a href="#" class="ayuda" accesskey="h" onclick="javascript:openDialog();"><img alt="AYUDA" title="Ayuda" src="images/Ayuda.png"></a>
-    </div>--%>
+   
    <div id="default-popup" class="avgrund-popup">
        <button id="cerrar" onclick="javascript:closeDialog();">Cerrar</button>
         <h3 align="center" style="font-size: 15px;"><p class="topAyuda">Pantalla Principal</p></h3><br><br>
         <p class="normalAyuda" style="padding-bottom: 20px;font-size: 15px;">Autenticaci&oacute;n</p>
         <p class="descripcionAyuda" style="padding-bottom: 10px;">Para desplegar la pantalla de ingreso de datos de click en la imagen <img alt="AYUDA" src="images/acces.png"></p>
         <center><p class="notaAyuda">Se motrara la siguiente pantalla en la cual ingresara sus datos de usuario</p></center>
-        <center><img alt="AYUDA" src="images/autenticacion.png"></center>
         <p class="descripcionAyuda" style="padding-top: 20px;">Despues de ingresar sus datos de click en la imagen <img alt="AYUDA" src="images/FileControl4-IniciarSesion-Boton.png"></p>
         <br><br><center>_________________________________________________________</center><br><br>
         <p class="normalAyuda" style="padding-bottom: 20px;font-size: 15px;">Autenticaci&oacute;n Erronea</p>
         <p class="descripcionAyuda" style="padding-bottom: 10px;">Si introduce su nombre de usuario o contraseña incorrectamente se mostrara la siguiente pantalla indicando el error</p>
         <center><p class="notaAyuda">Por politica despues de 5 reintentos fallidos se bloqueara su cuenta</p></center>
-        <center><img alt="AYUDA" src="images/autenticacionFail.png"></center>
         <p class="descripcionAyuda" style="padding-top: 20px;">Despues de corregir sus datos de click en la imagen <img alt="AYUDA" src="images/FileControl4-IniciarSesion-Boton.png"></p>
         <br><br><center>_________________________________________________________</center><br><br>
         <p class="normalAyuda" style="padding-bottom: 20px;font-size: 15px;">Politica de cambio de Contraseña</p>
@@ -155,8 +138,6 @@ form input[type="submit"]{
           </tr>
         </table>
     </div>
-<%--<script type='text/javascript' src='js/Ayudas/jquery.simplemodal.js'></script>
-<script type='text/javascript' src='js/Ayudas/basic.js'></script>--%>
 <div id="ImgIni"></div>
 <script type="text/javascript">
   $(function(){$("#myform :input").tooltip({position: "center right", offset: [6, 10],effect: "slide",opacity: 0.7});});

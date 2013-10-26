@@ -10,12 +10,12 @@
         <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.js'></script>                        
         <title>Menu FileControl</title>
         <style type="text/css" title="currentStyle">
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/reset.css";
             @import "css/design.css";
             @import "css/datatable/demo_page.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
+            @import "css/login/popupStyle.css";
         </style>
     </head>
     <body>
@@ -79,7 +79,6 @@
     
     <script type="text/javascript" src="js/login/popup.js" ></script>
 <script type="text/javascript">
-    //activa popup para las ayudas
     function openDialog() {
                 Avgrund.show( "#popupHelp" );
         }

@@ -11,9 +11,9 @@
     <title>Reporte Archivos</title>
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
+            @import "css/login/popupStyle.css";
             @import "css/design.css";
             @import "css/datatable/demo_page.css";
             @import "css/datatable/demo_table.css";
@@ -130,7 +130,7 @@ function fnGetSelected( oTableLocal )
         <p class="normalHelp"><img src="images/files_view.png" alt="HELP">&nbsp;&nbsp;&nbsp;&nbsp;Para visualizar el documento de click en este icono.<br><img alt="HELP" src="images/files_download.png">&nbsp;&nbsp;&nbsp;&nbsp;Dando click en este icono podemos descargar el archivo.</p>
         <br><br><center>_________________________________________________________</center><br><br>
 </div>
-<script type="text/javascript" src="js/login/popup.js" type="text/javascript"></script><script> <%--//activa popup para las ayudas--%>function openDialog() {Avgrund.show( "#popupHelp" );}function closeDialog() {Avgrund.hide();}</script><script type="text/javascript">function body(){document.body.style.backgroundImage = "url(images/backgeneral.jpg)"; document.body.style.backgroundRepeat = "repeat-x";document.body.backgroundPosition = "top";document.body.style.top = "50px";document.body.style.opacity = "1";}</script>
+<script type="text/javascript" src="js/login/popup.js" ></script><script type="text/javascript">function openDialog() {Avgrund.show( "#popupHelp" );}function closeDialog() {Avgrund.hide();}</script><script type="text/javascript">function body(){document.body.style.backgroundImage = "url(images/backgeneral.jpg)"; document.body.style.backgroundRepeat = "repeat-x";document.body.backgroundPosition = "top";document.body.style.top = "50px";document.body.style.opacity = "1";}</script>
  <script type="text/javascript" language="javascript" src="js/ExportDocuments/ExportDocuments.js"></script>
 </body>
 </html>

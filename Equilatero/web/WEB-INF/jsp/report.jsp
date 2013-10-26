@@ -7,20 +7,17 @@
         <%@include file="htmlhead.jspf" %>
         <link rel="shortcut icon" type="image/ico" href="images/FileControl.ico"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Reportes</title>
-        <%--<SCRIPT type="text/javascript">
-    window.history.forward();
-    function noBack() { window.history.forward(); }
-</SCRIPT>--%>
+        <title>Report</title>
+
         <style type="text/css" title="currentStyle">
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/login/popupStyle.css";
+            @import "css/Help/helpStyle.css";
             @import "css/reset.css";
             @import "css/design.css";
             @import "css/datatable/demo_page.css";
             @import "css/datatable/demo_table.css";
-            <%--@import "css/datatable/TableTools.css";--%>
+            
         </style>
         <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
         <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>

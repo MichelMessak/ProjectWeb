@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8"%>
         <link rel="stylesheet" href="css/periodos/example.css">
         <link rel="stylesheet" href="css/periodos/stroll.css">
-        <script type='text/javascript' src='js/Ayudas/jquery.simplemodal.js'></script>
+        <script type='text/javascript' src='js/Helps/jquery.simplemodal.js'></script>
         <script type='text/javascript'src="js/periodo/toggle.js"></script>
         <script type='text/javascript'src="js/fc4util.js"></script>
         <script type='text/javascript' src="js/periodo/stroll.min.js"></script>

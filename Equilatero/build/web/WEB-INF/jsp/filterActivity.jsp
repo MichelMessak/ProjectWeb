@@ -14,8 +14,8 @@
         <title>Filtre de rapport d'activité</title>
         <style type="text/css" title="currentStyle">
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/login/popupStyle.css";
+            @import "css/Help/helpStyle.css";
             @import "css/datatable/demo_page.css";
             @import "css/design.css";
             @import "css/filterDocGen/filterDocGen.css";
@@ -52,7 +52,7 @@
                     </div>
                    <p id="message"></p>
                         <div class="fieldgroup">
-                            <input type="submit" name="isFilterSubmit" value="Consult" id ="consult" class="submit" title="Valider">
+                            <input type="submit" name="isFilterSubmit" value="Valider" id ="consult" class="submit" title="Valider">
                         </div>
                 </fieldset>
                 </form>

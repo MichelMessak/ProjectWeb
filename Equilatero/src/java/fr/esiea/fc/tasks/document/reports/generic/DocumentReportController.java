@@ -25,27 +25,17 @@ public class DocumentReportController implements Controller {
 
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String[] fields = new String[]{"ID de l'entreprise", "Type", "Sous-Type", "ID", "UUID", "Date de création", "Heure de création",  "Statut"};
-        String[] widths = {"10%", "10%", "5%", "30%", "10%","10%", "10%", "5%", "5%", "5%"};
-        String[] aligns = {"center", "center", "center","center", "Center", "left", "left", "right", "right", "center"};
-        Boolean[] visible = {true, true, true,true, true, true, true, true, false, true};
-        Boolean[] sort = {true, true, true, true,true,  true, true, true, true, false};
-        Boolean[] search = {true, true, true,true, true,  true, true, true, true, false};
+        String[] widths = {"15%", "10%", "5%", "30%", "15%","10%", "10%", "5%"};
+        String[] aligns = {"center", "center", "center","center", "Center", "left", "left", "right" };
+        Boolean[] visible = {true, true, true,true, true, true, true, true};
+        Boolean[] sort = {true, true, true, true,true,  true, true, true};
+        Boolean[] search = {true, true, true,true, true,  true, true, true};
 
         String[] colExtras = {
-            "<img src=\"images/status_{7}.png\"/>",
-            "<form action=\"docFiles.do\" method=\"post\"><input type=\"hidden\" name=\"emp_id\" value=\"{0}\"/><input type=\"hidden\" name=\"dty_id\" value=\"{1}\"/><input type=\"hidden\" name=\"dst_id\" value=\"{2}\"/><input type=\"hidden\" name=\"doc_id\" value=\"{3}\"/><input type=\"image\" src=\"images/files_open_{7}.png\" style=\"width: 20px; height: 20px;\" title=\"Archivos\"/></form>",
              };
 
         try {
 
-            /**
-             * Este controlador es llamado mas de 1 vez, por las siguientes razones:
-             * 1. Desde el menu general. Aqui debe mostrar la ventana de filtros del reporte
-             * 2. Por errores en captura de datos del filtro. Aqui debe mostrar los campos capturados junto con los errores
-             * 3. Por submit correcto (validacion OK) de los filtros del reporte. Aqui debe mostrar el reporte
-             * 4. Por llamadas asincronas del grid "datatable" de jquery usando AJAX
-             * 5. Por llamadas desde otras tareas. Aqui debe mostrar la ventana de reporte porque los filtros son proporcionados por la tarea
-             */
             Report report = null;
 
             if (!SessionManager.hasSession(request)) {

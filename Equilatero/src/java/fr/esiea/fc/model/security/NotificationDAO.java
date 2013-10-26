@@ -4,7 +4,6 @@ import fr.esiea.fc.model.PoolConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Date;
 import java.util.List;
 import java.util.Vector;
 

@@ -28,10 +28,10 @@
              <div id="LogOut"></div>
          </a>
          <div class="taskTitle">Ajout d'un nouvel utilisateur réussi</div>
-         <meta HTTP-EQUIV="REFRESH" content="2; url=reporteGenericoUsuarios.task?isSubmit=true">
-<link rel="stylesheet" href="css/AltaUsuariosForm/jpreloader.css" />
+         <meta HTTP-EQUIV="REFRESH" content="2; url=reportUser.task?isSubmit=true">
+<link rel="stylesheet" href="css/Form/jpreloader.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/AltaUsuariosForm/jpreLoader.js"></script>
+<script type="text/javascript" src="js/Loader/jpreLoader.js"></script>
 
 <script type="text/javascript">
 <!-- jPreLoader script -->

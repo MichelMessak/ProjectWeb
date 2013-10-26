@@ -1,9 +1,6 @@
 package fr.esiea.fc.util;
 
 import fr.esiea.fc.util.error.QueryParserException;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.security.MessageDigest;

@@ -10,8 +10,8 @@
         @import "css/datatable/demo_page.css";
         @import "css/reset.css";
         @import "css/design.css";
-    @import "css/AltaUsuariosForm/bootstrap.css";
-    @import "css/AltaUsuariosForm/form.css";
+    @import "css/Form/bootstrap.css";
+    @import "css/Form/form.css";
 	</style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Modification d'un utilisateur</title>
@@ -32,10 +32,10 @@
              <div id="LogOut"></div>
          </a>
          <div class="taskTitle">Modification d'un utilisateur</div><br>
-         <meta HTTP-EQUIV="REFRESH" content=".5; url=reporteGenericoUsuarios.task?isSubmit=true">
-<link rel="stylesheet" href="css/AltaUsuariosForm/jpreloader.css" />
+         <meta HTTP-EQUIV="REFRESH" content=".5; url=reportUser.task?isSubmit=true">
+<link rel="stylesheet" href="css/Form/jpreloader.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/AltaUsuariosForm/jpreLoader.js"></script>
+<script type="text/javascript" src="js/Loader/jpreLoader.js"></script>
 
 <script type="text/javascript">
 <!-- jPreLoader script -->

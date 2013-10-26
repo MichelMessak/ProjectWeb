@@ -35,10 +35,12 @@ public class UserReportController implements Controller {
 
                     String userID = request.getParameter("user_id");
                     String URI = request.getParameter("URI");
-                    String user = request.getParameter("usuario");
-                    String action = request.getParameter("accion");
+                    String user = request.getParameter("user");
+                     String action = request.getParameter("action");
                     UrlValidatorService validate = new UrlValidatorService();
                     int resVal = validate.validateUrlChildTasks(URI,request);
+
+
 
                         if (resVal == 0)
                         {
@@ -52,10 +54,10 @@ public class UserReportController implements Controller {
                         {
                            ModelAndView mv = new ModelAndView("askTask");
                            ActivityDAO.insert(userId, "Accès à la tache permise : "+URI, userIp);
-                           mv.addObject("correct", "paso");
+                           mv.addObject("correct", "correct");
                            mv.addObject("user", user);
                            mv.addObject("action", action);
-                           ActivityDAO.insert(userId, "Acceso a tarea PErmitida: "+URI, userIp);
+                           ActivityDAO.insert(userId, "Accès à la tache permise: "+URI, userIp);
 
                            return mv;
                         }
@@ -76,14 +78,14 @@ public class UserReportController implements Controller {
         String[] colExtras = new String[]
         {
             "<form action=\"deleteUser.form\" method=\"post\" name=\"{0}\" id=\"{0}\">" +
-                    "<input type=\"image\" id=\"{0}Elimina\" src=\"images/deleteIcon.png\" style=\"width: 20px; display:none;\" title=\"Eliminar Usuario\"/>" +
+                    "<input type=\"image\" id=\"{0}Delete\" src=\"images/deleteIcon.png\" style=\"width: 20px; display:none;\" title=\"Supprimer un utilisateur\"/>" +
                     "<input type=\"hidden\" name=\"user_id\" value=\"{0}\"/>" +
                     "<input type=\"hidden\" name=\"user_name\" value=\"{1}\"/>" +
                     "<input type=\"hidden\" name=\"isSubmit\" value=\"false\"/>" +
             "</form>"+
-            "<input type=\"image\" src=\"images/deleteIcon.png\" onclick=\"sendRequest('reporteGenericoUsuarios.task', 'deleteUser.form','{0}','delete')\" style=\"width: 20px;\" title=\"Modificar Usuario\"/>",
+            "<input type=\"image\" src=\"images/deleteIcon.png\" onclick=\"sendRequest('reportUser.task', 'deleteUser.form','{0}','delete')\" style=\"width: 20px;\" title=\"Supprimer un utilisateur\"/>",
             "<form action=\"modifyUser.form\" method=\"post\" name=\"{0}\" id=\"{0}\">" +
-                    "<input type=\"image\" id=\"{0}Modifica\" src=\"images/editIcon.png\" style=\"width: 20px; display:none;\" title=\"Modificar Usuario\"/>" +
+                    "<input type=\"image\" id=\"{0}Modify\" src=\"images/editIcon.png\" style=\"width: 20px; display:none;\" title=\"Modifier un utilisateur\"/>" +
                     "<input type=\"hidden\" name=\"user_id\" value=\"{0}\"/>" +
                     "<input type=\"hidden\" name=\"user_name\" value=\"{1}\"/>" +
                     "<input type=\"hidden\" name=\"user_email\" value=\"{2}\"/>" +
@@ -91,16 +93,12 @@ public class UserReportController implements Controller {
                     "<input type=\"hidden\" name=\"reset_password\" value=\"{4}\"/>" +
                     "<input type=\"hidden\" name=\"isSubmit\" value=\"false\"/>" +
            "</form>"+
-                    "<input type=\"image\" src=\"images/editIcon.png\" onclick=\"sendRequest('reporteGenericoUsuarios.task', 'modifyUser.form' ,'{0}','modify')\" style=\"width: 20px;\" title=\"Modificar Usuario\"/>"
+                    "<input type=\"image\" src=\"images/editIcon.png\" onclick=\"sendRequest('reportUser.task', 'modifyUser.form' ,'{0}','modify')\" style=\"width: 20px;\" title=\"Modifier un utilisateur\"/>"
         };
 
         try {
 
-            /**
-             * Este controlador es llamado mas de 1 vez, por las siguientes razones:
-             * 1. Desde el menu general. Aqui debe mostrar la ventana de filtros del reporte
-             * 2. Por llamadas asincronas del grid "datatable" de jquery usando AJAX
-             */
+           
             Report report = null;
             if (!SessionManager.hasSession(request))
             {

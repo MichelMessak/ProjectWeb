@@ -1,14 +1,3 @@
-/**
- * Funciones javascript para manejo del GUI de FileControl4
- * @author Segundo García Heras
- * @since 1.0.0.0
- */
-
-/**
- * Permite hacer la ejecución de una consulta Ajax al cambiar la selección de un combo
- */
-
-//require("json2.js");
 
 var user_id = null;
 var emp_id = null;
@@ -35,160 +24,90 @@ function fc4_listview_deselect_children(control)
     }
 }
 
-function sendRequest(URI, URLAsk,usuario,accion)
+function sendRequest(URI, URLAsk,user,action)
     {
 
         var xmlhttp;
         if (window.XMLHttpRequest)
-          {// compatibilidad con IE7+, Firefox, Chrome, Opera, Safari
+          {
             xmlhttp=new XMLHttpRequest();
           }
         else
-          {// compatibilidad con IE6, IE5
+          {
             xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
           }
         xmlhttp.onreadystatechange=function()
           {
           if (xmlhttp.readyState==4 && xmlhttp.status==200)
             {
-                //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-                //alert(xmlhttp.responseText);
-                var respuesta = xmlhttp.responseText;
-                var respuestaParseada = JSON.parse(respuesta);
-                //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-                //document.getElementById("myDiv").innerHTML=myObject;
-                //alert(myObject);
-                //var respuesta = jquery.parseJSON(response.responseText);
-                //alert(respuesta);
-                var error = respuestaParseada.error;
-                var correcto = respuestaParseada.correct;
-                var usuario = respuestaParseada.user;
-                var accion = respuestaParseada.action;
+                var request = xmlhttp.responseText;
+                var parseRequest = JSON.parse(request);
+                var error = parseRequest.error;
+                var correct = parseRequest.correct;
+                var user = parseRequest.user;
+                var action = parseRequest.action;
+
+
+
                     if(error != null)
                      {
                         alert(error);
                      }
-                 else if(correcto != null)
+                 else if(correct != null)
                      {
-                         //alert("antes");alert(usuario);
-                         if(accion=="modify")
+                         if(action=="modify")
                          {
-                             //alert(accion);
-                             document.getElementById(usuario+"Modifica").click();
+                             document.getElementById(user+"Modify").click();
                          }
-                         else if(accion=="delete")
+                         else if(action=="delete")
                          {
-                             document.getElementById(usuario+"Elimina").click();
+                             document.getElementById(user+"Delete").click();
                          }
-                         else if(accion=="add")
+                         else if(action=="add")
                          {
-                             //alert(accion);
                              window.location.href="addUser.form";
                          }
-                         //alert("click");
                          
                      }
             }
           }
         var userId = document.getElementById("UserIDJSP").innerHTML;
-        var send="AjaxRequestChildTasks=true&sModo=consulta&user_id="+userId+"&URI="+URLAsk+"&usuario="+usuario+"&accion="+accion;
+        var send="AjaxRequestChildTasks=true&sModo=consulta&user_id="+userId+"&URI="+URLAsk+"&user="+user+"&action="+action;
         xmlhttp.open("POST",URI,true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        //xmlhttp.send("userID",userId);
-        //xmlhttp.send("user_id"+" = "+userId);
-        //alert("enviado");
         xmlhttp.send(send);
     }
      
 function validateDates()
     {
-        var fechaInicio= document.getElementById("calendar2");
-        var fechaFinal= document.getElementById("calendar");
+        var dateInit= document.getElementById("calendar2");
+        var dateFinal= document.getElementById("calendar");
+        var initialDate, finalDate;
 
-        if (fechaInicio.value!==""){
-            var anioInicio = parseInt(fechaInicio.value.substring(0,4));
-            var mesInicio = fechaInicio.value.substring(5,7);
-            var diaInicio = fechaInicio.value.substring(8,10);
-            fechaIni = new Date(anioInicio, mesInicio, diaInicio,0,0,0);
+        if (dateInit.value!==""){
+            var yearInit = parseInt(dateInit.value.substring(0,4));
+            var monthInit = dateInit.value.substring(5,7);
+            var dayInit = dateInit.value.substring(8,10);
+            initialDate = new Date(yearInit, monthInit, dayInit,0,0,0);
         }
 
-        if (fechaFinal.value!==""){
-            var anioFin = parseInt(fechaFinal.value.substring(0,4));
-            var mesFin = fechaFinal.value.substring(5,7);
-            var diaFin = fechaFinal.value.substring(8,10)
-            fechaFin = new Date(anioFin, mesFin, diaFin,0,0,0);
+        if (dateFinal.value!==""){
+            var yearFinal = parseInt(dateFinal.value.substring(0,4));
+            var monthFinal = dateFinal.value.substring(5,7);
+            var dayFinal = dateFinal.value.substring(8,10)
+            finalDate = new Date(yearFinal, monthFinal, dayFinal,0,0,0);
         }
 
-        if (typeof(fechaIni)!=='undefined' &&  typeof(fechaFin)!=='undefined')
-            if (fechaIni>fechaFin){
+        if (typeof(initialDate)!=='undefined' &&  typeof(finalDate)!=='undefined')
+            if (initialDate>finalDate){
             document.getElementById('consult').disabled = true;
-            document.getElementById('message').innerHTML = "La Fecha Inicial es superior a la Fecha Final.";
+            document.getElementById('message').innerHTML = "La date de début est supérieur à la date final.";
         }
         else {
             document.getElementById('consult').disabled = false;
             document.getElementById('message').innerHTML = "";
         }
-    /*
-        var fechaInicio= document.getElementById("calendar2");
-        var fechaFin= document.getElementById("calendar");
-        //alert(fechaInicio);
-        //extremos año mes y dia inicial
-        var anioInicio = parseInt(fechaInicio.value.substring(0,4));
-        var mesInicio = fechaInicio.value.substring(5,7);
-        var diaInicio = fechaInicio.value.substring(8,10);
-        //extraemos año mes y dia final
-        var anioFin = parseInt(fechaFin.value.substring(0,4));
-        var mesFin = fechaFin.value.substring(5,7);
-        var diaFin = fechaFin.value.substring(8,10);
-        var banderadeValidacion = true;
-
-        if(isNaN(anioFin) && isNaN(anioInicio))
-            document.getElementById("consult").style.display="";
-        if(anioFin < anioInicio)
-            {
-                alert("No se puede hacer una consulta si la fecha final es menor que la inicial!");
-                document.getElementById("consult").style.display="";
-                banderadeValidacion = false;
-                return(true);
-            }
-        else
-        {
-            if (anioFin == anioInicio)
-            {
-                if(mesFin < mesInicio)
-                    {
-                        alert("No se puede reslizar consulta si el mes final es menor que el inicial!");
-                        document.getElementById("consult").style.display="";
-                        alert("Corrija los datos para poder realizar la busqueda");
-                        banderadeValidacion =false;
-                        return(false);
-                    }
-                if(mesFin == mesInicio)
-                    {
-                        if(diaFin >= diaInicio)
-                            {
-                                document.getElementById("consult").style.display="";
-                                banderadeValidacion =true;
-                                return(true);
-                            }
-                        else
-                            {
-                                alert("El dia final debe ser mayor que el inicial para poder realizar la busqueda!")
-                                document.getElementById("consult").style.display="";
-                                alert("Corrija los datos para poder realizar la busqueda");
-                                banderadeValidacion =false;
-                            }
-                    }
-                else
-                    return(false);
-            }else
-                return(false);
-        }
-        //alert(banderadeValidacion);
-        if(banderadeValidacion ==false)
-            document.getElementById('consultar').disabled = true;
-            */
-    }
+ }
 
 function hours() {
 var horaInit = document.getElementById("hour_init");
@@ -200,7 +119,7 @@ var horaFinal = document.getElementById("hour_end");
         var minutes = parseInt(time[1], 10);
         if (isNaN(minutes) || minutes<0 || minutes>59 || hours <0 || hours >24){
             document.getElementById('consult').disabled = true;
-            document.getElementById('message').innerHTML = "Pone un formato de fecha correcto.";
+            document.getElementById('message').innerHTML = "Format incorrect.";
 
         }
         else {
@@ -217,7 +136,7 @@ var horaFinal = document.getElementById("hour_end");
         var minutes = parseInt(time[1], 10);
         if (isNaN(minutes) || minutes<0 || minutes>59 || hours <0 || hours >24){
             document.getElementById('consult').disabled = true;
-            document.getElementById('message').innerHTML = "Pone un formato de fecha correcto.";
+            document.getElementById('message').innerHTML = "Format incorrect.";
 
         }
         else {
@@ -231,7 +150,7 @@ var horaFinal = document.getElementById("hour_end");
        if (typeof(horaFin)!=='undefined' &&  typeof(horaInit)!=='undefined')
            if (horaFin<=horaIni){
                 document.getElementById('consult').disabled = true;
-                document.getElementById('message').innerHTML = "La Hora Final es superior a la Hora Initial."; 
+                document.getElementById('message').innerHTML = "L'heure initial est supérieur à l'heure final.";
             }
             else {
                     document.getElementById('consult').disabled = false;
@@ -246,7 +165,7 @@ var init = document.getElementById("filterInit").value;
 
  if ((finals!=="" || init!=="") && (UUID!=="")){
      document.getElementById('consult').disabled = true;
-     document.getElementById('message').innerHTML = "Un criterio de busqueda es requerido";
+     document.getElementById('message').innerHTML = "Un critère de recherches est obligatoire";
      return ;
 }
  sendRequestFilterDoc(init,finals);
@@ -296,7 +215,7 @@ else {
             document.getElementById('consult').disabled = false;
         }
         else {
-            document.getElementById('message').innerHTML = "Filtro incorecto";
+            document.getElementById('message').innerHTML = "Filtre incorect";
             document.getElementById('consult').disabled = true;
         }
         }
@@ -306,7 +225,7 @@ else if((serieInit!=="" && serieFinal==="") || (serieInit==="" && serieFinal!=="
     document.getElementById('consult').disabled = false;
 }
 else {
-    document.getElementById('message').innerHTML = "Filtro incorecto";
+    document.getElementById('message').innerHTML = "Filtre incorect";
     document.getElementById('consult').disabled = true;
 }
 }
@@ -325,14 +244,14 @@ function sendRequestLogExist(date)
 
     var xmlhttp;
     if (window.XMLHttpRequest)
-      {// compatibilidad con IE7+, Firefox, Chrome, Opera, Safari
+      {
         xmlhttp=new XMLHttpRequest();
       }
     else
-      {// compatibilidad con IE6, IE5
+      {
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
       }
-      //alert(xmlhttp.readyState);alert(xmlhttp.status);
+      
     xmlhttp.onreadystatechange=function()
       {
       if (xmlhttp.readyState==4 && xmlhttp.status==200)

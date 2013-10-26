@@ -14,12 +14,12 @@
         <link rel="stylesheet" type="text/css" href="css/login/tooltips.css" media="screen"/>
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
+            @import "css/login/popupStyle.css";
             @import "css/design.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
-            @import "css/AltaUsuariosForm/form.css";
+            @import "css/Form/bootstrap.css";
+            @import "css/Form/form.css";
 	</style>
 <style type="text/css">
 input:focus
@@ -53,10 +53,11 @@ select:focus
                             <form:errors path="name" cssClass="errorBlock" element="div"  cssStyle="color:#D4763F;"/>
                     </div>
                     <div class="fieldgroup">
-                        <input type="submit" value="modificationEnterprise" class="submit" title="Modifier une entreprise"/>
+                        <input type="submit" value="Valider" class="submit" title="Modifier une entreprise"/>
                     </div>
                     <div style="position: absolute;margin-left: 5px;margin-top: -65px;">
-                        <a href="reportEnterprise.task?isSubmit=true"><img alt="Retour" title="Retour"src="images/back.png" style="height: 60px;width: 60px;"/></a>
+                        <a href="reportEnterprise.task?isSubmit=true">
+                            <img alt="Retour" title="Retour"src="images/back.png" style="height: 60px;width: 60px;"/></a>
                     </div>
                     <input type="hidden"  name="isSubmit" value="true"/>
                 </fieldset>
@@ -81,7 +82,7 @@ select:focus
             <img alt="HELP" class="imagesPopupHelp" style="height: 35px;width: 35px;" src="images/back.png">
         </p>
         <p class="normalHelp" style="padding-top: 30px;">Pour modifier l'entreprise, appuyer sur le bouton
-            <img alt="HELP" class="imagesPopupHelp" src="images/ModificaUsuario.png"></p>
+            <img alt="HELP" class="imagesPopupHelp" src="images/modifyUser.png"></p>
         <br><br><center>_________________________________________________________</center><br><br>
      </div>
 <script type="text/javascript" language="javascript">

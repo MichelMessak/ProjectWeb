@@ -17,9 +17,6 @@ public class PoolConnection {
     private static DataSource ds;
     private static PoolProperties p;
 
-    /**
-     * Obtain a conexion from the pool
-     */
     public static Connection getPoolConnection()
     {
         try {
@@ -93,10 +90,7 @@ public class PoolConnection {
             throw new DBConnectionNotFound(ex);
         }
     }
-    /**Obtiene el valor del archivo de configuración, valida la obligatoriedad,
-     * convierte en la clase especificada y establece ésta propiedad en el objeto.
-     *
-     */
+   
     private static void setPoolProperty(PoolProperties p, String methodName, String key, Class propertyClass, boolean mandatory) throws Exception {
 
         try {

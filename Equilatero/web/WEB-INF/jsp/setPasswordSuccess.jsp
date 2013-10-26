@@ -23,9 +23,9 @@
          </a>
          <div class="taskTitle"> Changement de mot de passe réussi</div>
          <meta HTTP-EQUIV="REFRESH" content="2; url=auth.do?isSubmit=true">
-<link rel="stylesheet" href="css/AltaUsuariosForm/jpreloader.css" />
+<link rel="stylesheet" href="css/Form/jpreloader.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/AltaUsuariosForm/jpreLoader.js"></script>
+<script type="text/javascript" src="js/Loader/jpreLoader.js"></script>
 <script type="text/javascript">
 <!-- jPreLoader script -->
 $(document).ready(function() {

@@ -14,11 +14,11 @@
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
             @import "css/design.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
-            @import "css/AltaUsuariosForm/form.css";
+            @import "css/login/popupStyle.css";
+            @import "css/Form/bootstrap.css";
+            @import "css/Form/form.css";
         </style>
          <style type="text/css">
         input:focus

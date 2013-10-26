@@ -19,24 +19,12 @@ import org.springframework.web.servlet.mvc.SimpleFormController;
 
 public class ModifyEnterpriseController extends SimpleFormController
 {
-    /**
-     * Constructor default. Configura la clase comando con la clase {@link Enterprise} y el nombre del comando
-     * como la forma <code>modificaUsuarioForm</code>
-     */
+   
     public ModifyEnterpriseController()
     {
         setCommandClass(Enterprise.class);
         setCommandName("modifyEnterpriseForm");
     }
-
-    /**
-     * Sobre-escribe la manera de saber como la forma fue cargada, para saber si hay que mostrar datos, validar o ejecutar acciones
-     * Las formas de <code>File Control 4</code> usan el parámetro <code>isSubmit</code> en true para indicar que se debe validar la forma
-     * y no usan la manera default (por metodo GET o POST) de saber si hay que mostrar la forma o validarla
-     * @param request   Request HTTP para poder obtener sus parametros
-     * @return  Verdadero si el request debe considerarse como enviado y debe mandarse a validar.<br/>
-     * Falso si debe mostrarse la forma como captura inicial
-     */
 
     @Override
     public boolean isFormSubmission(HttpServletRequest request)
@@ -47,16 +35,7 @@ public class ModifyEnterpriseController extends SimpleFormController
         return ("true".equals(isSubmit));
     }
 
-    /**
-     * Procesa la accion a realizar despues de haber pasado la validación.
-     * Añade el usuario a la base de datos. Si hay alguna excepción manda a rechazar los datos
-     * @param request   Request HTTP enviado
-     * @param response  Response HTTP a recibir
-     * @param command   Comando enviado por <code>Spring</code> de acuerdo al configurado en el constructor
-     * @param errors    Errores que seran enviados a <code>Spring</code> para mostrarse en la forma
-     * @return  <code>ModelAndView</code> que debera ser mostrada en la UI
-     */
-
+   
     @Override
     protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws Exception
     {

@@ -56,9 +56,6 @@ public class UrlValidatorService {
         return status;
     }
 
-    /**
- * Valida las URL via AJAX precibiendo la URL a la que se solicita saber si el usuario cuenta con permiso de acceso.
- */
     public int validateUrlChildTasks(String string ,HttpServletRequest request)
     {
         int status = 0;

@@ -14,16 +14,6 @@ import org.springframework.web.servlet.mvc.Controller;
  * @author Michel Messak
  */
 
-//    /**
-//     * Sobre-escribe la manera de saber como la forma fue cargada, para saber si hay que mostrar datos, validar o ejecutar acciones
-//     * Las formas de <code>File Control 4</code> usan el parámetro <code>isSubmit</code> en true para indicar que se debe validar la forma
-//     * y no usan la manera default (por metodo GET o POST) de saber si hay que mostrar la forma o validarla
-//     * @param request   Request HTTP para poder obtener sus parametros
-//     * @return  Verdadero si el request debe considerarse como enviado y debe mandarse a validar.<br/>
-//     * Falso si debe mostrarse la forma como captura inicial
-//     */
-
-
 public class SettingsController implements Controller
 {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception

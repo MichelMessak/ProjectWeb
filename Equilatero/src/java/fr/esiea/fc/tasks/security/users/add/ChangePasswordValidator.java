@@ -9,7 +9,7 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 /**
- * Validación de la forma de alta de usuarios
+ * Validator for changing a password
  * @author Dispa Cécile
  */
 

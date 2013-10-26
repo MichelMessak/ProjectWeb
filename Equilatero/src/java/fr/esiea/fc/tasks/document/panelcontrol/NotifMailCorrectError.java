@@ -1,9 +1,5 @@
 package fr.esiea.fc.tasks.document.panelcontrol;
 
-/**
- * Envio de correos para notificaciones de documentos generados correctamente y con errores
- * @author Edgar Adrian Muñoz Morales
- */
 import fr.esiea.fc.model.Configuration;
 import fr.esiea.fc.model.security.Notification;
 import fr.esiea.fc.model.security.NotificationDAO;
@@ -32,7 +28,6 @@ public class NotifMailCorrectError extends TimerTask implements ServletContextLi
     public void contextInitialized(ServletContextEvent evt) {
         try {
             Log.write("Inicializando envio de correos.");
-            //Primero cargamos la configuracion en el archivo properties
             Configuration.Load();
             error = Boolean.valueOf(Configuration.getProperty("fc4.notification.notifyByError"));
             totals = Boolean.valueOf(Configuration.getProperty("fc4.notification.notifyTotals"));
@@ -47,12 +42,11 @@ public class NotifMailCorrectError extends TimerTask implements ServletContextLi
                 Log.write("El envio de notificaciones de correos con los documentos totales se encuentra activado");
             else
                 Log.write("El envio de notificaciones de correos con los documentos totales se encuentra desactivado");
-            //int time = Integer.parseInt(Stime);
+      
             timer = new Timer();
-            //Para pasar minutos a milisegundos unicamente multiplicamos time que viene en el properties en minutos
-            //lo multiplicamos por 60000 que es 1 minuto en milisegundos
+
+
             timer.schedule(this, 1000, time * 60000);
-            //timer.schedule(this, 1000, time * 60 * 1000)
         } catch (Exception ex) {
         }
     }
@@ -61,42 +55,37 @@ public class NotifMailCorrectError extends TimerTask implements ServletContextLi
         hasToStop=true;
         timer.cancel();
         timer.purge();
-        Log.write("Se detuvo el envio de notificación de correos");
+        Log.write("L'envoie de notification par courrier s'est arrété");
     }
 
     public void run(){
         try {
-            //nuevamente se carga el archivo properties para recargar la bandera de encio de notificaciones
             Configuration.Load();
-            //Se convierte a booleanos los Strijng para revisar banderas en el archivo properties
             error = Boolean.valueOf(Configuration.getProperty("fc4.notification.notifyByError"));
             totals = Boolean.valueOf(Configuration.getProperty("fc4.notification.notifyTotals"));
-            //verificamos si la bandera para envio de doctos generados con error esta activada
             if(error)
             {
                 if(hasToStop) return;
 
-                List<Notification> envios = NotificationDAO.getUsersAdministrators();
+                List<Notification> send = NotificationDAO.getUsersAdministrators();
 
-                for (Notification notifica : envios)
+                for (Notification notification : send)
                 {
                     if(hasToStop) return;
                     fc4Repository.Init();
                     SimpleMail.setRootPath(fc4Repository.getMailPath());
-                    user = notifica.getUser();
-                    email = notifica.getEmail();
-                    SIRET = notifica.getEnterpriseID();
-                    errors = notifica.getErrors();
-                    corrects = notifica.getCorrect();
+                    user = notification.getUser();
+                    email = notification.getEmail();
+                    SIRET = notification.getEnterpriseID();
+                    errors = notification.getErrors();
+                    corrects = notification.getCorrect();
                     Log.write("Enviando correo de notificacion de errores al usuario: "+user);
-                    //Verifica por medio del vector que el RFC contenga documentos asociados
-                    //generados con error
                         if(Integer.parseInt(errors) >= 1){
                                 String htmlBody = SimpleMail.loadTemplate(SimpleMail.NOTIFICATIONS_CORRECTS_ERRORS);
-                                SimpleMail.send(new String[]{email}, "Notificacion de Documentos con Errores",
+                                SimpleMail.send(new String[]{email}, "Notificacion de Documents avec Erreurs",
                                     htmlBody.replace("$replace",
-                                    "<br><span>RFC:"+SIRET+"<br>"+
-                                    "<span style='color: red'>Errores: "+errors+"</span><br>"
+                                    "<br><span>SIRET:"+SIRET+"<br>"+
+                                    "<span style='color: red'>ERREURS: "+errors+"</span><br>"
                                 ), null, SimpleMail.TYPE_HTML);
 
                         }
@@ -106,33 +95,30 @@ public class NotifMailCorrectError extends TimerTask implements ServletContextLi
 
                 if(hasToStop) return;
 
-                //verificamos si la bandera para envio de doctos totales esta levantada
                 if(totals)
                 {
 
                     if(hasToStop) return;
-                    List<Notification> envios = NotificationDAO.getUsersAdministrators();
+                    List<Notification> sends = NotificationDAO.getUsersAdministrators();
 
-                for (Notification notifica : envios)
+                for (Notification notification : sends)
                 {
                     if(hasToStop) return;
                     fc4Repository.Init();
                     SimpleMail.setRootPath(fc4Repository.getMailPath());
-                    user = notifica.getUser();
-                    email = notifica.getEmail();
-                    SIRET = notifica.getEnterpriseID();
-                    errors = notifica.getErrors();
-                    //errores ="2";
-                    corrects = notifica.getCorrect();
-                    Log.write("Enviando correo de notificacion de totales al usuario: "+user);
-                    //Verifica por medio del vector que el RFC contenga documentos asociados
-                    //generados con error
+                    user = notification.getUser();
+                    email = notification.getEmail();
+                    SIRET = notification.getEnterpriseID();
+                    errors = notification.getErrors();
+                    corrects = notification.getCorrect();
+                    Log.write("Envoie de courrier de notificatgion total de l'utilisateur: "+user);
+                    
                             String htmlBody = SimpleMail.loadTemplate(SimpleMail.NOTIFICATIONS_CORRECTS_ERRORS);
-                            SimpleMail.send(new String[]{email}, "Notificacion de Documentos con Correctos y con Errores",
+                            SimpleMail.send(new String[]{email}, "Notificacion de Documents Correcte et Erronée",
                                 htmlBody.replace("$replace",
-                                "<br><span>RFC:"+SIRET+"<br>"+
-                                "<span style='color: red'>Errores: "+errors+"</span><br>"+
-                                "<span style='color: green'>Correctos: "+corrects+"</span><br>"
+                                "<br><span>SIRET:"+SIRET+"<br>"+
+                                "<span style='color: red'>ERREUR: "+errors+"</span><br>"+
+                                "<span style='color: green'>COrrects: "+corrects+"</span><br>"
                             ), null, SimpleMail.TYPE_HTML);
                     }
                 }

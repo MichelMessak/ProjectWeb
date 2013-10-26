@@ -31,14 +31,6 @@ public class ActivityController implements Controller {
 
         try {
 
-            /**
-             * Este controlador es llamado mas de 1 vez, por las siguientes razones:
-             * 1. Desde el menu general. Aqui debe mostrar la ventana de filtros del reporte
-             * 2. Por errores en captura de datos del filtro. Aqui debe mostrar los campos capturados junto con los errores
-             * 3. Por submit correcto (validacion OK) de los filtros del reporte. Aqui debe mostrar el reporte
-             * 4. Por llamadas asincronas del grid "datatable" de jquery usando AJAX
-             * 5. Por llamadas desde otras tareas. Aqui debe mostrar la ventana de reporte porque los filtros son proporcionados por la tarea
-             */
             Report report = null;
 
             if (!SessionManager.hasSession(request)) {

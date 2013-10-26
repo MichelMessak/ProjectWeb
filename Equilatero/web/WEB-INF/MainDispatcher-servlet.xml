@@ -27,8 +27,6 @@
                 <prop key="auth.do">authController</prop>
                 <prop key="logout.do">logoutController</prop>
                 <prop key="home.do">homeController</prop>
-                <prop key="view.do">viewController</prop>
-                <prop key="docFiles.do">docFilesController</prop>
                 <prop key="reporteDocumentos.do">/reportDocument.task</prop>
                 <prop key="*.do">pluginController</prop>
             </props>
@@ -67,12 +65,6 @@
 
     <bean name="homeController"
           class="fr.esiea.fc.control.security.HomeController"/>
-
-    <bean name="docFilesController"
-          class="fr.esiea.fc.control.document.DocFilesController"/>
-          
-    <bean name="viewController"
-          class="fr.esiea.fc.control.fileview.ViewController"/>
 
     <bean name="/addUser.form" class="fr.esiea.fc.tasks.security.users.add.AddUserController">
         <property name="commandClass" value="fr.esiea.fc.model.security.User"/>

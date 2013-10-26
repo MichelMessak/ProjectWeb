@@ -54,10 +54,6 @@ public class Report {
         }
     }
 
-    /**
-     * Execute the query configurated. It is use to start the
-     * Ejecuta el query configurado. Se usa para empezar la carga del objeto
-     */
     public void ExecuteQuery(HttpServletRequest request) throws Exception {
         try {
             ExecuteQueryForTotals(request);
@@ -67,11 +63,7 @@ public class Report {
         }
     }
 
-   
-    /**
-     * Obtiene el número de columnas del reporte
-     * @return  Número de columnas en el reporte
-     */
+  
     public int getColumnCount() {
         if (this.columnNames != null) {
             return this.columnNames.length;
@@ -80,60 +72,31 @@ public class Report {
         }
     }
 
-    /**
-     * Obtiene el número de la página actual
-     * @return  número de página
-     */
     public int getCurrentPage() {
         return this.currentPage;
     }
-
-    /**
-     * Obtiene el número total de registros en el query
-     * @return  número total de registros
-     */
     public int getRowCount() {
         return this.rowCount;
     }
 
-    /**
-     * Obtiene el número total de registros filtrados en el último filtro consultado
-     * @return  número total de registros filtrados
-     */
     public int getRowFilterCount() {
         return this.rowFilterCount;
     }
 
-    /**
-     * Obtiene el número total de páginas de acuerdo al número de registros por página configurado
-     * @return  número total de páginas
-     */
     public int getPageCount() {
         return this.pageCount;
     }
 
-    /**
-     * Obtiene el arreglo de nombre de columnas del reporte
-     * @return
-     */
+    
     public String[] getColumnNames() {
         return this.columnNames;
-        //return Arrays.asList(colNames).iterator();
     }
 
-    /**
-     * Obtiene el URL que responde al paginado asíncrono
-     * @return  La cadena conteniendo el URL que el objeto javascript debe llamar para procesamiento asíncrono de búsquedas,
-     * ordenamiento y filtrado
-     */
+    
     public String getURL() {
         return this.URL;
     }
 
-    /**
-     * Obtiene los registros desde la base de datos en formato JSON
-     * @return  Un arreglo JSON {@link JSONArray} de filas. Cada fila es otro arreglo JSON de valores de las columnas.
-     */
     public JSONArray getData() {
         return this.data;
     }
@@ -186,13 +149,7 @@ public class Report {
         }
     }
 
-    
-    /**
-     * Permite cargar los registros de la página anterior
-     * @param conn  La conexión a la base de datos si se tiene una. Si la conexión es nula, se pide una del pool.
-     * Ver {@link PoolConnection}
-     * @throws Exception
-     */
+   
     public void getPreviousPage(Connection conn) throws Exception {
         try {
             if (this.currentPage - 1 < 0) {
@@ -208,14 +165,6 @@ public class Report {
         }
     }
 
-    /**
-     * Permite obtener los registros de la base de datos de acuerdo a un inicio y un límite. Usado por el objeto
-     * javascript de paginación. Esta función carga los registros en un arreglo JSON de filas. Donde cada fila contiene
-     * un arreglo JSON de valores de columnas.
-     * @param offset    Número inicial del registro donde empezar
-     * @param limit     Número total de registros a cargar
-     * @throws Exception
-     */
     public void getRecords(int offset, int limit) throws Exception {
         Connection conn = null;
         ResultSet rs = null;
@@ -413,12 +362,6 @@ public class Report {
 
     }
 
-    /**
-     * Permite cargar los registros de la página siguiente
-     * @param conn  La conexión a la base de datos si se tiene una. Si la conexión es nula, se pide una del pool.
-     * Ver {@link PoolConnection}
-     * @throws Exception
-     */
     public void getNextPage(Connection conn) throws Exception {
         try {
             if ((this.currentPage + 1) * this.ROWS_PER_PAGE > this.rowCount) {
@@ -431,17 +374,11 @@ public class Report {
         } 
     }
 
-    /**
-     * Permite cargar los registros de la página actual
-     * @param conn  La conexión a la base de datos si se tiene una. Si la conexión es nula, se pide una del pool.
-     * Ver {@link PoolConnection}
-     * @throws Exception
-     */
     private void getCurrentPage(Connection conn) throws Exception {
         PreparedStatement statement = null;
         ResultSet rs = null;
         try {
-            //Futuro: Mejorar rendimiento trayendo bloques de paginas y no pagina por pagina
+            
             this.OFFSET = currentPage * this.ROWS_PER_PAGE;
             if (rowCount > 0) {
                 if (conn == null) {
@@ -491,60 +428,28 @@ public class Report {
 
     }
 
-    /**
-     * Permite limpiar la información de ordenamiento. Se usa esta limpieza por cada request asíncrono
-     * del objeto javascript que atiende el ordenamiento
-     */
     public void clearSort() {
         this.sorter.clearSort();
     }
 
-    /**
-     * Añade una columna en el ordenamiento con su dirección (asc ó desc). Esta información es enviada por el objeto javascript
-     * en cada request asíncrono
-     * @param sColNumber
-     * @param sColDir
-     */
     public void addSort(String sColNumber, String sColDir) {
         this.sorter.addSort(sColNumber, sColDir);
     }
 
-    /**
-     * Permite limpiar la información de filtrado. Se usa por cada request asíncrono
-     */
     public void clearFilter() {
         this.filter.clearFilter();
     }
 
-    /**
-     * Añade un nuevo filtro dado la columna y su valor
-     * @param sColNumber    Índice de la columna a ser filtrada
-     * @param sColValue     Valor de filtro de la columna
-     */
     public void addFilter(String sColNumber, String sColValue) {
         this.filter.addFilter(sColNumber, sColValue);
     }
 
-    /**
-     * Configura la búsqueda genérica de todas las columnas
-     * @param search    Valor a buscar
-     */
     public void setSearch(String search) {
         this.filter.setSearch(search);
     }
 
-    /**
-     * Permite configurar los parámetros del requerimiento (request) asíncrono. Esta función
-     * carga los registros de acuerdo a lo requerido y los deja en el arreglo JSON de datos.
-     * El controlador se encarga de enviar este objeto a la vista de paginación para poder
-     * generar el objeto javascript necesario para atender la petición.
-     * @param request   Request asíncrono recibido desde el objeto javascript
-     * @throws Exception
-     */
     public void configureDatatableParameters(HttpServletRequest request) throws Exception {
         try {
-            //Carga de datos provenientes del datatable
-            //Sorting
             String sSortingCols = request.getParameter("iSortingCols");
             if (sSortingCols != null) {
                 this.clearSort();
@@ -558,7 +463,6 @@ public class Report {
                 this.clearSort();
             }
 
-            //Filters by column
             this.clearFilter();
             for (int i = 0; i < this.columnNames.length; i++) {
                 String sColValue = request.getParameter("sSearch_" + i);
@@ -567,7 +471,6 @@ public class Report {
                 }
             }
 
-            //Filter general
             String sSearch = request.getParameter("sSearch");
             this.setSearch(sSearch);
 
@@ -588,8 +491,7 @@ public class Report {
 
     public void configureDatatableParametersDocuments(HttpServletRequest request) throws Exception {
         try {
-            //Carga de datos provenientes del datatable
-            //Sorting
+            
             String sSortingCols = request.getParameter("iSortingCols");
             if (sSortingCols != null) {
                 this.clearSort();
@@ -630,15 +532,6 @@ public class Report {
         }
     }
 
-    /**
-     * Obtiene la definición javascript de las columnas del objeto para armar la salida
-     * @return  La definición en javascript de las columnas del objeto.<br/>
-     * Ejemplo:<br/>
-     * {<br/>
-     *      {sWidth: 10%, sClass:left, bVisible: true, bSortable: true},<br/>
-     *      {sWidth: 20%, sClass:right, bVisible: false, bSortable: false},<br/>
-     * }
-     */
     public String getJavascriptColumnDefinition() {
         String totalDef = null;
         for (int i = 0; i < this.columnNames.length; i++) {
@@ -679,7 +572,7 @@ public class Report {
                 }
                 def += "\"bSortable\": " + this.columnSortables[i];
             } else {
-                //SGH: El default en datatable es ordenar. Yo lo necesito al reves
+                
                 if (def == null) {
                     def = "";
                 }
@@ -746,7 +639,7 @@ public class Report {
                 }
                 def += "\"bSortable\": " + this.columnSortables[otherIndex];
             } else {
-                //SGH: El default en datatable es ordenar. Yo lo necesito al reves
+                
                 if (def == null) {
                     def = "";
                 }
@@ -771,74 +664,37 @@ public class Report {
         return totalDef;
     }
 
-    /**
-     * Permite configurar las alineaciones de las columnas
-     * @param columnAligns  Arreglo de cadenas con las alineaciones: left, right o center
-     */
     public void setColumnAlignments(String[] columnAligns) {
         this.columnAligns = columnAligns;
     }
 
-    /**
-     * Permite configurar los anchos de las columnas
-     * @param columnWidths  Arreglo de cadenas con los anchos en porcentajes. <br/>
-     * Ejemplo:<br/>
-     *  report.setColumnWidths(new String[]{"10%", "5%", "20%"});
-     */
     public void setColumnWidths(String[] columnWidths) {
         this.columnWidths = columnWidths;
     }
 
-    /**
-     * Permite configurar las columnas extras. Estas columnas extras son html puro que el objeto escribe en la salida.
-     * @param columnExtras  Arreglo de cadenas de las columnas extras. Estas cadenas deben contener html.<br/>
-     * Si se necesitan referenciar a datos de alguna columna de la fila actual, se debe usar la notación
-     * <code>{<numeroDeColumna>}</code>
-     * Ejemplo:<br/>
-     * report.setColumnExtras(new String[]{"<form method=\"post\" action=\"procesa.html\"><input type=\"text\" name=\"campo1\" value=\"{0}\"/></form>"});
-     */
+   
     public void setColumnExtras(String[] columnExtras) {
         this.columnExtras = columnExtras;
     }
 
-    /**
-     * Permite obtener las columnas extras para escribirlas en la salida
-     * @return  Arreglo de cadenas con las columnas extras en HTML
-     */
     public String[] getColumnExtras() {
         return new String[(this.columnExtras != null ? this.columnExtras.length : 0)];
     }
 
-    /**
-     * Configura la visibilidad de las columnas
-     * @param columnVisibles    Arreglo de lógicos que permite especificar si la columna es visible o invisible
-     */
     public void setColumnVisibles(Boolean[] columnVisibles) {
         this.columnVisibles = columnVisibles;
     }
 
-    /**
-     * Configura la ordenabilidad de las columnas
-     * @param columnSortables   Arreglo de lógicos que permite especificar si la columna permite ordenamiento o no
-     */
     public void setColumnSortables(Boolean[] columnSortables) {
         this.columnSortables = columnSortables;
     }
 
-    /**
-     * Configura la buscabilidad de las columnas
-     * @param columnSearchables Arreglo de lógicos que permite especificar si la columna permite filtros de búsqueda
-     */
+
     public void setColumnSearchables(Boolean[] columnSearchables) {
         this.columnSearchables = columnSearchables;
     }
 
-    /**
-     * Obtiene la definición de búsquedas por columna en el objeto. Es usada en la presentación del objeto
-     * @return  Arreglo de cadenas por columna que permite configurar la búsqueda o filtro por columnas
-     */
     public String[] getJavascriptSearchDefinition() {
-        //int len=(columnNames!=null?columnNames.length:0)+(columnExtras!=null?columnExtras.length:0);
         if (this.columnSearchables == null) {
             return null;
         }
@@ -854,47 +710,18 @@ public class Report {
 
     }
 
-    /**
-     * Permite limpiar los filtros por columna. Usada por cada request asíncrono para empezar una nueva especificación
-     * de filtros.
-     */
     public void clearWhere() {
         this.where.clearWhere();
     }
 
-    /**
-     * Añade una búsqueda o filtro por columna especificada al momento de request asíncrono
-     * mediante un valor determinado
-     * @param colName   Nombre de la columna
-     * @param colValue  Valor de filtro de la columna
-     */
     public void addWhere(String colName, String colValue) {
         this.where.addWhere(colName, colValue);
     }
 
-    /**
-     * Añade una búsqueda o filtro por columna especificada al momento del request asíncrono
-     * mediante rango de valores. Usada para rangos de fechas o de valores
-     * @param colName   Nombre de la columna
-     * @param from      Valor inicial
-     * @param to        Valor final
-     */
     public void addWhereBetween(String colName, String from, String to) {
         this.where.addWhereBetween(colName, from, to);
     }
 
-    /**
-     * Permite configurar los parámetros de una llamada desde otra tarea.
-     * Se usa aquí una definición de llamada estándar de tareas por medio de parámetros del request:
-     *  bTaskCallSubmit:        true si se trata de una llamada desde otra tarea
-     *  iDocumentColumns:       Número de columnas especificadas en este request
-     *  SColumnName_i:          Nombre de la columna a filtrar
-     *  sColumnValue_i:         Valor de la columna a filtrar (mediante valor determinado)
-     *  sColumnValue_start_i:   Valor inicial de la columna a filtrar (mediante un rango de valores)
-     *  sColumnValue_end_i:     Valor final de la columna a filtrar (mediante un rango de valores)
-     * @param request   Request HTTP de la llamada
-     * @throws Exception
-     */
     public void setTaskCallParameters(HttpServletRequest request) throws Exception {
         try {
             if (!isTaskCall(request)) {
@@ -923,24 +750,13 @@ public class Report {
         }
     }
 
-    /**
-     * Permite saber si la llamada corresponde a una desde otra tarea
-     * @param request   Request HTTP
-     * @return  Verdadero si la llamada se realizó desde otra tarea
-     */
     public static boolean isTaskCall(HttpServletRequest request) {
         return ("true".equals(request.getParameter("bTaskCallSubmit")) /*&& request.getSession().getAttribute("report")==null*/);
     }
 
-    /**
-     * Permite saber si la llamada se hizo desde el menú de tareas del usuario
-     * @param request   Request HTPP
-     * @return  Verdadeo si la llamada se realizó desde el menú
-     */
     public static boolean isMenuCall(HttpServletRequest request) {
         return ("true".equals(request.getParameter("isSubmit")) /*&& request.getSession().getAttribute("report")==null*/);
     }
-
 
     public static boolean isPrevious(HttpServletRequest request) {
         return ("Retour".equals(request.getParameter("isSubmit")) /*&& request.getSession().getAttribute("report")==null*/);
@@ -950,24 +766,12 @@ public class Report {
         return ("Previous".equals(request.getParameter("isSubmitPreviousReport")) /*&& request.getSession().getAttribute("report")==null*/);
     }
 
-    /**
-     * Permite saber si la llamada es un requerimiento asincrono ajax de paginación, ordenamiento y/o búsqueda
-     * @param request   Request HTTP
-     * @return  Verdadero si la llamada es un requerimiento asíncrono de ajax
-     */
     public static boolean isAjaxCall(HttpServletRequest request) {
         return (request.getParameter("sEcho") != null /*&& request.getSession().getAttribute("report")!=null*/);
     }
 
-    /**
-     * Permite saber si la llamada es un filtrado de valores de alguna forma anterior al reporte. Algunos reportes
-     * cuentan con una forma de filtrado antes de mostrar el reporte.
-     * @param request   Request HTTP
-     * @return  Verdadero si la llamada se hizo desde una pantalla de filtrado
-     */
     public static boolean isFilterCall(HttpServletRequest request) {
-        System.out.println(request.getParameter("isFilterSubmit"));
-        return ("Consult".equals(request.getParameter("isFilterSubmit")) /*&& request.getSession().getAttribute("report")==null*/);
+        return ("Valider".equals(request.getParameter("isFilterSubmit")) /*&& request.getSession().getAttribute("report")==null*/);
     }
 
     public ReportWhere getWhere() {

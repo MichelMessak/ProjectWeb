@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
 
 /**
- * Controller for addinf an user
+ * Controller for adding an user
  * @author Michel Messak
  */
 public class AddUserController extends SimpleFormController {

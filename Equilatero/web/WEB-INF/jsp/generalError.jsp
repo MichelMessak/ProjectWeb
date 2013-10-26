@@ -14,7 +14,7 @@
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
             @import "css/design.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
+            @import "css/Form/bootstrap.css";
             @import "css/error/error.css";
 	</style>
         <style type="text/css" media="print"> #trace, #tree, #vars { display: block; }</style>

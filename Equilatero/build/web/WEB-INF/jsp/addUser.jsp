@@ -12,11 +12,11 @@
         <style type="text/css" title="currentStyle">
             @import "css/reset.css";
             @import "css/design.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
-            @import "css/AltaUsuariosForm/form.css";
+            @import "css/login/popupStyle.css";
+            @import "css/Form/bootstrap.css";
+            @import "css/Form/form.css";
 	</style>
  <style type="text/css">
 input:focus
@@ -66,10 +66,10 @@ select:focus
                             <form:errors path="confirmationPassword" cssClass="errorBlock" element="div" cssStyle="color:#D4763F;"/>
                         </div>
                         <div class="fieldgroup">
-                            <input type="submit" value="Register" class="submit" title="Valider">
+                            <input type="submit" value="Valider" class="submit" title="Valider">
                             <div style="position: absolute;margin-left: 5px;">
-                                <a href="reporteGenericoUsuarios.task?isSubmit=true">
-                                    <img alt="Previous" title="Previous"src="images/back.png" style="height: 60px;width: 60px;"/>
+                                <a href="reportUser.task?isSubmit=true">
+                                    <img alt="Retour" title="Retour"src="images/back.png" style="height: 60px;width: 60px;"/>
                                 </a>
                             </div>
                         </div>

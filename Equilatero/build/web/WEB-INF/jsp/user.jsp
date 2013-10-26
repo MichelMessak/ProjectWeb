@@ -11,9 +11,9 @@
         <title>Utilisateurs</title>
         <style type="text/css" title="currentStyle">
             @import "css/design.css";
-            @import "css/Ayudas/estiloAyuda.css";
+            @import "css/Help/helpStyle.css";
             @import "css/login/popup.css";
-            @import "css/login/estilopopup.css";
+            @import "css/login/popupStyle.css";
             @import "css/datatable/demo_page.css";
             @import "css/datatable/demo_table.css";
             @import "css/datatable/TableTools.css";
@@ -154,7 +154,7 @@ function demo1() {
     </div>
 </c:if>
             <div id="demo">
-                <a id="addUser" href="#" onclick="sendRequest('reportUser.task', 'adduser.form' ,'addUser','add')">
+                <a id="addUser" href="#" onclick="sendRequest('reportUser.task', 'addUser.form' ,'addUser','add')">
                     <img alt="Ajouter un Utilisateur" title="Ajouter un utilisateur"src="images/button_add_user.png" style="border: 0;"/>
                 </a>
             </div>

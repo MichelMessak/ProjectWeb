@@ -7,12 +7,10 @@
         <%@include file="htmlhead.jspf" %>
         <link rel="shortcut icon" type="image/ico" href="images/FileControl.ico"/>
         <style type="text/css" title="currentStyle">
-            @import "css/Ayudas/basic.css";
-            @import "css/Ayudas/help.css";
             @import "css/reset.css";
             @import "css/design.css";
-            @import "css/AltaUsuariosForm/bootstrap.css";
-            @import "css/AltaUsuariosForm/form.css";
+            @import "css/Form/bootstrap.css";
+            @import "css/Form/form.css";
 	</style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Supprimer une entreprise</title>
@@ -34,9 +32,9 @@
          </a>
          <div class="taskTitle">Suppression d'une entreprise réussi</div>
          <meta HTTP-EQUIV="REFRESH" content="2; url=reportEnterprise.task?isSubmit=true">
-<link rel="stylesheet" href="css/AltaUsuariosForm/jpreloader.css" />
+<link rel="stylesheet" href="css/Form/jpreloader.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/AltaUsuariosForm/jpreLoader.js"></script>
+<script type="text/javascript" src="js/Loader/jpreLoader.js"></script>
 
 <script type="text/javascript">
 <!-- jPreLoader script -->

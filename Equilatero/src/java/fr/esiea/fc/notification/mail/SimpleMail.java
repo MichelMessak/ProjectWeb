@@ -22,8 +22,7 @@ import org.apache.commons.io.FileUtils;
 
 /**
  * Notificacion simple via mail
- * @author Segundo García Heras
- * @since 1.0.0.0
+ * @author Michel Messak
  */
 
 public class SimpleMail
@@ -176,7 +175,7 @@ public class SimpleMail
             }
             if (templateFile == null)
             {
-                throw new ConfigurationMissingException("Tenmplate para código " + templateCode + " no ha sido encontrado");
+                throw new ConfigurationMissingException("Template pour le code " + templateCode + " n'a pas pu etre trouvée");
             }
             templateFile=rootPath+"/"+templateFile;
             return FileUtils.readFileToString(new File(templateFile));

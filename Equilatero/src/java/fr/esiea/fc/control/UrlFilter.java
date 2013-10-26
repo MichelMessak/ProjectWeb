@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Check the user's URL for his access
- * @author Froylan
+ * @author Dispa Cécile
  */
 public class UrlFilter implements javax.servlet.Filter {
 

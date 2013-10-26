@@ -11,17 +11,15 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="css/design.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="css/login/tooltips.css" media="screen"/>
-        <!-- -->
-        <%--<link type='text/css' href='css/Ayudas/contenedor.css' rel='stylesheet' media='screen' />--%>
-	<link rel="stylesheet" type="text/css" href="css/Ayudas/estiloAyuda.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Help/helpStyle.css"/>
         <link rel="stylesheet" type="text/css" href="css/login/popup.css"/>
-        <link rel="stylesheet" type="text/css" href="css/login/estilopopup.css"/>
-        <link type='text/css' href='css/login/loginDesliza.css' rel='stylesheet' media='screen' />
+        <link rel="stylesheet" type="text/css" href="css/login/popupStyle.css"/>
+        <link type='text/css' href='css/login/loginTongue.css' rel='stylesheet' media='screen' />
         <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
         <title>Equilatero</title>
 
     <style type="text/css">
-        #botoncerrar{background:url(images/Salir2.png) no-repeat; width:47px; height:50px; display:inline; z-index:100; position:absolute; top:-32px; right:-27px; cursor:pointer;}
+        
 form input[type="submit"]{
     background: none;
     border: none;
@@ -30,7 +28,7 @@ form input[type="submit"]{
     cursor: pointer;
     position: fixed;
     margin-top: 2.9%;
-    margin-left: -40%;
+    margin-left:-40%;
 }
     </style>
 <script type="text/javascript">
@@ -50,7 +48,7 @@ form input[type="submit"]{
 <body onload="checkVersion()">
 <div id="header"></div>
 <div>
-    <div id="help" style="top: -120%;" class="forkit-curtain" >
+    <div id="help" style="top:-120%;" class="forkit-curtain" >
     <div id="close" class="close-button"></div>
         <div id="LogIn">
             <div id="mainContainer">
@@ -117,7 +115,6 @@ form input[type="submit"]{
             <img alt="HELP" src="images/acces.png">
         </p>
         <center><p class="noteHelp">La deuxième page se chargera après avoir s'être connecté</p></center>
-        <center><img alt="HELP" src="images/autenticacion.png"></center>
         <p class="descripcionHelp" style="padding-top: 20px;">
             Après avoir renseigner vos identifiants, appuyer sur le bouton
             <img alt="HELP" src="images/FileControl4-IniciarSesion-Boton.png">
@@ -126,7 +123,6 @@ form input[type="submit"]{
         <p class="normalHelp" style="padding-bottom: 20px;font-size: 15px;">Erreur d'Identification</p>
         <p class="descripcionHelp" style="padding-bottom: 10px;">Si vous introduiser un nom d'utilisateur/mot de passe erronés, la page suivante vous l'indiquera</p>
         <center><p class="noteHelp">Par politique, l'utilisateur sera bloqué après 3 tentatives erronées</p></center>
-        <center><img alt="HELP" src="images/autenticacionFail.png"></center>
         <p class="descripcionHelp" style="padding-top: 20px;">
             Après avoir fait les modifications necessaires, cliquer sur l'image
             <img alt="HELP" src="images/FileControl4-IniciarSesion-Boton.png">
@@ -156,8 +152,8 @@ form input[type="submit"]{
           </tr>
         </table>        
     </div>   
-<script type='text/javascript' src='js/Ayudas/jquery.simplemodal.js'></script>
-<script type='text/javascript' src='js/Ayudas/basic.js'></script>
+<script type='text/javascript' src='js/Helps/jquery.simplemodal.js'></script>
+<script type='text/javascript' src='js/Helps/basic.js'></script>
 <div id="ImgIni"></div>
 <script type="text/javascript">
   $(function(){$("#myForm :input").tooltip({position: "center right", offset: [6, 10],effect: "slide",opacity: 0.7});});
