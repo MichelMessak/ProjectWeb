@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.2.4
 -- Dumped by pg_dump version 9.2.2
--- Started on 2013-10-26 13:07:41
+-- Started on 2013-10-26 17:10:53
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -943,7 +943,6 @@ BAMJ850411K10	JOSE JAHIR BAROJAS MUÑO	admin
 TAV951205C15	TAV	admin
 MME020905462	MULTINA MEXICO	agarcia
 XEXX010101000	PRUEBA	agarcia
-BGL860805G63	Test	MMichel
 \.
 
 
@@ -972,6 +971,7 @@ USER	report.enterprise.modify
 USER	users.report.PDF
 USER	users.setPassword
 USER	users.report.EXCEL
+USER	users.changePassword
 \.
 
 
@@ -987,6 +987,7 @@ report.enterprise	Entreprise	rep_ent_gen.jpg	reportEnterprise.task	MENU
 report.user	Utilisateurs	rep_user_gen.png	reportUser.task	MENU
 users.report.EXCEL	Génération Excel	\N	reportEXCEL.form	ACTION
 users.report.PDF	Génération PDF	\N	reportPDF.form	ACTION
+admin.logs	Logs	rep_doc_gen.jpg	log.task	MENU
 users.changePassword	Changer de Mot de Passe	\N	changePassword.form	ACTION
 report.enterprise.add	Ajout d'une entreprise	\N	addEnterprise.form	ACTION
 report.enterprise.delete	Suppression d'une entreprise	\N	deleteEnterprise.form	ACTION
@@ -995,7 +996,6 @@ report.user.add	Ajout d'un utilisateur	\N	addUser.form	ACTION
 report.user.delete	Supprimer un utilisateur	\N	deleteUser.form	ACTION
 report.user.modify	Modifier un utilisateur	\N	modifyUser.form	ACTION
 users.setPassword	Rétablir un mot de passe	\N	setPassword.form	ACTION
-admin.logs	Logs	\r	log.task	MENU
 auditor.activity	Rapport d'activité	task_auditoria.png	activity.task	MENU
 \.
 
@@ -1009,6 +1009,7 @@ auditor.activity	Rapport d'activité	task_auditoria.png	activity.task	MENU
 COPY users (user_id, user_name, user_email, user_pwd, user_status, user_pwdreset, user_type) FROM stdin;
 agarcia	Ángel García Alcántara	michel.messak@gmail.com	3cd6e84a34793dabc32d3748bc890aa88cd1e018d3d86170c0565248f9ab0d49	A	f	USER
 admin	Admin	agarcia@itcomplements.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	A	f	ADMIN
+MMichel	Messak	micaknfckn@gflkzenfjklzenbf.fr	226c0afa7fbb574af0cc1d4706187d78b3847b0e56d4b7f7bed51e70316d73d9	A	f	USER
 \.
 
 
@@ -1062,6 +1063,7 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9074	agarcia	2013-10-24	13:32:53.323	Début de session	127.0.0.1
 9075	agarcia	2013-10-24	13:33:05.333	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 9153	agarcia	2013-10-25	12:02:37.327	Début de session	127.0.0.1
+9155	agarcia	2013-10-26	13:40:49.136	Début de session	127.0.0.1
 8707	admin	2013-10-16	15:46:38.18	Consulta a usuarios	127.0.0.1
 8708	admin	2013-10-16	15:46:44.131	Acceso a tarea Permitida: altaUsuario.form	127.0.0.1
 8709	admin	2013-10-16	15:46:44.134	Acceso a tarea PErmitida: altaUsuario.form	127.0.0.1
@@ -1097,6 +1099,8 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9077	agarcia	2013-10-24	13:46:19.365	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 9078	agarcia	2013-10-24	13:46:20.066	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 9154	agarcia	2013-10-25	12:17:53.186	Début de session	127.0.0.1
+9156	agarcia	2013-10-26	15:37:24.181	Début de session	127.0.0.1
+9157	agarcia	2013-10-26	15:37:39.109	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 8769	agarcia	2013-10-18	12:21:50.376	Inicio de sesión	127.0.0.1
 8770	agarcia	2013-10-18	12:21:54.959	Consulta de reporte de empresas	127.0.0.1
 8771	agarcia	2013-10-18	12:22:16.76	Empresa HYM091130QYD agregada	127.0.0.1
@@ -1116,6 +1120,20 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 8839	admin	2013-10-21	16:37:23.71	Acceso a tarea PErmitida: addUser.form	127.0.0.1
 9079	agarcia	2013-10-24	13:49:01.132	Début de session	127.0.0.1
 9080	agarcia	2013-10-24	13:49:08.393	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
+9158	agarcia	2013-10-26	16:11:58.252	Début de session	127.0.0.1
+9159	agarcia	2013-10-26	16:12:07.395	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
+9160	agarcia	2013-10-26	16:12:24.938	Consultation des entreprises	127.0.0.1
+9161	agarcia	2013-10-26	16:12:47.428	L'entreprise EDY860510S06 a été ajoutée	127.0.0.1
+9162	agarcia	2013-10-26	16:12:50.196	Consultation des entreprises	127.0.0.1
+9163	agarcia	2013-10-26	16:13:08.035	Entreprise EDY860510S06 Modifiée	127.0.0.1
+9164	agarcia	2013-10-26	16:13:10.498	Consultation des entreprises	127.0.0.1
+9165	agarcia	2013-10-26	16:13:16.57	Entreprise EDY860510S06 supprimée	127.0.0.1
+9166	agarcia	2013-10-26	16:13:19.239	Consultation des entreprises	127.0.0.1
+9167	admin	2013-10-26	16:14:33.932	Début de session	127.0.0.1
+9168	admin	2013-10-26	16:16:04.262	Consultation des logs :C:/ITC/FC4/Logs\\2013\\10\\fc4.20131024.log du jour : 2013/10/24	127.0.0.1
+9169	admin	2013-10-26	16:16:12.181	Consultation du rapport d'activité	127.0.0.1
+9170	admin	2013-10-26	16:16:20.308	Consultation des utilisateurs	127.0.0.1
+9171	admin	2013-10-26	16:16:22.433	Essai d'effectuer la tache: adduser.form	127.0.0.1
 8775	agarcia	2013-10-18	13:28:51.587	Inicio de sesión	127.0.0.1
 8776	agarcia	2013-10-18	13:29:10.727	Consulta de reporte de empresas	127.0.0.1
 8777	agarcia	2013-10-18	13:31:00.193	Empresa EDY860510S04 agregada	127.0.0.1
@@ -1125,6 +1143,10 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 8843	admin	2013-10-21	16:38:15.6	Acceso a tarea PErmitida: addUser.form	127.0.0.1
 9081	agarcia	2013-10-24	13:49:44.151	Début de session	127.0.0.1
 9082	agarcia	2013-10-24	13:49:51.517	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
+9172	agarcia	2013-10-26	16:29:09.848	Début de session	127.0.0.1
+9173	admin	2013-10-26	16:29:28.159	Début de session	127.0.0.1
+9174	admin	2013-10-26	16:29:32.474	Consultation des utilisateurs	127.0.0.1
+9175	admin	2013-10-26	16:29:56.299	Consultation des utilisateurs	127.0.0.1
 8778	agarcia	2013-10-18	13:39:20.395	Inicio de sesión	127.0.0.1
 8779	agarcia	2013-10-18	13:39:32.735	Consulta de reporte de empresas	127.0.0.1
 8780	agarcia	2013-10-18	13:39:55.191	Empresa EDY860510S06 agregada	127.0.0.1
@@ -1144,6 +1166,10 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9083	agarcia	2013-10-24	13:51:34.741	Début de session	127.0.0.1
 9084	agarcia	2013-10-24	13:51:43.788	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 9085	agarcia	2013-10-24	13:52:01.752	Consultation des documents de l'entreprise MME020905462	127.0.0.1
+9176	admin	2013-10-26	16:31:44.725	Début de session	127.0.0.1
+9177	admin	2013-10-26	16:31:47.021	Consultation des utilisateurs	127.0.0.1
+9178	admin	2013-10-26	16:32:14.249	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9179	admin	2013-10-26	16:33:35.54	Consultation des utilisateurs	127.0.0.1
 8788	agarcia	2013-10-18	15:50:02.109	Inicio de sesión	127.0.0.1
 8789	agarcia	2013-10-18	15:50:11.285	Consulta de reporte de empresas	127.0.0.1
 8790	agarcia	2013-10-18	15:50:43.724	Consulta de los documentos de la empresa XEXX010101000	127.0.0.1
@@ -1168,6 +1194,8 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 8868	admin	2013-10-21	16:44:02.488	Intento Accesar a una tarea no permitida: altaUsuario.form	127.0.0.1
 9086	agarcia	2013-10-24	13:53:57.217	Début de session	127.0.0.1
 9087	agarcia	2013-10-24	13:54:05.725	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
+9180	admin	2013-10-26	16:34:31.649	Début de session	127.0.0.1
+9181	admin	2013-10-26	16:35:00.707	Consultation des utilisateurs	127.0.0.1
 8729	admin	2013-10-16	16:12:28.903	Inicio de sesión	127.0.0.1
 8730	admin	2013-10-16	16:12:31.33	Consulta a usuarios	127.0.0.1
 8731	admin	2013-10-16	16:12:37.688	Consulta de reporte de empresas	127.0.0.1
@@ -1195,6 +1223,10 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 8877	admin	2013-10-21	16:49:46.585	Acceso a tarea Permitida: addUser.form	127.0.0.1
 8878	admin	2013-10-21	16:49:46.587	Acceso a tarea PErmitida: addUser.form	127.0.0.1
 9088	admin	2013-10-24	14:03:09.77	Début de session	127.0.0.1
+9182	admin	2013-10-26	16:38:59.482	Début de session	127.0.0.1
+9183	admin	2013-10-26	16:39:10.727	Consultation des utilisateurs	127.0.0.1
+9184	admin	2013-10-26	16:39:13.94	Accès à la tache permise : modifyUser.form	127.0.0.1
+9185	admin	2013-10-26	16:39:13.943	Acceso a tarea PErmitida: modifyUser.form	127.0.0.1
 8741	admin	2013-10-16	16:28:01.582	Inicio de sesión	127.0.0.1
 8742	admin	2013-10-16	16:28:22.156	Consulta a usuarios	127.0.0.1
 8743	agarcia	2013-10-16	16:28:52.247	Inicio de sesión	127.0.0.1
@@ -1210,6 +1242,18 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9089	agarcia	2013-10-24	14:10:16.801	Début de session	127.0.0.1
 9090	agarcia	2013-10-24	14:10:21.953	Consultation des documents de l'entreprise MME020905462	127.0.0.1
 9091	agarcia	2013-10-24	14:13:47.66	Consultation des documents de l'entreprise MME020905462	127.0.0.1
+9186	admin	2013-10-26	16:42:02.059	Début de session	127.0.0.1
+9187	admin	2013-10-26	16:42:06.125	Consultation des utilisateurs	127.0.0.1
+9188	admin	2013-10-26	16:42:09.175	Accès à la tache permise : modifyUser.form	127.0.0.1
+9189	admin	2013-10-26	16:42:09.206	Acceso a tarea PErmitida: modifyUser.form	127.0.0.1
+9190	admin	2013-10-26	16:42:11.912	Consultation des utilisateurs	127.0.0.1
+9191	admin	2013-10-26	16:42:13.592	Accès à la tache permise : deleteUser.form	127.0.0.1
+9192	admin	2013-10-26	16:42:13.624	Acceso a tarea PErmitida: deleteUser.form	127.0.0.1
+9193	admin	2013-10-26	16:42:15.804	Consultation des utilisateurs	127.0.0.1
+9194	admin	2013-10-26	16:42:17.169	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9195	admin	2013-10-26	16:42:36.066	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9196	admin	2013-10-26	16:43:34.428	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9197	admin	2013-10-26	16:43:47.014	Essai d'effectuer la tache: adduser.form	127.0.0.1
 8744	agarcia	2013-10-16	16:30:06.857	Inicio de sesión	127.0.0.1
 8800	agarcia	2013-10-18	17:42:31.747	Inicio de sesión	127.0.0.1
 8801	admin	2013-10-18	17:42:47.673	Inicio de sesión	127.0.0.1
@@ -1237,6 +1281,11 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9098	agarcia	2013-10-24	14:22:03.276	Début de session	127.0.0.1
 9099	agarcia	2013-10-24	14:22:31.615	Consultation des entreprises	127.0.0.1
 9100	agarcia	2013-10-24	14:22:40.526	Entreprise EDY860510S04 supprimée	127.0.0.1
+9198	admin	2013-10-26	16:53:56.499	Début de session	127.0.0.1
+9199	admin	2013-10-26	16:53:59.513	Consultation des utilisateurs	127.0.0.1
+9200	admin	2013-10-26	16:54:04.053	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9201	admin	2013-10-26	16:55:22.951	Essai d'effectuer la tache: adduser.form	127.0.0.1
+9202	admin	2013-10-26	16:55:46.227	Essai d'effectuer la tache: adduser.form	127.0.0.1
 8745	agarcia	2013-10-16	16:32:42.28	Inicio de sesión	127.0.0.1
 8893	agarcia	2013-10-21	17:05:18.309	Début de session	127.0.0.1
 8894	agarcia	2013-10-21	17:05:57.328	Début de session	127.0.0.1
@@ -1253,11 +1302,45 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 9109	agarcia	2013-10-24	14:26:25.088	Consultation des documents de l'entreprise MME020905462	127.0.0.1
 9110	agarcia	2013-10-24	14:27:27.56	Consultation des entreprises	127.0.0.1
 9111	agarcia	2013-10-24	14:27:37.838	Entreprise MME020905462 Modifiée	127.0.0.1
+9203	admin	2013-10-26	16:59:12.759	Début de session	127.0.0.1
+9204	admin	2013-10-26	16:59:28.624	Consultation des utilisateurs	127.0.0.1
+9205	admin	2013-10-26	16:59:39.884	Accès à la tache permise : addUser.form	127.0.0.1
+9206	admin	2013-10-26	16:59:39.888	Accès à la tache permise: addUser.form	127.0.0.1
 8746	agarcia	2013-10-16	16:37:51.099	Inicio de sesión	127.0.0.1
 8897	admin	2013-10-21	17:11:04.827	Début de session	127.0.0.1
 9112	agarcia	2013-10-24	14:29:26.986	Début de session	127.0.0.1
 9113	agarcia	2013-10-24	14:29:30.421	Consultation des entreprises	127.0.0.1
 9114	agarcia	2013-10-24	14:29:44.092	L'entreprise EDY860510S04 a été ajoutée	127.0.0.1
+9207	admin	2013-10-26	17:00:46.747	Début de session	127.0.0.1
+9208	admin	2013-10-26	17:00:58.183	Le mot de passe de l'utilisateur admin a été actualisé	127.0.0.1
+9209	admin	2013-10-26	17:01:16.832	Le mot de passe de l'utilisateur admin a été actualisé	127.0.0.1
+9210	admin	2013-10-26	17:01:27.054	Consultation des logs :C:/ITC/FC4/Logs\\2013\\10\\fc4.20131024.log du jour : 2013/10/24	127.0.0.1
+9211	admin	2013-10-26	17:01:34.972	Consultation du rapport d'activité	127.0.0.1
+9212	admin	2013-10-26	17:02:00.933	Consultation du rapport d'activité	127.0.0.1
+9213	admin	2013-10-26	17:02:16.815	Consultation des utilisateurs	127.0.0.1
+9214	admin	2013-10-26	17:02:22.864	Accès à la tache permise : addUser.form	127.0.0.1
+9215	admin	2013-10-26	17:02:22.901	Accès à la tache permise: addUser.form	127.0.0.1
+9216	admin	2013-10-26	17:02:49.666	Utilisateur MMichel Ajouté	127.0.0.1
+9217	admin	2013-10-26	17:04:09.567	Consultation des utilisateurs	127.0.0.1
+9218	admin	2013-10-26	17:04:12.887	Accès à la tache permise : modifyUser.form	127.0.0.1
+9219	admin	2013-10-26	17:04:12.93	Accès à la tache permise: modifyUser.form	127.0.0.1
+9220	admin	2013-10-26	17:04:23.285	Utilisateur MMichel a été mdifié	127.0.0.1
+9221	admin	2013-10-26	17:04:24.317	Consultation des utilisateurs	127.0.0.1
+9222	MMichel	2013-10-26	17:04:57.819	Début de session	127.0.0.1
+9223	MMichel	2013-10-26	17:05:00.225	Consultation des entreprises	127.0.0.1
+9224	MMichel	2013-10-26	17:05:13.619	Entreprise BGL860805G63 supprimée	127.0.0.1
+9225	MMichel	2013-10-26	17:05:16.336	Consultation des entreprises	127.0.0.1
+9226	MMichel	2013-10-26	17:06:06.559	L'entreprise EDY860510S06 a été ajoutée	127.0.0.1
+9227	MMichel	2013-10-26	17:06:09.285	Consultation des entreprises	127.0.0.1
+9228	MMichel	2013-10-26	17:06:18.55	Entreprise EDY860510S06 Modifiée	127.0.0.1
+9229	MMichel	2013-10-26	17:06:21.256	Consultation des entreprises	127.0.0.1
+9230	MMichel	2013-10-26	17:06:24.799	Consultation des entreprises	127.0.0.1
+9231	MMichel	2013-10-26	17:06:36.182	Consultation des documents de l'entreprise EDY860510S06	127.0.0.1
+9232	MMichel	2013-10-26	17:06:41.62	Consultation des entreprises	127.0.0.1
+9233	MMichel	2013-10-26	17:06:45.657	Entreprise EDY860510S06 supprimée	127.0.0.1
+9234	MMichel	2013-10-26	17:06:47.903	Consultation des entreprises	127.0.0.1
+9235	agarcia	2013-10-26	17:07:07.767	Début de session	127.0.0.1
+9236	agarcia	2013-10-26	17:07:12.602	Consultation des documents de l'entreprise XEXX010101000	127.0.0.1
 8747	agarcia	2013-10-16	19:16:35.837	Inicio de sesión	127.0.0.1
 8898	admin	2013-10-21	17:12:04.847	Début de session	127.0.0.1
 8899	admin	2013-10-21	17:12:22.409	Contraseña de usuario admin actualizada	127.0.0.1
@@ -1462,7 +1545,7 @@ COPY activities (act_id, user_id, act_date, act_time, act_description, act_ip_ad
 -- Name: activities_act_id_seq; Type: SEQUENCE SET; Schema: period; Owner: postgres
 --
 
-SELECT pg_catalog.setval('activities_act_id_seq', 9154, true);
+SELECT pg_catalog.setval('activities_act_id_seq', 9236, true);
 
 
 --
@@ -1846,7 +1929,7 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
--- Completed on 2013-10-26 13:07:42
+-- Completed on 2013-10-26 17:10:57
 
 --
 -- PostgreSQL database dump complete
