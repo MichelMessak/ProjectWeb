@@ -1,0 +1,69 @@
+125849587: Inicializando envio de correos.
+130004029: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+130006147: Iniciando sesión con usuario [admin] y periodo [2013]
+130210441: Inicializando envio de correos.
+130231299: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+130233002: Iniciando sesión con usuario [admin] y periodo [2013]
+130233546: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+           com.itc.fc4.model.admin.ActivityDAO.insert(ActivityDAO.java:85)
+           com.itc.fc4.model.admin.ActivityDAO.insert(ActivityDAO.java:99)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:275)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+130335965: Inicializando envio de correos.
+130428118: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+130428334: com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:52)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:131)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+130514016: Inicializando envio de correos.
+130532677: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+130534450: Iniciando sesión con usuario [admin] y periodo [2013]
+130942391: Finalizando sesión con usuario [admin]
+141217728: Inicializando envio de correos.

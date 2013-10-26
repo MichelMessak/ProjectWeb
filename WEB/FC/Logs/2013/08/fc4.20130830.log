@@ -1,0 +1,189 @@
+185724744: Inicializando envio de correos.
+185747239: Inicializando envio de correos.
+185847770: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+185852196: Iniciando sesión con usuario [admin] y periodo [2013]
+190000052: Iniciando sesión con usuario [admin] y periodo [2013]
+190456601: Iniciando sesión con usuario [admin] y periodo [2013]
+192012156: Iniciando sesión con usuario [admin] y periodo [2013]
+192129160: Iniciando sesión con usuario [admin] y periodo [2013]
+193418287: Inicializando envio de correos.
+193547242: Inicializando envio de correos.
+193610182: Inicializando envio de correos.
+193645575: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+193647670: Iniciando sesión con usuario [admin] y periodo [2013]
+194139466: Inicializando envio de correos.
+194200960: Inicializando envio de correos.
+194244125: Inicializando envio de correos.
+194311087: Inicializando envio de correos.
+194358112: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+194359913: Iniciando sesión con usuario [admin] y periodo [2013]
+194658473: Inicializando envio de correos.
+194718486: Inicializando envio de correos.
+194817899: Inicializando envio de correos.
+194954495: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+194956681: Iniciando sesión con usuario [admin] y periodo [2013]
+195510267: Inicializando envio de correos.
+195604774: Inicializando envio de correos.
+195740684: Inicializando envio de correos.
+195833232: Inicializando envio de correos.
+200026332: Inicializando envio de correos.
+200135582: Inicializando envio de correos.
+200449918: Inicializando envio de correos.
+200621183: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+200622364: Iniciando sesión con usuario [admin] y periodo [2013]
+200709548: Inicializando envio de correos.
+200732765: Inicializando envio de correos.
+200812571: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+200814210: Iniciando sesión con usuario [admin] y periodo [2013]
+201029343: Iniciando sesión con usuario [admin] y periodo [2013]
+201542753: Inicializando envio de correos.
+201607947: Inicializando envio de correos.
+201642147: Inicializando envio de correos.
+201716086: Inicializando envio de correos.
+201736725: Inicializando envio de correos.
+201857987: Inicializando envio de correos.
+202003275: Inicializando envio de correos.
+202058001: Inicializando envio de correos.
+202118378: Inicializando envio de correos.
+202148234: Inicializando envio de correos.
+202342392: Inicializando envio de correos.
+202428525: Inicializando envio de correos.
+202448980: Inicializando envio de correos.
+202525885: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+202527656: Iniciando sesión con usuario [admin] y periodo [2013]
+202623340: Inicializando envio de correos.
+202730958: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+202732533: Iniciando sesión con usuario [admin] y periodo [2013]
+203106130: Inicializando envio de correos.
+203402281: Inicializando envio de correos.
+203438744: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+203440707: Iniciando sesión con usuario [admin] y periodo [2013]
+203649939: Inicializando envio de correos.
+203713685: Inicializando envio de correos.
+203748099: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+203750470: Iniciando sesión con usuario [admin] y periodo [2013]
+203937952: Inicializando envio de correos.
+204025603: Inicializando envio de correos.
+204233470: Inicializando envio de correos.
+204304921: Inicializando envio de correos.
+204315953: Inicializando envio de correos.
+204340461: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+204342121: Iniciando sesión con usuario [admin] y periodo [2013]
+204407619: java.lang.Integer.parseInt(Integer.java:415)
+           java.lang.Integer.parseInt(Integer.java:497)
+           com.itc.fc4.control.Report.setTaskCallParameters(Report.java:1203)
+           com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:115)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:431)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+204436971: Inicializando envio de correos.
+204459594: Inicializando envio de correos.
+204720865: Inicializando envio de correos.
+204947134: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+204949989: Iniciando sesión con usuario [admin] y periodo [2013]
+205102868: java.lang.Integer.parseInt(Integer.java:415)
+           java.lang.Integer.parseInt(Integer.java:497)
+           com.itc.fc4.control.Report.setTaskCallParameters(Report.java:1203)
+           com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:115)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:431)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+205343102: Inicializando envio de correos.
+205403420: Inicializando envio de correos.
+205426032: Inicializando envio de correos.
+205550025: Inicializando envio de correos.
+205611226: Inicializando envio de correos.
+205837743: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+205839307: Iniciando sesión con usuario [admin] y periodo [2013]
+210100548: Inicializando envio de correos.
+210136447: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+210138026: Iniciando sesión con usuario [admin] y periodo [2013]
+210404842: Inicializando envio de correos.
+210448539: Inicializando envio de correos.
+210542592: Inicializando envio de correos.
+210629850: Inicializando envio de correos.
+210714226: Inicializando envio de correos.
+210754130: Inicializando envio de correos.
+210814085: Inicializando envio de correos.
+210833913: Inicializando envio de correos.
+210932427: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+210934097: Iniciando sesión con usuario [admin] y periodo [2013]
+211152274: Inicializando envio de correos.
+211212960: Inicializando envio de correos.
+211236305: Inicializando envio de correos.
+211304187: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+211305951: Iniciando sesión con usuario [admin] y periodo [2013]
+211725274: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+212036598: Inicializando envio de correos.
+212056613: Inicializando envio de correos.
+212146679: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+212148423: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+212814105: Inicializando envio de correos.
+213029735: Inicializando envio de correos.
+213043556: Inicializando envio de correos.
+213121129: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+213122686: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+213201808: Inicializando envio de correos.
+213224886: Inicializando envio de correos.
+213323621: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+213325368: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+213948699: Inicializando envio de correos.
+214007094: Inicializando envio de correos.
+214035101: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+214036852: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+214224639: Inicializando envio de correos.
+214243037: Inicializando envio de correos.
+214318805: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+214320465: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+223501216: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+224830627: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+225829430: Inicializando envio de correos.
+225909887: Inicializando envio de correos.
+225949234: Inicializando envio de correos.
+230702587: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+230705264: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+234943711: Inicializando envio de correos.
+235134078: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+235142443: Iniciando sesión con usuario [Froylan Villalba] y periodo [2013]
+235805989: Inicializando envio de correos.
+235822308: Inicializando envio de correos.
+235900375: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+235901769: Iniciando sesión con usuario [Froylan Villalba] y periodo [2013]

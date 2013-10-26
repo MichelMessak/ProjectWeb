@@ -1,0 +1,62 @@
+/**
+ * Demo page styles, all list scroll effects styles are in sctroll.css
+ */
+
+article {
+	display: inline-block;
+	margin: 20px;
+        /*visibility: hidden;*/
+	font-size: 20px;
+}
+#artPeriodo{
+    visibility: hidden;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+small {
+	opacity: 0.6;
+	font-style: italic;
+	margin-left: 5px;
+}
+
+/**
+ * List used for the demo page
+ */
+dl {
+	position: relative;
+	width: 220px;
+	height: 120px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	list-style: none;
+
+	-webkit-perspective: 100px;
+	   -moz-perspective: 100px;
+	    -ms-perspective: 100px;
+	     -o-perspective: 100px;
+	        perspective: 100px;
+}
+	dl dt {
+		position: relative;
+		padding: 10px;
+		background: #bae2c7;
+		color: #252525;
+		font-size: 12px;
+		z-index: 2;
+
+		-webkit-transform: translateZ(2px);
+		   -moz-transform: translateZ(2px);
+		    -ms-transform: translateZ(2px);
+		     -o-transform: translateZ(2px);
+		        transform: translateZ(2px);
+	}
+	dl dt:nth-child(odd) {
+		background: #006d1e;
+	}

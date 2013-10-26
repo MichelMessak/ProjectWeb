@@ -1,0 +1,47 @@
+<%-- Header --%>
+<%@ page pageEncoding="UTF-8"%>
+        <link rel="stylesheet" href="css/periodos/example.css">
+        <link rel="stylesheet" href="css/periodos/stroll.css">
+        <script type='text/javascript' src='js/Ayudas/jquery.simplemodal.js'></script>
+        <script type='text/javascript'src="js/periodo/toggle.js"></script>
+        <script type='text/javascript'src="js/fc4util.js"></script>
+        <script type='text/javascript' src="js/periodo/stroll.min.js"></script>
+<style type="text/css">
+.togglebox{
+    position: absolute;
+    top: 60px;
+    right: 165px;
+    z-index: 1;
+}
+</style>
+    <div id="ContainerTop">
+        <div id="header"></div>
+        <div id="Logo"></div>
+        <div class="taskTitle">
+            <p id="#titleTask">
+                <c:out value="${title}"/>
+            </p>
+        </div>
+        <div id="user">
+            ${sessionScope.user_name}
+        </div>
+        <div id="version">
+            1.0.0.0
+            <p id="UserIDJSP" style="display:none;">
+                ${sessionScope.user_id}
+            </p>
+        </div>
+        <a href="home.do">
+            <div id="Home"></div>
+        </a>
+        <a href="changePassword.form">
+            <div id="Engrane"></div>
+        </a>
+        <a href="logout.do" accesskey="l">
+            <div id="LogOut"></div>
+        </a>
+    </div>
+
+<%
+    response.setCharacterEncoding("UTF-8");
+%>

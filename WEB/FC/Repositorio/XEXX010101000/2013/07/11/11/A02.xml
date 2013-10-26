@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LugarExpedicion="DEL. BENITO JUAREZ, DISTRITO FEDERAL" Moneda="MXN" NumCtaPago="8373" certificado="MIIEdDCCA1ygAwIBAgIUMjAwMDEwMDAwMDAxMDAwMDU4NjcwDQYJKoZIhvcNAQEFBQAwggFvMRgwFgYDVQQDDA9BLkMuIGRlIHBydWViYXMxLzAtBgNVBAoMJlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhMTgwNgYDVQQLDC9BZG1pbmlzdHJhY2nDs24gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjacOzbjEpMCcGCSqGSIb3DQEJARYaYXNpc25ldEBwcnVlYmFzLnNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEjAQBgNVBAcMCUNveW9hY8OhbjEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTIwMAYJKoZIhvcNAQkCDCNSZXNwb25zYWJsZTogSMOpY3RvciBPcm5lbGFzIEFyY2lnYTAeFw0xMjA3MjcxNzAyMDBaFw0xNjA3MjcxNzAyMDBaMIHbMSkwJwYDVQQDEyBBQ0NFTSBTRVJWSUNJT1MgRU1QUkVTQVJJQUxFUyBTQzEpMCcGA1UEKRMgQUNDRU0gU0VSVklDSU9TIEVNUFJFU0FSSUFMRVMgU0MxKTAnBgNVBAoTIEFDQ0VNIFNFUlZJQ0lPUyBFTVBSRVNBUklBTEVTIFNDMSUwIwYDVQQtExxBQUEwMTAxMDFBQUEgLyBIRUdUNzYxMDAzNFMyMR4wHAYDVQQFExUgLyBIRUdUNzYxMDAzTURGUk5OMDkxETAPBgNVBAsTCFVuaWRhZCAxMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2TTQSPONBOVxpXv9wLYo8jezBrb34i/tLx8jGdtyy27BcesOav2c1NS/Gdv10u9SkWtwdy34uRAVe7H0a3VMRLHAkvp2qMCHaZc4T8k47Jtb9wrOEh/XFS8LgT4y5OQYo6civfXXdlvxWU/gdM/e6I2lg6FGorP8H4GPAJ/qCNwIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEATxMecTpMbdhSHo6KVUg4QVF4Op2IBhiMaOrtrXBdJgzGotUFcJgdBCMjtTZXSlq1S4DG1jr8p4NzQlzxsdTxaB8nSKJ4KEMgIT7E62xRUj15jI49qFz7f2uMttZLNThipunsN/NF1XtvESMTDwQFvas/Ugig6qwEfSZc0MDxMpKLEkEePmQwtZD+zXFSMVa6hmOu4M+FzGiRXbj4YJXn9Myjd8xbL/c+9UIcrYoZskxDvMxc6/6M3rNNDY3OFhBK+V/sPMzWWGt8S1yjmtPfXgFs1t65AZ2hcTwTAuHrKwDatJ1ZPfa482ZBROAAX1waz7WwXp0gso7sDCm2/yUVww==" condicionesDePago="30 DIAS" descuento="0.00" fecha="2012-09-03T11:51:57" folio="20" formaDePago="Pago en una sola exhibición" metodoDePago="CHEQUE" noCertificado="20001000000100005867" sello="OP4QqvUnUPZPz7bKz6N1gsCBlkm5PTaIN/MrgGEf55nalOHtyiLCrH335m7vhRi08KR00Bi1fo5otQ9HOvSPP5yXT2Qgn8J13I26xBBSqo31+sqcnezVE7iILR6OjmV5BbRzcsiZp7WyrIKr+tgD7G9rQ/Wb2GKryPKT4+279Fk=" serie="A" subTotal="1.00" tipoDeComprobante="ingreso" total="1.16" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+<cfdi:Emisor nombre="EMPRESA DE PRUEBA" rfc="XEXX010101000">
+<cfdi:DomicilioFiscal calle="PATRIOTISMO" codigoPostal="03910" colonia="MIXCOAC" estado="DISTRITO FEDERAL" municipio="DEL. BENITO JUAREZ" noExterior="889" noInterior="6to. PISO" pais="MEXICO"/>
+    <cfdi:RegimenFiscal Regimen="RÉGIMEN GENERAL DE LEY PERSONAS MORALES"/>
+</cfdi:Emisor>
+
+<cfdi:Receptor nombre="VENTAS MOSTRADOR" rfc="XAXX010101000">
+<cfdi:Domicilio codigoPostal="00000" pais="MEXICO"/>
+</cfdi:Receptor>
+
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="1.000000" descripcion="PÓLIZA DE MANTENIMIENTO FAFE" importe="1.00" noIdentificacion="POLFAFE" unidad="POLIZA" valorUnitario="1.000000">
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="0.16">
+<cfdi:Traslados>
+
+<cfdi:Traslado importe="0.16" impuesto="IVA" tasa="16.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+
+<cfdi:Complemento>
+    <tfd:TimbreFiscalDigital FechaTimbrado="2012-09-03T11:51:57" UUID="kii63bf1d407e" noCertificadoSAT="30001000000100000801" selloCFD="OP4QqvUnUPZPz7bKz6N1gsCBlkm5PTaIN/MrgGEf55nalOHtyiLCrH335m7vhRi08KR00Bi1fo5otQ9HOvSPP5yXT2Qgn8J13I26xBBSqo31+sqcnezVE7iILR6OjmV5BbRzcsiZp7WyrIKr+tgD7G9rQ/Wb2GKryPKT4+279Fk=" selloSAT="b2gGimLFsQXuGdrpmBz0hsoyJqN2dXza2PJqOCErLGiims9cxdfbPPVD7cNXNPh90E5J+HWs8HNZal9GMUHsl/WWBR4YAHDsb0RtG1pWW7UyU+e/Z3CiFnvB2ZCgNT3GICVqbrX7M2DHwY0Ah1pVWIJQ+30eszjIR8/3BnTbMe4=" version="1.0" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"/>
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+<fa:Datos conLetra="UN PESOS 16/100" tipoDoc="Factura" version="1.0" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd"/>
+  </cfdi:Addenda>
+</cfdi:Comprobante>

@@ -1,0 +1,1427 @@
+010113873: Iniciando sesión con usuario [admin] y periodo [2012]
+010534019: Iniciando sesión con usuario [admin] y periodo [2012]
+010534019: Autentificación incorrecta para usuario [admin]
+011749404: Iniciando sesión con usuario [admin] y periodo [2012]
+012024263: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+012110902: Iniciando sesión con usuario [admin] y periodo [2012]
+163422351: Iniciando sesión con usuario [admin] y periodo [2012]
+164035123: Iniciando sesión con usuario [admin] y periodo [2012]
+164522817: Iniciando sesión con usuario [admin] y periodo [2012]
+164524905: Finalizando sesión con usuario [admin]
+164524944: Iniciando sesión con usuario [admin] y periodo [2012]
+165630488: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+           sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+           sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+           java.lang.reflect.Method.invoke(Method.java:592)
+           org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:234)
+           $Proxy1.executeUpdate(Unknown Source)
+           com.itc.fc4.model.security.RolDAO.delete(RolDAO.java:212)
+           com.itc.fc4.tasks.security.roles.reports.EliminaRolController.onSubmit(EliminaRolController.java:71)
+           org.springframework.web.servlet.mvc.SimpleFormController.processFormSubmission(SimpleFormController.java:267)
+           org.springframework.web.servlet.mvc.AbstractFormController.handleRequestInternal(AbstractFormController.java:265)
+           org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+165920808: Finalizando sesión con usuario [admin]
+171552487: Iniciando sesión con usuario [admin] y periodo [2012]
+171552486: Iniciando sesión con usuario [admin] y periodo [2012]
+171553063: Iniciando sesión con usuario [admin] y periodo [2012]
+171553068: Iniciando sesión con usuario [admin] y periodo [2012]
+171553072: Iniciando sesión con usuario [admin] y periodo [2012]
+171553079: Iniciando sesión con usuario [admin] y periodo [2012]
+171553080: Iniciando sesión con usuario [admin] y periodo [2012]
+171553086: Iniciando sesión con usuario [admin] y periodo [2012]
+171553094: Iniciando sesión con usuario [admin] y periodo [2012]
+171553101: Iniciando sesión con usuario [admin] y periodo [2012]
+171553116: Iniciando sesión con usuario [admin] y periodo [2012]
+171553138: Iniciando sesión con usuario [admin] y periodo [2012]
+171553140: Iniciando sesión con usuario [admin] y periodo [2012]
+171553144: Iniciando sesión con usuario [admin] y periodo [2012]
+171553146: Iniciando sesión con usuario [admin] y periodo [2012]
+171553155: Iniciando sesión con usuario [admin] y periodo [2012]
+171553167: Iniciando sesión con usuario [admin] y periodo [2012]
+171553188: Iniciando sesión con usuario [admin] y periodo [2012]
+171553195: Iniciando sesión con usuario [admin] y periodo [2012]
+171553198: Iniciando sesión con usuario [admin] y periodo [2012]
+171553200: Iniciando sesión con usuario [admin] y periodo [2012]
+171553206: Iniciando sesión con usuario [admin] y periodo [2012]
+171553214: Iniciando sesión con usuario [admin] y periodo [2012]
+171553227: Iniciando sesión con usuario [admin] y periodo [2012]
+171553234: Iniciando sesión con usuario [admin] y periodo [2012]
+171553249: Iniciando sesión con usuario [admin] y periodo [2012]
+171553250: Iniciando sesión con usuario [admin] y periodo [2012]
+171553257: Iniciando sesión con usuario [admin] y periodo [2012]
+171553259: Iniciando sesión con usuario [admin] y periodo [2012]
+171553305: Iniciando sesión con usuario [admin] y periodo [2012]
+171553306: Iniciando sesión con usuario [admin] y periodo [2012]
+171553309: Iniciando sesión con usuario [admin] y periodo [2012]
+171553312: Iniciando sesión con usuario [admin] y periodo [2012]
+171553312: Iniciando sesión con usuario [admin] y periodo [2012]
+171553328: Iniciando sesión con usuario [admin] y periodo [2012]
+171553340: Iniciando sesión con usuario [admin] y periodo [2012]
+171553344: Iniciando sesión con usuario [admin] y periodo [2012]
+171553379: Iniciando sesión con usuario [admin] y periodo [2012]
+171553392: Iniciando sesión con usuario [admin] y periodo [2012]
+171553401: Iniciando sesión con usuario [admin] y periodo [2012]
+171553408: Iniciando sesión con usuario [admin] y periodo [2012]
+171553413: Iniciando sesión con usuario [admin] y periodo [2012]
+171553405: Iniciando sesión con usuario [admin] y periodo [2012]
+171553446: Iniciando sesión con usuario [admin] y periodo [2012]
+171553450: Iniciando sesión con usuario [admin] y periodo [2012]
+171553458: Iniciando sesión con usuario [admin] y periodo [2012]
+171553460: Iniciando sesión con usuario [admin] y periodo [2012]
+171553461: Iniciando sesión con usuario [admin] y periodo [2012]
+171553463: Iniciando sesión con usuario [admin] y periodo [2012]
+171553463: Iniciando sesión con usuario [admin] y periodo [2012]
+171553465: Iniciando sesión con usuario [admin] y periodo [2012]
+171553476: Iniciando sesión con usuario [admin] y periodo [2012]
+171553503: Iniciando sesión con usuario [admin] y periodo [2012]
+171553511: Iniciando sesión con usuario [admin] y periodo [2012]
+171553511: Iniciando sesión con usuario [admin] y periodo [2012]
+171553517: Iniciando sesión con usuario [admin] y periodo [2012]
+171553526: Iniciando sesión con usuario [admin] y periodo [2012]
+171553536: Iniciando sesión con usuario [admin] y periodo [2012]
+171553598: Iniciando sesión con usuario [admin] y periodo [2012]
+171553603: Iniciando sesión con usuario [admin] y periodo [2012]
+171553617: Iniciando sesión con usuario [admin] y periodo [2012]
+171553641: Iniciando sesión con usuario [admin] y periodo [2012]
+171553641: Iniciando sesión con usuario [admin] y periodo [2012]
+171553643: Iniciando sesión con usuario [admin] y periodo [2012]
+171553619: Iniciando sesión con usuario [admin] y periodo [2012]
+171553621: Iniciando sesión con usuario [admin] y periodo [2012]
+171553614: Iniciando sesión con usuario [admin] y periodo [2012]
+171553607: Iniciando sesión con usuario [admin] y periodo [2012]
+171553622: Iniciando sesión con usuario [admin] y periodo [2012]
+171553625: Iniciando sesión con usuario [admin] y periodo [2012]
+171553650: Iniciando sesión con usuario [admin] y periodo [2012]
+171553658: Iniciando sesión con usuario [admin] y periodo [2012]
+171553661: Iniciando sesión con usuario [admin] y periodo [2012]
+171554531: Iniciando sesión con usuario [admin] y periodo [2012]
+171554928: Iniciando sesión con usuario [admin] y periodo [2012]
+171554945: Iniciando sesión con usuario [admin] y periodo [2012]
+171554967: Iniciando sesión con usuario [admin] y periodo [2012]
+171554970: Iniciando sesión con usuario [admin] y periodo [2012]
+171554971: Iniciando sesión con usuario [admin] y periodo [2012]
+171554969: Iniciando sesión con usuario [admin] y periodo [2012]
+171556425: Iniciando sesión con usuario [admin] y periodo [2012]
+171556590: Iniciando sesión con usuario [admin] y periodo [2012]
+171556526: Iniciando sesión con usuario [admin] y periodo [2012]
+171556597: Iniciando sesión con usuario [admin] y periodo [2012]
+171556618: Iniciando sesión con usuario [admin] y periodo [2012]
+171556733: Iniciando sesión con usuario [admin] y periodo [2012]
+171556861: Iniciando sesión con usuario [admin] y periodo [2012]
+171556947: Iniciando sesión con usuario [admin] y periodo [2012]
+171557115: Finalizando sesión con usuario [admin]
+171557107: Iniciando sesión con usuario [admin] y periodo [2012]
+171557119: Finalizando sesión con usuario [admin]
+171557232: Finalizando sesión con usuario [admin]
+171557248: Finalizando sesión con usuario [admin]
+171557260: Finalizando sesión con usuario [admin]
+171557268: Finalizando sesión con usuario [admin]
+171557248: Iniciando sesión con usuario [admin] y periodo [2012]
+171557272: Finalizando sesión con usuario [admin]
+171557417: Iniciando sesión con usuario [admin] y periodo [2012]
+171557431: Finalizando sesión con usuario [admin]
+171557533: Iniciando sesión con usuario [admin] y periodo [2012]
+171557444: Iniciando sesión con usuario [admin] y periodo [2012]
+171557500: Iniciando sesión con usuario [admin] y periodo [2012]
+171557602: Iniciando sesión con usuario [admin] y periodo [2012]
+171557605: Iniciando sesión con usuario [admin] y periodo [2012]
+171557610: Iniciando sesión con usuario [admin] y periodo [2012]
+171557612: Finalizando sesión con usuario [admin]
+171557533: Iniciando sesión con usuario [admin] y periodo [2012]
+171557618: Finalizando sesión con usuario [admin]
+171557446: Finalizando sesión con usuario [admin]
+171557452: Iniciando sesión con usuario [admin] y periodo [2012]
+171557488: Iniciando sesión con usuario [admin] y periodo [2012]
+171557641: Finalizando sesión con usuario [admin]
+171557634: Finalizando sesión con usuario [admin]
+171557692: Iniciando sesión con usuario [admin] y periodo [2012]
+171557635: Finalizando sesión con usuario [admin]
+171557697: Iniciando sesión con usuario [admin] y periodo [2012]
+171557720: Iniciando sesión con usuario [admin] y periodo [2012]
+171557730: Iniciando sesión con usuario [admin] y periodo [2012]
+171557740: Iniciando sesión con usuario [admin] y periodo [2012]
+171557746: Iniciando sesión con usuario [admin] y periodo [2012]
+171557768: Iniciando sesión con usuario [admin] y periodo [2012]
+171557821: Iniciando sesión con usuario [admin] y periodo [2012]
+171557831: Iniciando sesión con usuario [admin] y periodo [2012]
+171557846: Iniciando sesión con usuario [admin] y periodo [2012]
+171557850: Iniciando sesión con usuario [admin] y periodo [2012]
+171557856: Iniciando sesión con usuario [admin] y periodo [2012]
+171557648: Iniciando sesión con usuario [admin] y periodo [2012]
+171557860: Iniciando sesión con usuario [admin] y periodo [2012]
+171557876: Iniciando sesión con usuario [admin] y periodo [2012]
+171557896: Iniciando sesión con usuario [admin] y periodo [2012]
+171557908: Iniciando sesión con usuario [admin] y periodo [2012]
+171557913: Iniciando sesión con usuario [admin] y periodo [2012]
+171557925: Iniciando sesión con usuario [admin] y periodo [2012]
+171557934: Iniciando sesión con usuario [admin] y periodo [2012]
+171557935: Iniciando sesión con usuario [admin] y periodo [2012]
+171557939: Iniciando sesión con usuario [admin] y periodo [2012]
+171557956: Iniciando sesión con usuario [admin] y periodo [2012]
+171557961: Iniciando sesión con usuario [admin] y periodo [2012]
+171558014: Iniciando sesión con usuario [admin] y periodo [2012]
+171558127: Finalizando sesión con usuario [admin]
+171558136: Finalizando sesión con usuario [admin]
+171558193: Finalizando sesión con usuario [admin]
+171558260: Finalizando sesión con usuario [admin]
+171558264: Finalizando sesión con usuario [admin]
+171558270: Finalizando sesión con usuario [admin]
+171558274: Finalizando sesión con usuario [admin]
+171559027: Finalizando sesión con usuario [admin]
+171559035: Finalizando sesión con usuario [admin]
+171600019: Finalizando sesión con usuario [admin]
+171600094: Finalizando sesión con usuario [admin]
+171600118: Finalizando sesión con usuario [admin]
+171600141: Finalizando sesión con usuario [admin]
+171600320: Finalizando sesión con usuario [admin]
+171600325: Finalizando sesión con usuario [admin]
+171600358: Finalizando sesión con usuario [admin]
+171600390: Finalizando sesión con usuario [admin]
+171600415: Finalizando sesión con usuario [admin]
+171600454: Finalizando sesión con usuario [admin]
+171600461: Finalizando sesión con usuario [admin]
+171600473: Finalizando sesión con usuario [admin]
+171600481: Finalizando sesión con usuario [admin]
+171600696: Finalizando sesión con usuario [admin]
+171600700: Finalizando sesión con usuario [admin]
+171600705: Finalizando sesión con usuario [admin]
+171600751: Finalizando sesión con usuario [admin]
+171600754: Finalizando sesión con usuario [admin]
+171600764: Finalizando sesión con usuario [admin]
+171600771: Finalizando sesión con usuario [admin]
+171600774: Finalizando sesión con usuario [admin]
+171600792: Finalizando sesión con usuario [admin]
+171600795: Finalizando sesión con usuario [admin]
+171600816: Finalizando sesión con usuario [admin]
+171600834: Finalizando sesión con usuario [admin]
+171600855: Finalizando sesión con usuario [admin]
+171600861: Finalizando sesión con usuario [admin]
+171600864: Finalizando sesión con usuario [admin]
+171600887: Finalizando sesión con usuario [admin]
+171600897: Finalizando sesión con usuario [admin]
+171600906: Finalizando sesión con usuario [admin]
+171600915: Finalizando sesión con usuario [admin]
+171600918: Finalizando sesión con usuario [admin]
+171600962: Finalizando sesión con usuario [admin]
+171600971: Finalizando sesión con usuario [admin]
+171601060: Finalizando sesión con usuario [admin]
+171601082: Finalizando sesión con usuario [admin]
+171601096: Finalizando sesión con usuario [admin]
+171601102: Finalizando sesión con usuario [admin]
+171601106: Finalizando sesión con usuario [admin]
+171601800: Finalizando sesión con usuario [admin]
+171601809: Finalizando sesión con usuario [admin]
+171601817: Finalizando sesión con usuario [admin]
+171601824: Finalizando sesión con usuario [admin]
+171601852: Finalizando sesión con usuario [admin]
+171601862: Finalizando sesión con usuario [admin]
+171601909: Finalizando sesión con usuario [admin]
+171601920: Finalizando sesión con usuario [admin]
+171601956: Finalizando sesión con usuario [admin]
+171601978: Finalizando sesión con usuario [admin]
+171601981: Finalizando sesión con usuario [admin]
+171602004: Finalizando sesión con usuario [admin]
+171602014: Finalizando sesión con usuario [admin]
+171602110: Finalizando sesión con usuario [admin]
+171602153: Finalizando sesión con usuario [admin]
+171602286: Finalizando sesión con usuario [admin]
+171602769: Finalizando sesión con usuario [admin]
+171602772: Finalizando sesión con usuario [admin]
+171602777: Finalizando sesión con usuario [admin]
+171602783: Finalizando sesión con usuario [admin]
+171602801: Finalizando sesión con usuario [admin]
+171602806: Finalizando sesión con usuario [admin]
+171602815: Finalizando sesión con usuario [admin]
+171602820: Finalizando sesión con usuario [admin]
+171602842: Finalizando sesión con usuario [admin]
+171602848: Finalizando sesión con usuario [admin]
+171602868: Finalizando sesión con usuario [admin]
+171602873: Finalizando sesión con usuario [admin]
+171602879: Finalizando sesión con usuario [admin]
+171602883: Finalizando sesión con usuario [admin]
+171602904: Finalizando sesión con usuario [admin]
+171602910: Finalizando sesión con usuario [admin]
+171602916: Finalizando sesión con usuario [admin]
+171602924: Finalizando sesión con usuario [admin]
+171602932: Finalizando sesión con usuario [admin]
+171602940: Finalizando sesión con usuario [admin]
+171602964: Finalizando sesión con usuario [admin]
+171603016: Finalizando sesión con usuario [admin]
+171603004: Finalizando sesión con usuario [admin]
+171603029: Finalizando sesión con usuario [admin]
+171603033: Finalizando sesión con usuario [admin]
+171603036: Finalizando sesión con usuario [admin]
+171603066: Finalizando sesión con usuario [admin]
+171603044: Finalizando sesión con usuario [admin]
+171603088: Finalizando sesión con usuario [admin]
+171603095: Finalizando sesión con usuario [admin]
+171603132: Finalizando sesión con usuario [admin]
+171603168: Finalizando sesión con usuario [admin]
+171603198: Finalizando sesión con usuario [admin]
+171603231: Finalizando sesión con usuario [admin]
+171603242: Finalizando sesión con usuario [admin]
+171603254: Finalizando sesión con usuario [admin]
+171603274: Finalizando sesión con usuario [admin]
+171603296: Finalizando sesión con usuario [admin]
+171603298: Finalizando sesión con usuario [admin]
+171603312: Finalizando sesión con usuario [admin]
+171603315: Finalizando sesión con usuario [admin]
+171603334: Finalizando sesión con usuario [admin]
+171603336: Finalizando sesión con usuario [admin]
+171603336: Finalizando sesión con usuario [admin]
+171603339: Finalizando sesión con usuario [admin]
+171603344: Finalizando sesión con usuario [admin]
+171603354: Finalizando sesión con usuario [admin]
+171603377: Finalizando sesión con usuario [admin]
+171603378: Finalizando sesión con usuario [admin]
+171603378: Finalizando sesión con usuario [admin]
+171603378: Finalizando sesión con usuario [admin]
+171603402: Finalizando sesión con usuario [admin]
+171603424: Finalizando sesión con usuario [admin]
+171603418: Finalizando sesión con usuario [admin]
+171603424: Finalizando sesión con usuario [admin]
+171603510: Finalizando sesión con usuario [admin]
+171603512: Finalizando sesión con usuario [admin]
+171603578: Finalizando sesión con usuario [admin]
+171603579: Finalizando sesión con usuario [admin]
+171854228: Iniciando sesión con usuario [admin] y periodo [2012]
+172136398: Finalizando sesión con usuario [admin]
+180418802: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+180455043: Iniciando sesión con usuario [admin] y periodo [2012]
+181946137: Iniciando sesión con usuario [admin] y periodo [2012]
+182302332: Iniciando sesión con usuario [admin] y periodo [2012]
+182811588: Iniciando sesión con usuario [admin] y periodo [2012]
+182811624: Iniciando sesión con usuario [admin] y periodo [2012]
+182811763: Iniciando sesión con usuario [admin] y periodo [2012]
+182811787: Iniciando sesión con usuario [admin] y periodo [2012]
+182811842: Iniciando sesión con usuario [admin] y periodo [2012]
+182812305: Iniciando sesión con usuario [admin] y periodo [2012]
+182813255: Iniciando sesión con usuario [admin] y periodo [2012]
+182814108: Iniciando sesión con usuario [admin] y periodo [2012]
+182815456: Iniciando sesión con usuario [admin] y periodo [2012]
+182815828: Iniciando sesión con usuario [admin] y periodo [2012]
+182900557: Iniciando sesión con usuario [admin] y periodo [2012]
+182901635: Iniciando sesión con usuario [admin] y periodo [2012]
+182901709: Iniciando sesión con usuario [admin] y periodo [2012]
+182902523: Iniciando sesión con usuario [admin] y periodo [2012]
+182902826: Iniciando sesión con usuario [admin] y periodo [2012]
+182905436: Iniciando sesión con usuario [admin] y periodo [2012]
+182905559: Iniciando sesión con usuario [admin] y periodo [2012]
+182905634: Iniciando sesión con usuario [admin] y periodo [2012]
+182905789: Iniciando sesión con usuario [admin] y periodo [2012]
+182905818: Iniciando sesión con usuario [admin] y periodo [2012]
+182908325: Iniciando sesión con usuario [admin] y periodo [2012]
+182908735: Iniciando sesión con usuario [admin] y periodo [2012]
+182908780: Iniciando sesión con usuario [admin] y periodo [2012]
+182909049: Iniciando sesión con usuario [admin] y periodo [2012]
+182909493: Iniciando sesión con usuario [admin] y periodo [2012]
+182909618: Iniciando sesión con usuario [admin] y periodo [2012]
+182910592: Iniciando sesión con usuario [admin] y periodo [2012]
+182910643: Iniciando sesión con usuario [admin] y periodo [2012]
+182910783: Iniciando sesión con usuario [admin] y periodo [2012]
+182911168: Iniciando sesión con usuario [admin] y periodo [2012]
+183007070: Iniciando sesión con usuario [admin] y periodo [2012]
+183009136: Iniciando sesión con usuario [admin] y periodo [2012]
+183009251: Iniciando sesión con usuario [admin] y periodo [2012]
+183009296: Iniciando sesión con usuario [admin] y periodo [2012]
+183009327: Iniciando sesión con usuario [admin] y periodo [2012]
+183009382: Iniciando sesión con usuario [admin] y periodo [2012]
+183011035: Iniciando sesión con usuario [admin] y periodo [2012]
+183011110: Iniciando sesión con usuario [admin] y periodo [2012]
+183020377: Iniciando sesión con usuario [admin] y periodo [2012]
+183020464: Iniciando sesión con usuario [admin] y periodo [2012]
+183020509: Iniciando sesión con usuario [admin] y periodo [2012]
+183020815: Iniciando sesión con usuario [admin] y periodo [2012]
+183022339: Iniciando sesión con usuario [admin] y periodo [2012]
+183024231: Iniciando sesión con usuario [admin] y periodo [2012]
+183026322: Iniciando sesión con usuario [admin] y periodo [2012]
+183026478: Iniciando sesión con usuario [admin] y periodo [2012]
+183026506: Iniciando sesión con usuario [admin] y periodo [2012]
+183026574: Iniciando sesión con usuario [admin] y periodo [2012]
+183027132: Iniciando sesión con usuario [admin] y periodo [2012]
+183027102: Iniciando sesión con usuario [admin] y periodo [2012]
+183027240: Iniciando sesión con usuario [admin] y periodo [2012]
+183033128: Iniciando sesión con usuario [admin] y periodo [2012]
+183033150: Iniciando sesión con usuario [admin] y periodo [2012]
+183033802: Iniciando sesión con usuario [admin] y periodo [2012]
+183033877: Iniciando sesión con usuario [admin] y periodo [2012]
+183036799: Iniciando sesión con usuario [admin] y periodo [2012]
+183037134: Iniciando sesión con usuario [admin] y periodo [2012]
+183037182: Iniciando sesión con usuario [admin] y periodo [2012]
+183037182: Iniciando sesión con usuario [admin] y periodo [2012]
+183037220: Iniciando sesión con usuario [admin] y periodo [2012]
+183037231: Iniciando sesión con usuario [admin] y periodo [2012]
+183037399: Iniciando sesión con usuario [admin] y periodo [2012]
+183037509: Iniciando sesión con usuario [admin] y periodo [2012]
+183037608: Iniciando sesión con usuario [admin] y periodo [2012]
+183038302: Iniciando sesión con usuario [admin] y periodo [2012]
+183038326: Iniciando sesión con usuario [admin] y periodo [2012]
+183038342: Iniciando sesión con usuario [admin] y periodo [2012]
+183038384: Iniciando sesión con usuario [admin] y periodo [2012]
+183038586: Iniciando sesión con usuario [admin] y periodo [2012]
+183038627: Iniciando sesión con usuario [admin] y periodo [2012]
+183038694: Iniciando sesión con usuario [admin] y periodo [2012]
+183038766: Iniciando sesión con usuario [admin] y periodo [2012]
+183038962: Iniciando sesión con usuario [admin] y periodo [2012]
+183039113: Iniciando sesión con usuario [admin] y periodo [2012]
+183039157: Iniciando sesión con usuario [admin] y periodo [2012]
+183039230: Iniciando sesión con usuario [admin] y periodo [2012]
+183039374: Iniciando sesión con usuario [admin] y periodo [2012]
+183040232: Iniciando sesión con usuario [admin] y periodo [2012]
+183510817: Iniciando sesión con usuario [admin] y periodo [2012]
+183511037: Iniciando sesión con usuario [admin] y periodo [2012]
+183511042: Iniciando sesión con usuario [admin] y periodo [2012]
+183511148: Iniciando sesión con usuario [admin] y periodo [2012]
+183511161: Iniciando sesión con usuario [admin] y periodo [2012]
+183513091: Iniciando sesión con usuario [admin] y periodo [2012]
+183516086: Iniciando sesión con usuario [admin] y periodo [2012]
+183517906: Iniciando sesión con usuario [admin] y periodo [2012]
+183519509: Iniciando sesión con usuario [admin] y periodo [2012]
+183519512: Iniciando sesión con usuario [admin] y periodo [2012]
+183521330: Iniciando sesión con usuario [admin] y periodo [2012]
+183522694: Iniciando sesión con usuario [admin] y periodo [2012]
+183525304: Iniciando sesión con usuario [admin] y periodo [2012]
+183525648: Iniciando sesión con usuario [admin] y periodo [2012]
+183525936: Iniciando sesión con usuario [admin] y periodo [2012]
+183526399: Iniciando sesión con usuario [admin] y periodo [2012]
+183526433: Iniciando sesión con usuario [admin] y periodo [2012]
+183526572: Iniciando sesión con usuario [admin] y periodo [2012]
+183526576: Iniciando sesión con usuario [admin] y periodo [2012]
+183526577: Iniciando sesión con usuario [admin] y periodo [2012]
+183526584: Iniciando sesión con usuario [admin] y periodo [2012]
+183526586: Iniciando sesión con usuario [admin] y periodo [2012]
+183526753: Iniciando sesión con usuario [admin] y periodo [2012]
+183526755: Iniciando sesión con usuario [admin] y periodo [2012]
+183526755: Iniciando sesión con usuario [admin] y periodo [2012]
+183526785: Iniciando sesión con usuario [admin] y periodo [2012]
+183526795: Iniciando sesión con usuario [admin] y periodo [2012]
+183526798: Iniciando sesión con usuario [admin] y periodo [2012]
+183526806: Iniciando sesión con usuario [admin] y periodo [2012]
+183526814: Iniciando sesión con usuario [admin] y periodo [2012]
+183526831: Iniciando sesión con usuario [admin] y periodo [2012]
+183526837: Iniciando sesión con usuario [admin] y periodo [2012]
+183526968: Iniciando sesión con usuario [admin] y periodo [2012]
+183526984: Iniciando sesión con usuario [admin] y periodo [2012]
+183526997: Iniciando sesión con usuario [admin] y periodo [2012]
+183527051: Iniciando sesión con usuario [admin] y periodo [2012]
+183527177: Iniciando sesión con usuario [admin] y periodo [2012]
+183527230: Iniciando sesión con usuario [admin] y periodo [2012]
+183527316: Iniciando sesión con usuario [admin] y periodo [2012]
+183527462: Iniciando sesión con usuario [admin] y periodo [2012]
+183527499: Iniciando sesión con usuario [admin] y periodo [2012]
+183527638: Iniciando sesión con usuario [admin] y periodo [2012]
+183527678: Iniciando sesión con usuario [admin] y periodo [2012]
+183530431: Iniciando sesión con usuario [admin] y periodo [2012]
+183530624: Iniciando sesión con usuario [admin] y periodo [2012]
+183530672: Iniciando sesión con usuario [admin] y periodo [2012]
+183530705: Iniciando sesión con usuario [admin] y periodo [2012]
+183531128: Iniciando sesión con usuario [admin] y periodo [2012]
+183531905: Iniciando sesión con usuario [admin] y periodo [2012]
+184241842: Iniciando sesión con usuario [admin] y periodo [2012]
+184308504: Iniciando sesión con usuario [admin] y periodo [2012]
+184332528: Iniciando sesión con usuario [admin] y periodo [2012]
+184345427: Iniciando sesión con usuario [admin] y periodo [2012]
+184745104: Iniciando sesión con usuario [admin] y periodo [2012]
+184943889: Iniciando sesión con usuario [admin] y periodo [2012]
+184943910: Iniciando sesión con usuario [admin] y periodo [2012]
+184944340: Iniciando sesión con usuario [admin] y periodo [2012]
+184944352: Iniciando sesión con usuario [admin] y periodo [2012]
+184944376: Iniciando sesión con usuario [admin] y periodo [2012]
+184944385: Iniciando sesión con usuario [admin] y periodo [2012]
+184944408: Iniciando sesión con usuario [admin] y periodo [2012]
+184944420: Iniciando sesión con usuario [admin] y periodo [2012]
+184944429: Iniciando sesión con usuario [admin] y periodo [2012]
+184944433: Iniciando sesión con usuario [admin] y periodo [2012]
+184944436: Iniciando sesión con usuario [admin] y periodo [2012]
+184945320: Iniciando sesión con usuario [admin] y periodo [2012]
+184945328: Iniciando sesión con usuario [admin] y periodo [2012]
+184945338: Iniciando sesión con usuario [admin] y periodo [2012]
+184945351: Iniciando sesión con usuario [admin] y periodo [2012]
+184945729: Iniciando sesión con usuario [admin] y periodo [2012]
+184945742: Iniciando sesión con usuario [admin] y periodo [2012]
+184945746: Iniciando sesión con usuario [admin] y periodo [2012]
+184945749: Iniciando sesión con usuario [admin] y periodo [2012]
+184945838: Iniciando sesión con usuario [admin] y periodo [2012]
+184945841: Iniciando sesión con usuario [admin] y periodo [2012]
+184945846: Iniciando sesión con usuario [admin] y periodo [2012]
+184945856: Iniciando sesión con usuario [admin] y periodo [2012]
+184945865: Iniciando sesión con usuario [admin] y periodo [2012]
+184945903: Iniciando sesión con usuario [admin] y periodo [2012]
+184945943: Iniciando sesión con usuario [admin] y periodo [2012]
+184945998: Iniciando sesión con usuario [admin] y periodo [2012]
+184946006: Iniciando sesión con usuario [admin] y periodo [2012]
+184946010: Iniciando sesión con usuario [admin] y periodo [2012]
+184946064: Iniciando sesión con usuario [admin] y periodo [2012]
+184946216: Iniciando sesión con usuario [admin] y periodo [2012]
+184946360: Iniciando sesión con usuario [admin] y periodo [2012]
+184946367: Iniciando sesión con usuario [admin] y periodo [2012]
+184946378: Iniciando sesión con usuario [admin] y periodo [2012]
+184946384: Iniciando sesión con usuario [admin] y periodo [2012]
+184946407: Iniciando sesión con usuario [admin] y periodo [2012]
+184946413: Iniciando sesión con usuario [admin] y periodo [2012]
+184946550: Iniciando sesión con usuario [admin] y periodo [2012]
+184946812: Iniciando sesión con usuario [admin] y periodo [2012]
+184946865: Iniciando sesión con usuario [admin] y periodo [2012]
+184946880: Iniciando sesión con usuario [admin] y periodo [2012]
+184946885: Iniciando sesión con usuario [admin] y periodo [2012]
+184946909: Iniciando sesión con usuario [admin] y periodo [2012]
+184946521: Iniciando sesión con usuario [admin] y periodo [2012]
+184946893: Iniciando sesión con usuario [admin] y periodo [2012]
+184947017: Iniciando sesión con usuario [admin] y periodo [2012]
+184947025: Iniciando sesión con usuario [admin] y periodo [2012]
+184947029: Iniciando sesión con usuario [admin] y periodo [2012]
+184947033: Iniciando sesión con usuario [admin] y periodo [2012]
+184947036: Iniciando sesión con usuario [admin] y periodo [2012]
+184947044: Iniciando sesión con usuario [admin] y periodo [2012]
+184947088: Iniciando sesión con usuario [admin] y periodo [2012]
+184947193: Iniciando sesión con usuario [admin] y periodo [2012]
+184947204: Iniciando sesión con usuario [admin] y periodo [2012]
+184947196: Iniciando sesión con usuario [admin] y periodo [2012]
+184947243: Iniciando sesión con usuario [admin] y periodo [2012]
+184947246: Iniciando sesión con usuario [admin] y periodo [2012]
+184947250: Iniciando sesión con usuario [admin] y periodo [2012]
+184947268: Iniciando sesión con usuario [admin] y periodo [2012]
+184947286: Iniciando sesión con usuario [admin] y periodo [2012]
+184947344: Iniciando sesión con usuario [admin] y periodo [2012]
+184947444: Iniciando sesión con usuario [admin] y periodo [2012]
+184947460: Iniciando sesión con usuario [admin] y periodo [2012]
+184947926: Iniciando sesión con usuario [admin] y periodo [2012]
+184947998: Iniciando sesión con usuario [admin] y periodo [2012]
+184947467: Iniciando sesión con usuario [admin] y periodo [2012]
+184948346: Iniciando sesión con usuario [admin] y periodo [2012]
+184948373: Iniciando sesión con usuario [admin] y periodo [2012]
+184948396: Iniciando sesión con usuario [admin] y periodo [2012]
+184948570: Iniciando sesión con usuario [admin] y periodo [2012]
+184948596: Iniciando sesión con usuario [admin] y periodo [2012]
+184948620: Iniciando sesión con usuario [admin] y periodo [2012]
+184948647: Iniciando sesión con usuario [admin] y periodo [2012]
+184948659: Iniciando sesión con usuario [admin] y periodo [2012]
+184948663: Iniciando sesión con usuario [admin] y periodo [2012]
+184948824: Iniciando sesión con usuario [admin] y periodo [2012]
+184948849: Iniciando sesión con usuario [admin] y periodo [2012]
+184948855: Iniciando sesión con usuario [admin] y periodo [2012]
+184949043: Iniciando sesión con usuario [admin] y periodo [2012]
+184949080: Iniciando sesión con usuario [admin] y periodo [2012]
+184949820: Iniciando sesión con usuario [admin] y periodo [2012]
+184949842: Iniciando sesión con usuario [admin] y periodo [2012]
+184949944: Iniciando sesión con usuario [admin] y periodo [2012]
+184949987: Iniciando sesión con usuario [admin] y periodo [2012]
+184950029: Iniciando sesión con usuario [admin] y periodo [2012]
+184950038: Iniciando sesión con usuario [admin] y periodo [2012]
+184950045: Iniciando sesión con usuario [admin] y periodo [2012]
+184950060: Iniciando sesión con usuario [admin] y periodo [2012]
+184950068: Iniciando sesión con usuario [admin] y periodo [2012]
+184950209: Iniciando sesión con usuario [admin] y periodo [2012]
+184950220: Iniciando sesión con usuario [admin] y periodo [2012]
+184950243: Iniciando sesión con usuario [admin] y periodo [2012]
+184950265: Iniciando sesión con usuario [admin] y periodo [2012]
+184950265: Iniciando sesión con usuario [admin] y periodo [2012]
+184950420: Iniciando sesión con usuario [admin] y periodo [2012]
+184950432: Iniciando sesión con usuario [admin] y periodo [2012]
+184950441: Iniciando sesión con usuario [admin] y periodo [2012]
+184950520: Iniciando sesión con usuario [admin] y periodo [2012]
+184950696: Iniciando sesión con usuario [admin] y periodo [2012]
+184950698: Iniciando sesión con usuario [admin] y periodo [2012]
+184950698: Iniciando sesión con usuario [admin] y periodo [2012]
+184950700: Iniciando sesión con usuario [admin] y periodo [2012]
+184950699: Iniciando sesión con usuario [admin] y periodo [2012]
+184950947: Iniciando sesión con usuario [admin] y periodo [2012]
+184950950: Iniciando sesión con usuario [admin] y periodo [2012]
+184951023: Iniciando sesión con usuario [admin] y periodo [2012]
+184951031: Iniciando sesión con usuario [admin] y periodo [2012]
+184951092: Iniciando sesión con usuario [admin] y periodo [2012]
+184951240: Iniciando sesión con usuario [admin] y periodo [2012]
+184951246: Iniciando sesión con usuario [admin] y periodo [2012]
+184951249: Iniciando sesión con usuario [admin] y periodo [2012]
+184951265: Iniciando sesión con usuario [admin] y periodo [2012]
+184951290: Iniciando sesión con usuario [admin] y periodo [2012]
+184951324: Iniciando sesión con usuario [admin] y periodo [2012]
+184951353: Iniciando sesión con usuario [admin] y periodo [2012]
+184951508: Iniciando sesión con usuario [admin] y periodo [2012]
+184951519: Iniciando sesión con usuario [admin] y periodo [2012]
+184951595: Iniciando sesión con usuario [admin] y periodo [2012]
+184951602: Iniciando sesión con usuario [admin] y periodo [2012]
+184951721: Iniciando sesión con usuario [admin] y periodo [2012]
+184951722: Iniciando sesión con usuario [admin] y periodo [2012]
+184951727: Iniciando sesión con usuario [admin] y periodo [2012]
+184951731: Iniciando sesión con usuario [admin] y periodo [2012]
+184951731: Iniciando sesión con usuario [admin] y periodo [2012]
+184951731: Iniciando sesión con usuario [admin] y periodo [2012]
+184951742: Iniciando sesión con usuario [admin] y periodo [2012]
+184951799: Iniciando sesión con usuario [admin] y periodo [2012]
+184951805: Iniciando sesión con usuario [admin] y periodo [2012]
+184951833: Iniciando sesión con usuario [admin] y periodo [2012]
+184951853: Iniciando sesión con usuario [admin] y periodo [2012]
+184952056: Iniciando sesión con usuario [admin] y periodo [2012]
+184952060: Iniciando sesión con usuario [admin] y periodo [2012]
+184952063: Iniciando sesión con usuario [admin] y periodo [2012]
+184952053: Iniciando sesión con usuario [admin] y periodo [2012]
+184952066: Iniciando sesión con usuario [admin] y periodo [2012]
+184952068: Iniciando sesión con usuario [admin] y periodo [2012]
+184952070: Iniciando sesión con usuario [admin] y periodo [2012]
+184952072: Iniciando sesión con usuario [admin] y periodo [2012]
+184952097: Iniciando sesión con usuario [admin] y periodo [2012]
+184952410: Iniciando sesión con usuario [admin] y periodo [2012]
+184952414: Iniciando sesión con usuario [admin] y periodo [2012]
+184952420: Iniciando sesión con usuario [admin] y periodo [2012]
+184952424: Iniciando sesión con usuario [admin] y periodo [2012]
+184952431: Iniciando sesión con usuario [admin] y periodo [2012]
+184952434: Iniciando sesión con usuario [admin] y periodo [2012]
+184952438: Iniciando sesión con usuario [admin] y periodo [2012]
+184952264: Iniciando sesión con usuario [admin] y periodo [2012]
+184952537: Iniciando sesión con usuario [admin] y periodo [2012]
+184952389: Iniciando sesión con usuario [admin] y periodo [2012]
+184952989: Iniciando sesión con usuario [admin] y periodo [2012]
+184952994: Iniciando sesión con usuario [admin] y periodo [2012]
+184953011: Iniciando sesión con usuario [admin] y periodo [2012]
+184953019: Iniciando sesión con usuario [admin] y periodo [2012]
+184953046: Iniciando sesión con usuario [admin] y periodo [2012]
+184953050: Iniciando sesión con usuario [admin] y periodo [2012]
+184953078: Iniciando sesión con usuario [admin] y periodo [2012]
+184953071: Iniciando sesión con usuario [admin] y periodo [2012]
+184953190: Iniciando sesión con usuario [admin] y periodo [2012]
+184953195: Iniciando sesión con usuario [admin] y periodo [2012]
+184953198: Iniciando sesión con usuario [admin] y periodo [2012]
+184953200: Iniciando sesión con usuario [admin] y periodo [2012]
+184953202: Iniciando sesión con usuario [admin] y periodo [2012]
+184953203: Iniciando sesión con usuario [admin] y periodo [2012]
+184953214: Iniciando sesión con usuario [admin] y periodo [2012]
+184953215: Iniciando sesión con usuario [admin] y periodo [2012]
+184953216: Iniciando sesión con usuario [admin] y periodo [2012]
+184953223: Iniciando sesión con usuario [admin] y periodo [2012]
+184953224: Iniciando sesión con usuario [admin] y periodo [2012]
+184953226: Iniciando sesión con usuario [admin] y periodo [2012]
+184953226: Iniciando sesión con usuario [admin] y periodo [2012]
+184953407: Iniciando sesión con usuario [admin] y periodo [2012]
+184953413: Iniciando sesión con usuario [admin] y periodo [2012]
+184953417: Iniciando sesión con usuario [admin] y periodo [2012]
+184953416: Iniciando sesión con usuario [admin] y periodo [2012]
+184953428: Iniciando sesión con usuario [admin] y periodo [2012]
+184953439: Iniciando sesión con usuario [admin] y periodo [2012]
+184953458: Iniciando sesión con usuario [admin] y periodo [2012]
+184953458: Iniciando sesión con usuario [admin] y periodo [2012]
+184953489: Iniciando sesión con usuario [admin] y periodo [2012]
+184953457: Iniciando sesión con usuario [admin] y periodo [2012]
+184953493: Iniciando sesión con usuario [admin] y periodo [2012]
+184953517: Iniciando sesión con usuario [admin] y periodo [2012]
+184953527: Iniciando sesión con usuario [admin] y periodo [2012]
+184953620: Iniciando sesión con usuario [admin] y periodo [2012]
+184953622: Iniciando sesión con usuario [admin] y periodo [2012]
+184953655: Iniciando sesión con usuario [admin] y periodo [2012]
+184953747: Iniciando sesión con usuario [admin] y periodo [2012]
+184953757: Iniciando sesión con usuario [admin] y periodo [2012]
+184953762: Iniciando sesión con usuario [admin] y periodo [2012]
+184953776: Iniciando sesión con usuario [admin] y periodo [2012]
+184953781: Iniciando sesión con usuario [admin] y periodo [2012]
+184953809: Iniciando sesión con usuario [admin] y periodo [2012]
+184953925: Iniciando sesión con usuario [admin] y periodo [2012]
+184954006: Iniciando sesión con usuario [admin] y periodo [2012]
+184954009: Iniciando sesión con usuario [admin] y periodo [2012]
+184954044: Iniciando sesión con usuario [admin] y periodo [2012]
+184954070: Iniciando sesión con usuario [admin] y periodo [2012]
+184954233: Iniciando sesión con usuario [admin] y periodo [2012]
+184954583: Iniciando sesión con usuario [admin] y periodo [2012]
+184954863: Iniciando sesión con usuario [admin] y periodo [2012]
+184954910: Iniciando sesión con usuario [admin] y periodo [2012]
+184955253: Iniciando sesión con usuario [admin] y periodo [2012]
+184955317: Iniciando sesión con usuario [admin] y periodo [2012]
+184955335: Iniciando sesión con usuario [admin] y periodo [2012]
+184955382: Iniciando sesión con usuario [admin] y periodo [2012]
+184955401: Iniciando sesión con usuario [admin] y periodo [2012]
+184955431: Iniciando sesión con usuario [admin] y periodo [2012]
+184955490: Iniciando sesión con usuario [admin] y periodo [2012]
+184955524: Iniciando sesión con usuario [admin] y periodo [2012]
+184955668: Iniciando sesión con usuario [admin] y periodo [2012]
+184955709: Iniciando sesión con usuario [admin] y periodo [2012]
+184955715: Iniciando sesión con usuario [admin] y periodo [2012]
+184955754: Iniciando sesión con usuario [admin] y periodo [2012]
+184955771: Iniciando sesión con usuario [admin] y periodo [2012]
+184956081: Iniciando sesión con usuario [admin] y periodo [2012]
+184956357: Iniciando sesión con usuario [admin] y periodo [2012]
+184956442: Iniciando sesión con usuario [admin] y periodo [2012]
+184956452: Iniciando sesión con usuario [admin] y periodo [2012]
+184956569: Iniciando sesión con usuario [admin] y periodo [2012]
+184956618: Iniciando sesión con usuario [admin] y periodo [2012]
+184956665: Iniciando sesión con usuario [admin] y periodo [2012]
+184956706: Iniciando sesión con usuario [admin] y periodo [2012]
+184956759: Iniciando sesión con usuario [admin] y periodo [2012]
+184956849: Iniciando sesión con usuario [admin] y periodo [2012]
+184956886: Iniciando sesión con usuario [admin] y periodo [2012]
+184956928: Iniciando sesión con usuario [admin] y periodo [2012]
+184956966: Iniciando sesión con usuario [admin] y periodo [2012]
+184957002: Iniciando sesión con usuario [admin] y periodo [2012]
+184957010: Iniciando sesión con usuario [admin] y periodo [2012]
+184957028: Iniciando sesión con usuario [admin] y periodo [2012]
+184957049: Iniciando sesión con usuario [admin] y periodo [2012]
+184957074: Iniciando sesión con usuario [admin] y periodo [2012]
+184957097: Iniciando sesión con usuario [admin] y periodo [2012]
+184957180: Iniciando sesión con usuario [admin] y periodo [2012]
+184957207: Iniciando sesión con usuario [admin] y periodo [2012]
+184957269: Iniciando sesión con usuario [admin] y periodo [2012]
+184957331: Iniciando sesión con usuario [admin] y periodo [2012]
+184957346: Iniciando sesión con usuario [admin] y periodo [2012]
+184957374: Iniciando sesión con usuario [admin] y periodo [2012]
+184957372: Iniciando sesión con usuario [admin] y periodo [2012]
+184957413: Iniciando sesión con usuario [admin] y periodo [2012]
+184957424: Iniciando sesión con usuario [admin] y periodo [2012]
+184957441: Iniciando sesión con usuario [admin] y periodo [2012]
+184957469: Iniciando sesión con usuario [admin] y periodo [2012]
+184957475: Iniciando sesión con usuario [admin] y periodo [2012]
+184957484: Iniciando sesión con usuario [admin] y periodo [2012]
+184957492: Iniciando sesión con usuario [admin] y periodo [2012]
+184957601: Iniciando sesión con usuario [admin] y periodo [2012]
+184957699: Iniciando sesión con usuario [admin] y periodo [2012]
+184957822: Iniciando sesión con usuario [admin] y periodo [2012]
+184957826: Iniciando sesión con usuario [admin] y periodo [2012]
+184957947: Iniciando sesión con usuario [admin] y periodo [2012]
+184957955: Iniciando sesión con usuario [admin] y periodo [2012]
+184958084: Iniciando sesión con usuario [admin] y periodo [2012]
+184958184: Iniciando sesión con usuario [admin] y periodo [2012]
+184958230: Iniciando sesión con usuario [admin] y periodo [2012]
+184958271: Iniciando sesión con usuario [admin] y periodo [2012]
+184958332: Iniciando sesión con usuario [admin] y periodo [2012]
+184958343: Iniciando sesión con usuario [admin] y periodo [2012]
+184958632: Iniciando sesión con usuario [admin] y periodo [2012]
+184958760: Iniciando sesión con usuario [admin] y periodo [2012]
+184958787: Iniciando sesión con usuario [admin] y periodo [2012]
+185000110: Iniciando sesión con usuario [admin] y periodo [2012]
+185936728: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+           sun.reflect.GeneratedMethodAccessor44.invoke(Unknown Source)
+           sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+           java.lang.reflect.Method.invoke(Method.java:592)
+           org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:234)
+           $Proxy1.executeUpdate(Unknown Source)
+           com.itc.fc4.model.security.UserDAO.delete(UserDAO.java:122)
+           com.itc.fc4.tasks.security.usuarios.reports.EliminaUsuarioController.onSubmit(EliminaUsuarioController.java:68)
+           org.springframework.web.servlet.mvc.SimpleFormController.processFormSubmission(SimpleFormController.java:267)
+           org.springframework.web.servlet.mvc.AbstractFormController.handleRequestInternal(AbstractFormController.java:265)
+           org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+202036081: Iniciando sesión con usuario [admin] y periodo [2012]
+204022666: com.itc.fc4.tasks.admin.log.LogController.handleRequest(LogController.java:45)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+210647908: Iniciando sesión con usuario [admin] y periodo [2013]
+211459750: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+211530302: Iniciando sesión con usuario [admin] y periodo [2013]
+211926834: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+212018091: Iniciando sesión con usuario [admin] y periodo [2013]
+212343754: Iniciando sesión con usuario [admin] y periodo [2013]
+212418147: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+           sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+           sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+           java.lang.reflect.Method.invoke(Method.java:592)
+           org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:234)
+           $Proxy4.executeQuery(Unknown Source)
+           com.itc.fc4.control.Report.ExecuteQueryForTotals(Report.java:185)
+           com.itc.fc4.control.Report.ExecuteQuery(Report.java:80)
+           com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:113)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+212613394: Iniciando sesión con usuario [admin] y periodo [2013]
+224945450: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+225141240: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+225243274: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+225412866: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+225547443: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+225705810: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+230257763: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+230440807: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+230729802: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+231636777: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+234612527: org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:138)
+           org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+           org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+           org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+           org.postgresql.jdbc3.Jdbc3Connection.<init>(Jdbc3Connection.java:24)
+           org.postgresql.Driver.makeConnection(Driver.java:393)
+           org.postgresql.Driver.connect(Driver.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:267)
+           org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:176)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:653)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:595)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:458)
+           org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:130)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:99)
+           org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:110)
+           com.itc.fc4.model.PoolConnection.getPoolConnection(PoolConnection.java:91)
+           com.itc.fc4.model.admin.PeriodDAO.getCurrentPeriod(PeriodDAO.java:69)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:128)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)

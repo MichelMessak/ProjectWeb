@@ -1,0 +1,132 @@
+230215082: Inicializando envio de correos.
+230229742: Inicializando envio de correos.
+230247590: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+230257532: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+230445573: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+230451381: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+230505658: fr.esiea.fc.tasks.document.reports.generic.DocumentReportController.handleRequest(DocumentReportController.java:156)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.UrlFilter.doFilter(UrlFilter.java:47)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+230812575: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+230819325: Identification incorrect pour l'utilisateur [admin]
+230824863: Innitialisation de la session pour l'utilisateur [Admin]
+231035574: Inicializando envio de correos.
+231050430: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+231051423: Innitialisation de la session pour l'utilisateur [Admin]
+231125400: fr.esiea.fc.control.auditor.ActivityController.handleRequest(ActivityController.java:102)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.UrlFilter.doFilter(UrlFilter.java:47)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+231219655: Finalisation de la session de l'utilisateur [Admin]
+231556285: Inicializando envio de correos.
+231600410: Inicializando envio de correos.
+231604994: Inicializando envio de correos.
+231616842: Inicializando envio de correos.
+231630660: Inicializando envio de correos.
+231645556: Inicializando envio de correos.
+231655619: Inicializando envio de correos.
+231700007: Inicializando envio de correos.
+231703729: Inicializando envio de correos.
+231718261: Inicializando envio de correos.
+231735089: Inicializando envio de correos.
+231743348: Inicializando envio de correos.
+231759553: Inicializando envio de correos.
+231805114: Inicializando envio de correos.
+231823068: Inicializando envio de correos.
+231827018: Inicializando envio de correos.
+231833266: Inicializando envio de correos.
+231841986: Inicializando envio de correos.
+231901095: Inicializando envio de correos.
+231908897: Inicializando envio de correos.
+231915049: Inicializando envio de correos.
+231931500: Inicializando envio de correos.
+231935056: Inicializando envio de correos.
+231945724: Inicializando envio de correos.
+231947940: Inicializando envio de correos.
+232003037: Inicializando envio de correos.
+232005500: Inicializando envio de correos.
+232007722: Inicializando envio de correos.
+232017380: Inicializando envio de correos.
+232034095: Inicializando envio de correos.
+232038137: Inicializando envio de correos.
+232040367: Inicializando envio de correos.
+232045370: Inicializando envio de correos.
+232128788: Inicializando envio de correos.
+232139879: Inicializando envio de correos.
+232209841: Inicializando envio de correos.
+232246408: Inicializando envio de correos.
+232323443: Inicializando envio de correos.
+232421105: Inicializando envio de correos.
+232427727: Inicializando envio de correos.
+232449968: Inicializando envio de correos.
+232634522: Inicializando envio de correos.
+232704945: Inicializando envio de correos.
+232710389: Inicializando envio de correos.
+232736468: Inicializando envio de correos.
+232740427: Inicializando envio de correos.
+232748477: Inicializando envio de correos.
+232811000: Inicializando envio de correos.
+233008066: Inicializando envio de correos.
+233010598: Inicializando envio de correos.
+233021913: Inicializando envio de correos.
+233039637: Inicializando envio de correos.
+233047612: Inicializando envio de correos.
+233111513: Inicializando envio de correos.
+233123719: Inicializando envio de correos.
+233128368: Inicializando envio de correos.
+233148121: Inicializando envio de correos.
+233157010: Inicializando envio de correos.
+233159457: Inicializando envio de correos.
+233218317: Inicializando envio de correos.
+233222837: Inicializando envio de correos.
+233232154: Inicializando envio de correos.
+233234617: Inicializando envio de correos.
+233238322: Inicializando envio de correos.
+233240858: Inicializando envio de correos.
+233249408: Inicializando envio de correos.
+233251909: Inicializando envio de correos.

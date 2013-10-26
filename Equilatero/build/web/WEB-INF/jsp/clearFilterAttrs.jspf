@@ -1,0 +1,9 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<%
+    //Clean all the attribute we do not use into the filters
+    request.removeAttribute("report");
+    request.removeAttribute("isSubmit");
+    request.removeAttribute("isFilterSubmit");
+    session.removeAttribute("report");
+%>

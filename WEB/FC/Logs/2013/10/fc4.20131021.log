@@ -1,0 +1,794 @@
+160059910: Inicializando envio de correos.
+160117692: Inicializando envio de correos.
+160207634: Inicializando envio de correos.
+160212017: Inicializando envio de correos.
+160234307: Inicializando envio de correos.
+160246998: Inicializando envio de correos.
+160318606: Inicializando envio de correos.
+160330394: Inicializando envio de correos.
+160343076: Inicializando envio de correos.
+160345790: Inicializando envio de correos.
+160359395: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+160403792: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+160430780: com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:182)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:49)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+160703785: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+160723046: Innitialisation de la session pour l'utilisateur [Admin]
+161033589: Inicializando envio de correos.
+161206243: Inicializando envio de correos.
+161216789: Inicializando envio de correos.
+161230422: Inicializando envio de correos.
+161246231: Inicializando envio de correos.
+161340655: Inicializando envio de correos.
+161344752: Inicializando envio de correos.
+161356727: Inicializando envio de correos.
+161422954: Inicializando envio de correos.
+161434736: Inicializando envio de correos.
+161440318: Inicializando envio de correos.
+161510555: Inicializando envio de correos.
+161520476: Inicializando envio de correos.
+161531783: Inicializando envio de correos.
+161549880: Inicializando envio de correos.
+161653694: Inicializando envio de correos.
+161657525: Inicializando envio de correos.
+161856713: Inicializando envio de correos.
+161955354: Inicializando envio de correos.
+162112290: Inicializando envio de correos.
+162135351: Inicializando envio de correos.
+162247943: Inicializando envio de correos.
+162333833: Inicializando envio de correos.
+162345178: Inicializando envio de correos.
+162402008: Inicializando envio de correos.
+162421541: Inicializando envio de correos.
+162425194: Inicializando envio de correos.
+162438672: Inicializando envio de correos.
+162441867: Inicializando envio de correos.
+162452592: Inicializando envio de correos.
+162500971: Inicializando envio de correos.
+162503181: Inicializando envio de correos.
+162534082: Inicializando envio de correos.
+162618861: Inicializando envio de correos.
+162631508: Inicializando envio de correos.
+162641612: Inicializando envio de correos.
+162644403: Inicializando envio de correos.
+162707941: Inicializando envio de correos.
+162722346: Inicializando envio de correos.
+162725673: Inicializando envio de correos.
+162732241: Inicializando envio de correos.
+162736859: Inicializando envio de correos.
+162752383: Inicializando envio de correos.
+162815019: Inicializando envio de correos.
+162818134: Inicializando envio de correos.
+162932554: Inicializando envio de correos.
+162944428: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+162946019: Identification incorrect pour l'utilisateur [agarica]
+162953104: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+163218273: Inicializando envio de correos.
+163231587: Inicializando envio de correos.
+163234504: Inicializando envio de correos.
+163241188: Inicializando envio de correos.
+163243292: Inicializando envio de correos.
+163314782: Inicializando envio de correos.
+163606595: Inicializando envio de correos.
+163615996: Inicializando envio de correos.
+163621974: Inicializando envio de correos.
+163626858: Inicializando envio de correos.
+163642100: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+163643212: Innitialisation de la session pour l'utilisateur [Admin]
+163713783: Finalisation de la session de l'utilisateur [Admin]
+163720463: Innitialisation de la session pour l'utilisateur [Admin]
+163802055: Inicializando envio de correos.
+163811165: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+163811938: Innitialisation de la session pour l'utilisateur [Admin]
+163839316: Inicializando envio de correos.
+163859657: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+163900454: Innitialisation de la session pour l'utilisateur [Admin]
+164133384: Inicializando envio de correos.
+164144269: Inicializando envio de correos.
+164218327: Inicializando envio de correos.
+164221482: Inicializando envio de correos.
+164236977: Inicializando envio de correos.
+164240071: Inicializando envio de correos.
+164255937: Inicializando envio de correos.
+164301684: Inicializando envio de correos.
+164321235: Inicializando envio de correos.
+164324899: Inicializando envio de correos.
+164335383: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+164336369: Innitialisation de la session pour l'utilisateur [Admin]
+164427482: Inicializando envio de correos.
+164440418: Inicializando envio de correos.
+164457196: Inicializando envio de correos.
+164459832: Inicializando envio de correos.
+164750363: Inicializando envio de correos.
+164910336: Inicializando envio de correos.
+164914466: Inicializando envio de correos.
+164932089: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+164933120: Innitialisation de la session pour l'utilisateur [Admin]
+165004496: Inicializando envio de correos.
+165018631: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+165019422: Innitialisation de la session pour l'utilisateur [Admin]
+165311242: Inicializando envio de correos.
+165638185: Inicializando envio de correos.
+165647822: Inicializando envio de correos.
+165710197: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+165711105: Innitialisation de la session pour l'utilisateur [Admin]
+165848499: Inicializando envio de correos.
+165857442: Inicializando envio de correos.
+165941294: Inicializando envio de correos.
+170132313: Inicializando envio de correos.
+170154429: Inicializando envio de correos.
+170255178: Inicializando envio de correos.
+170301028: Inicializando envio de correos.
+170324273: Inicializando envio de correos.
+170352439: Inicializando envio de correos.
+170356242: Inicializando envio de correos.
+170452213: Inicializando envio de correos.
+170459185: Inicializando envio de correos.
+170506961: Inicializando envio de correos.
+170517415: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+170518299: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+170557327: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+170622691: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+170706903: Inicializando envio de correos.
+170735496: Inicializando envio de correos.
+170738940: Inicializando envio de correos.
+170745795: Inicializando envio de correos.
+170806886: Inicializando envio de correos.
+170823528: Inicializando envio de correos.
+170859587: Inicializando envio de correos.
+170925342: Inicializando envio de correos.
+170929658: Inicializando envio de correos.
+170950903: Inicializando envio de correos.
+170953535: Inicializando envio de correos.
+171000649: Inicializando envio de correos.
+171010651: Inicializando envio de correos.
+171020933: Inicializando envio de correos.
+171025587: Inicializando envio de correos.
+171103992: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+171104822: Innitialisation de la session pour l'utilisateur [Admin]
+171148836: Inicializando envio de correos.
+171204077: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+171204842: Innitialisation de la session pour l'utilisateur [Admin]
+171240867: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+           com.itc.fc4.model.security.UserPasswordDAO.addPasUser(UserPasswordDAO.java:214)
+           com.itc.fc4.tasks.security.usuarios.reports.ModificaUsuarioController.onSubmit(ModificaUsuarioController.java:80)
+           org.springframework.web.servlet.mvc.SimpleFormController.processFormSubmission(SimpleFormController.java:267)
+           org.springframework.web.servlet.mvc.AbstractFormController.handleRequestInternal(AbstractFormController.java:265)
+           org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:49)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+171259663: Inicializando envio de correos.
+171301862: Inicializando envio de correos.
+171409030: Inicializando envio de correos.
+171425265: Inicializando envio de correos.
+171441634: Inicializando envio de correos.
+171446008: Inicializando envio de correos.
+171452059: Inicializando envio de correos.
+171521803: Inicializando envio de correos.
+171532450: Inicializando envio de correos.
+171537883: Inicializando envio de correos.
+171543182: Inicializando envio de correos.
+171557316: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+171558208: Identification incorrect pour l'utilisateur [agarcia]
+171606840: Changement de mot de passe obligatoire pour l'utilisateur [agarcia]
+171630787: Finalizando sesión
+171637878: Identification incorrect pour l'utilisateur [agarcia]
+171644735: Changement de mot de passe obligatoire pour l'utilisateur [agarcia]
+171927317: Inicializando envio de correos.
+171932778: Inicializando envio de correos.
+171946162: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+171947040: Changement de mot de passe obligatoire pour l'utilisateur [agarcia]
+171957257: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+172050370: Inicializando envio de correos.
+172103444: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+172104425: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+172206833: Inicializando envio de correos.
+172209783: Inicializando envio de correos.
+172212274: Inicializando envio de correos.
+172214717: Inicializando envio de correos.
+172220633: Inicializando envio de correos.
+172239312: Inicializando envio de correos.
+172303945: Inicializando envio de correos.
+172315531: Inicializando envio de correos.
+172320059: Inicializando envio de correos.
+172324567: Inicializando envio de correos.
+172326923: Inicializando envio de correos.
+172341308: Inicializando envio de correos.
+172412324: Inicializando envio de correos.
+172605641: Inicializando envio de correos.
+172616072: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+172616844: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+172633187: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+172640091: Identification incorrect pour l'utilisateur [admin]
+172648060: Innitialisation de la session pour l'utilisateur [Admin]
+173000647: Inicializando envio de correos.
+173050869: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173052267: Innitialisation de la session pour l'utilisateur [Admin]
+173348295: Inicializando envio de correos.
+173352353: Inicializando envio de correos.
+173411288: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173412072: Innitialisation de la session pour l'utilisateur [Admin]
+173459788: Inicializando envio de correos.
+173516822: Inicializando envio de correos.
+173519240: Inicializando envio de correos.
+173522328: Inicializando envio de correos.
+173536523: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173537275: Innitialisation de la session pour l'utilisateur [Admin]
+173601465: Inicializando envio de correos.
+173633137: Inicializando envio de correos.
+173644149: Inicializando envio de correos.
+173721294: Inicializando envio de correos.
+173734682: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173743556: Innitialisation de la session pour l'utilisateur [Admin]
+173836167: Inicializando envio de correos.
+173913126: Inicializando envio de correos.
+173921828: Inicializando envio de correos.
+173926485: Inicializando envio de correos.
+173929472: Inicializando envio de correos.
+173939186: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173939976: Identification incorrect pour l'utilisateur [admin]
+173949019: Innitialisation de la session pour l'utilisateur [Admin]
+174028896: Inicializando envio de correos.
+174055764: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174056493: Innitialisation de la session pour l'utilisateur [Admin]
+174215190: Inicializando envio de correos.
+174323793: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174441488: Inicializando envio de correos.
+174507441: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174508350: Innitialisation de la session pour l'utilisateur [Admin]
+174546418: Inicializando envio de correos.
+174556218: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174557802: Identification incorrect pour l'utilisateur [admin]
+174617430: Innitialisation de la session pour l'utilisateur [Admin]
+174656759: Inicializando envio de correos.
+174718765: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174719544: Innitialisation de la session pour l'utilisateur [Admin]
+174837845: Inicializando envio de correos.
+174915186: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174915989: Innitialisation de la session pour l'utilisateur [Admin]
+175007539: Inicializando envio de correos.
+175047150: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+175047878: Innitialisation de la session pour l'utilisateur [Admin]
+175324161: Inicializando envio de correos.
+175449688: Inicializando envio de correos.
+175948989: Inicializando envio de correos.
+180340000: Inicializando envio de correos.
+180358950: Inicializando envio de correos.
+180501457: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+180503130: Innitialisation de la session pour l'utilisateur [Admin]
+181124988: Inicializando envio de correos.
+181302939: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+181303890: Innitialisation de la session pour l'utilisateur [Admin]
+181451725: Inicializando envio de correos.
+181801048: Inicializando envio de correos.
+181818078: Inicializando envio de correos.
+181836001: Inicializando envio de correos.
+181839688: Inicializando envio de correos.
+181846259: Inicializando envio de correos.
+181904872: Inicializando envio de correos.
+181912650: Inicializando envio de correos.
+181920046: Inicializando envio de correos.
+181927523: Inicializando envio de correos.
+181931961: Inicializando envio de correos.
+182018097: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+182019037: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+182048056: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+182101121: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+182108272: Identification incorrect pour l'utilisateur [admin]
+182116204: Innitialisation de la session pour l'utilisateur [Admin]
+182302023: Inicializando envio de correos.
+182309786: Inicializando envio de correos.
+182321176: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+182322071: Innitialisation de la session pour l'utilisateur [Admin]
+182912280: Inicializando envio de correos.
+182922607: Inicializando envio de correos.
+182934076: Inicializando envio de correos.
+182941523: Inicializando envio de correos.
+182945175: Inicializando envio de correos.
+182957197: Inicializando envio de correos.
+183001482: Inicializando envio de correos.
+183009195: Inicializando envio de correos.
+183013096: Inicializando envio de correos.
+183022727: Inicializando envio de correos.
+183047230: Inicializando envio de correos.
+183052548: Inicializando envio de correos.
+183056895: Inicializando envio de correos.
+183103367: Inicializando envio de correos.
+183109989: Inicializando envio de correos.
+183122024: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+183123029: Identification incorrect pour l'utilisateur [admin]
+183130428: Innitialisation de la session pour l'utilisateur [Admin]
+183235921: Inicializando envio de correos.
+183247852: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+183249161: Identification incorrect pour l'utilisateur [admin]
+183254873: Innitialisation de la session pour l'utilisateur [Admin]
+183404866: Inicializando envio de correos.
+183441332: Inicializando envio de correos.
+183450723: Inicializando envio de correos.
+183507694: Inicializando envio de correos.
+183530710: Inicializando envio de correos.
+183534735: Inicializando envio de correos.
+183752278: Inicializando envio de correos.
+183806450: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+183807472: Identification incorrect pour l'utilisateur [agarcia]
+183824316: Identification incorrect pour l'utilisateur [agarcia]
+184017567: Inicializando envio de correos.
+184103563: Inicializando envio de correos.
+184124243: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+184209911: Inicializando envio de correos.
+184323090: Inicializando envio de correos.
+184534752: Inicializando envio de correos.
+184543990: Inicializando envio de correos.
+184548275: Inicializando envio de correos.
+184552687: Inicializando envio de correos.
+184556630: Inicializando envio de correos.
+184602781: Inicializando envio de correos.
+184619111: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+184620348: Innitialisation de la session pour l'utilisateur [Admin]
+184732380: Inicializando envio de correos.
+184745317: Inicializando envio de correos.
+184847241: Inicializando envio de correos.
+184850991: Inicializando envio de correos.
+184857496: Inicializando envio de correos.
+184915954: Inicializando envio de correos.
+184920631: Inicializando envio de correos.
+184936279: Inicializando envio de correos.
+184941462: Inicializando envio de correos.
+184945878: Inicializando envio de correos.
+184950457: Inicializando envio de correos.
+184954929: Inicializando envio de correos.
+184959749: Inicializando envio de correos.
+185004848: Inicializando envio de correos.
+185008859: Inicializando envio de correos.
+185013124: Inicializando envio de correos.
+185024860: Inicializando envio de correos.
+185036564: Inicializando envio de correos.
+185045063: Inicializando envio de correos.
+185100082: Inicializando envio de correos.
+185204159: Inicializando envio de correos.
+185214058: Inicializando envio de correos.
+185220504: Inicializando envio de correos.
+185224779: Inicializando envio de correos.
+185233866: Inicializando envio de correos.
+185238731: Inicializando envio de correos.
+185319899: Inicializando envio de correos.
+185328875: Inicializando envio de correos.
+185416214: Inicializando envio de correos.
+185420731: Inicializando envio de correos.
+185424742: Inicializando envio de correos.
+185432132: Inicializando envio de correos.
+185443155: Inicializando envio de correos.
+185446755: Inicializando envio de correos.
+185454388: Inicializando envio de correos.
+185459509: Inicializando envio de correos.
+185512752: Inicializando envio de correos.
+185524422: Inicializando envio de correos.
+185530148: Inicializando envio de correos.
+185613554: Inicializando envio de correos.
+185625990: Inicializando envio de correos.
+185640149: Inicializando envio de correos.
+185655478: Inicializando envio de correos.
+185706038: Inicializando envio de correos.
+185714190: Inicializando envio de correos.
+185746347: Inicializando envio de correos.
+185751054: Inicializando envio de correos.
+185811506: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+185812536: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+185828953: fr.esiea.fc.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:180)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.UrlFilter.doFilter(UrlFilter.java:49)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+185947372: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+190319164: Inicializando envio de correos.
+190512986: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+190514382: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+191005513: Inicializando envio de correos.
+191017841: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+191019361: Innitialisation de la session pour l'utilisateur [Ángel García Alcántara]
+191034023: fr.esiea.fc.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:180)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.UrlFilter.doFilter(UrlFilter.java:49)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           fr.esiea.fc.control.EncodingFilter.doFilter(EncodingFilter.java:36)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+191053117: Finalisation de la session de l'utilisateur [Ángel García Alcántara]
+191142446: Inicializando envio de correos.
+191153872: Inicializando envio de correos.
+191158656: Inicializando envio de correos.
+191208621: Inicializando envio de correos.
+191212919: Inicializando envio de correos.
+191247158: Inicializando envio de correos.
+191254506: Inicializando envio de correos.
+191302997: Inicializando envio de correos.
+191316116: Inicializando envio de correos.
+191415816: Inicializando envio de correos.
+191435995: Inicializando envio de correos.
+191441868: Inicializando envio de correos.
+191453080: Inicializando envio de correos.
+191457297: Inicializando envio de correos.
+191536616: Inicializando envio de correos.
+191606272: Inicializando envio de correos.
+191614312: Inicializando envio de correos.
+191618863: Inicializando envio de correos.
+191626607: Inicializando envio de correos.
+191630983: Inicializando envio de correos.
+191643150: Inicializando envio de correos.
+191647609: Inicializando envio de correos.
+191713739: Inicializando envio de correos.
+191740326: Inicializando envio de correos.
+191745593: Inicializando envio de correos.
+191805476: Inicializando envio de correos.
+191820003: Inicializando envio de correos.
+191824242: Inicializando envio de correos.
+191834224: Inicializando envio de correos.
+191852465: Inicializando envio de correos.
+191908603: Inicializando envio de correos.
+192040565: Inicializando envio de correos.
+192103416: Inicializando envio de correos.
+192217644: Inicializando envio de correos.
+192221905: Inicializando envio de correos.
+192238673: Inicializando envio de correos.
+192307417: Inicializando envio de correos.
+192313210: Inicializando envio de correos.
+192338172: Inicializando envio de correos.
+192353438: Inicializando envio de correos.
+192420506: Inicializando envio de correos.
+192433969: Inicializando envio de correos.
+192439839: Inicializando envio de correos.
+192503480: Inicializando envio de correos.
+192517372: Inicializando envio de correos.
+192523378: Inicializando envio de correos.
+192527690: Inicializando envio de correos.
+192534133: Inicializando envio de correos.
+192558044: Inicializando envio de correos.
+192619509: Inicializando envio de correos.
+192624977: Inicializando envio de correos.
+192631471: Inicializando envio de correos.
+192646496: Inicializando envio de correos.
+192751646: Inicializando envio de correos.
+192759139: Inicializando envio de correos.
+192803204: Inicializando envio de correos.
+192844674: Inicializando envio de correos.
+192913155: Inicializando envio de correos.
+192917463: Inicializando envio de correos.
+192927957: Inicializando envio de correos.
+192942830: Inicializando envio de correos.
+193003634: Inicializando envio de correos.
+193007851: Inicializando envio de correos.
+193016190: Inicializando envio de correos.
+193032939: Inicializando envio de correos.
+193043461: Inicializando envio de correos.
+193054817: Inicializando envio de correos.
+193133650: Inicializando envio de correos.
+193206300: Inicializando envio de correos.
+193219028: Inicializando envio de correos.
+193223858: Inicializando envio de correos.
+193236823: Inicializando envio de correos.
+193246768: Inicializando envio de correos.
+193251364: Inicializando envio de correos.
+193303182: Inicializando envio de correos.
+193321000: Inicializando envio de correos.
+193334693: Inicializando envio de correos.
+193502083: Inicializando envio de correos.
+193513442: Inicializando envio de correos.
+193517689: Inicializando envio de correos.
+193549223: Inicializando envio de correos.
+193600509: Inicializando envio de correos.
+193616575: Inicializando envio de correos.
+193620999: Inicializando envio de correos.
+193706286: Inicializando envio de correos.
+193726277: Inicializando envio de correos.
+193730541: Inicializando envio de correos.
+193740906: Inicializando envio de correos.
+193753315: Inicializando envio de correos.
+193801233: Inicializando envio de correos.
+193825816: Inicializando envio de correos.
+193837705: Inicializando envio de correos.
+193851019: Inicializando envio de correos.
+193855288: Inicializando envio de correos.
+193939462: Inicializando envio de correos.
+193944942: Inicializando envio de correos.
+194047880: Inicializando envio de correos.
+194101120: Inicializando envio de correos.
+194218160: Inicializando envio de correos.
+194316210: Inicializando envio de correos.
+194410046: Inicializando envio de correos.
+194421856: Inicializando envio de correos.
+194425979: Inicializando envio de correos.
+194432610: Inicializando envio de correos.
+194436999: Inicializando envio de correos.
+202746792: Inicializando envio de correos.
+202753051: Inicializando envio de correos.
+202758339: Inicializando envio de correos.
+202855555: Inicializando envio de correos.
+202900075: Inicializando envio de correos.
+202912117: Inicializando envio de correos.
+202918216: Inicializando envio de correos.
+202925785: Inicializando envio de correos.
+202930731: Inicializando envio de correos.
+202935539: Inicializando envio de correos.
+202942256: Inicializando envio de correos.
+202947683: Inicializando envio de correos.
+202952983: Inicializando envio de correos.
+202957874: Inicializando envio de correos.
+203009445: Inicializando envio de correos.
+203014161: Inicializando envio de correos.
+203024671: Inicializando envio de correos.
+203114929: Inicializando envio de correos.
+203119712: Inicializando envio de correos.
+203129911: Inicializando envio de correos.
+203135715: Inicializando envio de correos.
+203233680: Inicializando envio de correos.
+203238992: Inicializando envio de correos.
+203243905: Inicializando envio de correos.
+203251267: Inicializando envio de correos.
+203305022: Inicializando envio de correos.
+203309735: Inicializando envio de correos.
+203404060: Inicializando envio de correos.
+203412639: Inicializando envio de correos.
+203422068: Inicializando envio de correos.
+203428439: Inicializando envio de correos.
+203454880: Inicializando envio de correos.
+203505427: Inicializando envio de correos.
+203510543: Inicializando envio de correos.
+203608854: Inicializando envio de correos.
+203619846: Inicializando envio de correos.
+203624407: Inicializando envio de correos.
+203639685: Inicializando envio de correos.
+203659453: Inicializando envio de correos.
+203705082: Inicializando envio de correos.
+203715433: Inicializando envio de correos.
+203721213: Inicializando envio de correos.
+203725907: Inicializando envio de correos.
+203731637: Inicializando envio de correos.
+203750137: Inicializando envio de correos.
+203803703: Inicializando envio de correos.
+203812447: Inicializando envio de correos.
+203817021: Inicializando envio de correos.
+204102585: Inicializando envio de correos.
+204114874: Inicializando envio de correos.
+204129402: Inicializando envio de correos.
+204142986: Inicializando envio de correos.
+204148649: Inicializando envio de correos.
+204413388: Inicializando envio de correos.
+204511469: Inicializando envio de correos.
+204516293: Inicializando envio de correos.
+204520928: Inicializando envio de correos.
+204549167: Inicializando envio de correos.
+204557165: Inicializando envio de correos.
+204602763: Inicializando envio de correos.
+204607141: Inicializando envio de correos.
+204643367: Inicializando envio de correos.
+204703869: Inicializando envio de correos.
+204712471: Inicializando envio de correos.
+204720584: Inicializando envio de correos.
+204725787: Inicializando envio de correos.
+204741311: Inicializando envio de correos.
+204746763: Inicializando envio de correos.
+204823100: Inicializando envio de correos.
+204827763: Inicializando envio de correos.
+204832257: Inicializando envio de correos.
+204840369: Inicializando envio de correos.
+204850211: Inicializando envio de correos.
+204901738: Inicializando envio de correos.
+204914928: Inicializando envio de correos.
+204919978: Inicializando envio de correos.
+205056301: Inicializando envio de correos.
+205102400: Inicializando envio de correos.
+205107237: Inicializando envio de correos.
+205137275: Inicializando envio de correos.
+205142266: Inicializando envio de correos.
+205201185: Inicializando envio de correos.
+205213878: Inicializando envio de correos.
+205237441: Inicializando envio de correos.
+205250644: Inicializando envio de correos.
+205308341: Inicializando envio de correos.
+205323730: Inicializando envio de correos.
+205339825: Inicializando envio de correos.
+205356275: Inicializando envio de correos.
+205404868: Inicializando envio de correos.
+205409408: Inicializando envio de correos.
+205414723: Inicializando envio de correos.
+205522770: Inicializando envio de correos.
+205527387: Inicializando envio de correos.
+205545305: Inicializando envio de correos.
+205549519: Inicializando envio de correos.
+205606572: Inicializando envio de correos.
+205617162: Inicializando envio de correos.
+205623519: Inicializando envio de correos.
+205628416: Inicializando envio de correos.
+205640653: Inicializando envio de correos.
+205657462: Inicializando envio de correos.
+205702184: Inicializando envio de correos.
+205711401: Inicializando envio de correos.
+205728602: Inicializando envio de correos.
+205747644: Inicializando envio de correos.
+205752062: Inicializando envio de correos.
+205812935: Inicializando envio de correos.
+205827579: Inicializando envio de correos.
+205838248: Inicializando envio de correos.
+205905356: Inicializando envio de correos.
+210009992: Inicializando envio de correos.
+210015508: Inicializando envio de correos.
+210020329: Inicializando envio de correos.
+210041503: Inicializando envio de correos.
+210046598: Inicializando envio de correos.
+210100854: Inicializando envio de correos.
+210117729: Inicializando envio de correos.
+210122490: Inicializando envio de correos.
+210127561: Inicializando envio de correos.
+210132318: Inicializando envio de correos.
+210158033: Inicializando envio de correos.
+210202433: Inicializando envio de correos.
+210210808: Inicializando envio de correos.
+210229493: Inicializando envio de correos.
+210236450: Inicializando envio de correos.
+210242304: Inicializando envio de correos.
+210250319: Inicializando envio de correos.
+210254707: Inicializando envio de correos.
+210331731: Inicializando envio de correos.
+210339589: Inicializando envio de correos.
+210348173: Inicializando envio de correos.
+210423033: Inicializando envio de correos.
+210448773: Inicializando envio de correos.
+210508716: Inicializando envio de correos.
+210531830: Inicializando envio de correos.
+210549057: Inicializando envio de correos.
+210619810: Inicializando envio de correos.
+210624583: Inicializando envio de correos.
+210638123: Inicializando envio de correos.
+210645325: Inicializando envio de correos.
+210651020: Inicializando envio de correos.
+210656534: Inicializando envio de correos.
+210707404: Inicializando envio de correos.
+210721715: Inicializando envio de correos.
+210741861: Inicializando envio de correos.
+210754831: Inicializando envio de correos.
+210806370: Inicializando envio de correos.
+210811723: Inicializando envio de correos.
+210830673: Inicializando envio de correos.
+210843919: Inicializando envio de correos.
+210850635: Inicializando envio de correos.
+210858104: Inicializando envio de correos.
+210902696: Inicializando envio de correos.
+210919463: Inicializando envio de correos.
+210941625: Inicializando envio de correos.
+211007529: Inicializando envio de correos.
+211012084: Inicializando envio de correos.
+211024892: Inicializando envio de correos.
+211029904: Inicializando envio de correos.
+211036909: Inicializando envio de correos.
+211056484: Inicializando envio de correos.
+211105441: Inicializando envio de correos.
+211112581: Inicializando envio de correos.
+211118368: Inicializando envio de correos.
+211146841: Inicializando envio de correos.
+211152900: Inicializando envio de correos.
+211212701: Inicializando envio de correos.
+211238808: Inicializando envio de correos.
+211255166: Inicializando envio de correos.
+211308334: Inicializando envio de correos.
+211323065: Inicializando envio de correos.
+211339057: Inicializando envio de correos.
+211343834: Inicializando envio de correos.
+211348550: Inicializando envio de correos.
+211359656: Inicializando envio de correos.
+211434421: Inicializando envio de correos.
+211438907: Inicializando envio de correos.
+211508276: Inicializando envio de correos.
+211524237: Inicializando envio de correos.
+211543780: Inicializando envio de correos.
+211554394: Inicializando envio de correos.
+211604382: Inicializando envio de correos.
+211716336: Inicializando envio de correos.
+211735840: Inicializando envio de correos.
+211749343: Inicializando envio de correos.
+211802470: Inicializando envio de correos.
+211812053: Inicializando envio de correos.
+211825074: Inicializando envio de correos.
+211832018: Inicializando envio de correos.
+211856601: Inicializando envio de correos.
+211909258: Inicializando envio de correos.
+211924782: Inicializando envio de correos.
+211932637: Inicializando envio de correos.
+211937125: Inicializando envio de correos.
+211955213: Inicializando envio de correos.
+212001192: Inicializando envio de correos.
+212009252: Inicializando envio de correos.
+212015614: Inicializando envio de correos.
+212020334: Inicializando envio de correos.
+212031549: Inicializando envio de correos.

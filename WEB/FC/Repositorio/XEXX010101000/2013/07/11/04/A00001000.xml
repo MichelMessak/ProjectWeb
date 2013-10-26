@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LugarExpedicion="GUADALAJARA, JALISCO" Moneda="MXN" certificado="MIIEIjCCAwqgAwIBAgIUMDAwMDEwMDAwMDAxMDQ4NzMwNzAwDQYJKoZIhvcNAQEFBQAwggE2MTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExHzAdBgkqhkiG9w0BCQEWEGFjb2RzQHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEzARBgNVBAcMCkN1YXVodGVtb2MxMzAxBgkqhkiG9w0BCQIMJFJlc3BvbnNhYmxlOiBGZXJuYW5kbyBNYXJ0w61uZXogQ29zczAeFw0xMTEyMTQxNzAxNTFaFw0xMzEyMTMxNzAxNTFaMIHCMSMwIQYDVQQDExpBVCBDT05TVFJVQ0NJT05FUyBTQSBERSBDVjEjMCEGA1UEKRMaQVQgQ09OU1RSVUNDSU9ORVMgU0EgREUgQ1YxIzAhBgNVBAoTGkFUIENPTlNUUlVDQ0lPTkVTIFNBIERFIENWMSUwIwYDVQQtExxBQ08wMDA4MDdLUzAgLyBBQVRMNDAxMDI4UjQxMR4wHAYDVQQFExUgLyBBQVRMNDAxMDI4SEdUVkxTMDYxCjAIBgNVBAsTAWMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAORMXRCkyZZigpeF/CN4agQtuM2AruRjayQXGcsePcODkeuwPoAr4bSWKLhPNDqMZY5YVvM2UzLd9jv+YzluOHoflgxO1dmzgXXgR22i0Xi6hOJMWnZjJoy422W34fI8uqixqqjEt9gSMkSQyjlepEtwJHcJmRjzC8kuOLAQR/q5AgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQBqaTZOjozBlbLzHSvdY6VOLOZ7mACVrPUAnLSdJ6y6ZK1L1oEVuMuDx2G6WV3+SGvmAgepwT2JdSZE3wGvVnD3YtCrnRvdroWt3YiZ+H3bdZ62Yjv93R1/PvruQN83YeAKB7pgZzaMP9+Z1xclvA+EWLr87wkZkwtBVT8+CRWswLo3WXuD60aQwPhhRYEigB4XpZCDCaWrw+jaZko6fHnjw2RyoBl2xlD41SwFDI1m34ilJgxz7EJKy+femHWwsKaM6kVcd711M05CKue7E6cPS7xpwrR5hfynC28i44DmyKItt2a7tHalbe7BDYJaxGaoDKwxljsZOhHJfYmtztgu" descuento="0.00" fecha="2012-08-22T17:16:15" folio="1000" formaDePago="Pago en una sola exhibición" metodoDePago="NO IDENTIFICADO" noCertificado="00001000000104873070" sello="qBPmU/iD7f5LxjboqS5EAE+/4geh/LhJCxub/ZdU0xD3RhH2G/PA7GGcOt8Q2aKlurLkesXZKYBDL9LMWZLkox5kcjRDmg/pEvSSHNPUtnxv7W2U//YlzW8YkRliSS1WsPqgnPkg3CgJ6I1oxNiH7Gd43RZhYv01zCY/55FJF2E=" serie="O" subTotal="31673.74" tipoDeComprobante="ingreso" total="36741.54" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+<cfdi:Emisor nombre="AT CONSTRUCCIONES, S.A. DE C.V." rfc="XEXX010101000">
+<cfdi:DomicilioFiscal calle="AV. UNION" codigoPostal="44500" colonia="COL. ARCOS VALLARTA SUR" estado="JALISCO" municipio="GUADALAJARA" noExterior="480" noInterior="ALTOS" pais="GUADALAJARA"/>
+    
+<cfdi:RegimenFiscal Regimen="Regimen General de ley personas morales"/>
+</cfdi:Emisor>
+
+<cfdi:Receptor nombre="PC INDUSTRIAL S.A. DE C.V." rfc="PIN860514S81">
+<cfdi:Domicilio calle="SIERRA MOJADA" codigoPostal="11000" colonia="LOMAS DE CHAPULTEPEC" estado="DISTRITO FEDERAL" municipio="DELEGACION MIGUEL HIDALGO" noExterior="215" pais="MEXICO"/>
+</cfdi:Receptor>
+
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="1.000000" descripcion="CAMBIOS DE DOMICILIO DIVISION:CENTRO AREA: GUADALAJARA CTO TRABAJO:TLAQUEPAQUE" importe="0.00" noIdentificacion="CD" unidad="UNIDAD" valorUnitario="0.000000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="51.000000" descripcion="CONST. DE LINEA DE CLIENTE BASICA C/DIT C/SPLITTER C/BAJANTE DE 1 PAR" importe="16516.86" noIdentificacion="27" unidad="LINEA" valorUnitario="323.860000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="22.000000" descripcion="PLUSVALIA POR TRAMO ADICIONAL DE 50M CON BAJANTE DE 1 PAR" importe="4657.40" noIdentificacion="05" unidad="TRAMO" valorUnitario="211.700000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="23.000000" descripcion="CONSTR O REHAB DE CABLEADO INTERIOR P/1 APARATO" importe="3013.46" noIdentificacion="59" unidad="LINEA" valorUnitario="131.020000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="26.000000" descripcion="CABLEADO INTERIOR PARA 1 APARATO MODEM P/INFINITUM C/SPLITTER" importe="6812.26" noIdentificacion="26" unidad="LINEA" valorUnitario="262.010000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="49.000000" descripcion="MONTAJE DE PUENTE EN DISTRIBUCION GENERAL" importe="575.26" noIdentificacion="13" unidad="PIEZA" valorUnitario="11.740000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="50.000000" descripcion="REPORTE DE IVR, PARA LIQUIDACION DEL SERVICIO" importe="98.50" noIdentificacion="34" unidad="LINEA" valorUnitario="1.970000">
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="5067.80">
+<cfdi:Traslados>
+
+<cfdi:Traslado importe="5067.80" impuesto="IVA" tasa="16.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="05A4D47F-9F52-42F2-9E20-CBD82B5F1FC5" FechaTimbrado="2012-08-22T17:35:58" selloCFD="qBPmU/iD7f5LxjboqS5EAE+/4geh/LhJCxub/ZdU0xD3RhH2G/PA7GGcOt8Q2aKlurLkesXZKYBDL9LMWZLkox5kcjRDmg/pEvSSHNPUtnxv7W2U//YlzW8YkRliSS1WsPqgnPkg3CgJ6I1oxNiH7Gd43RZhYv01zCY/55FJF2E=" noCertificadoSAT="00001000000102574483" selloSAT="CIZ0FWY8CNIBfveUJCpHCGh9zmTH5K4jP/TvGCdCPDMWZcj0mt9cAfIZ0f1uWWVS1b/F891v7VCw0zxyt0fjz+IG78T1HXDkTuJPanrrL1rinwIN01F0skHGlY+eRmUumd39TyRsItdR3FIQzsdYt9RulAPSfqFp5nJIZrU22yE="  />
+</cfdi:Complemento>
+
+<cfdi:Addenda>
+<fa:Datos conLetra="TREINTA Y SEIS MIL SETECIENTOS CUARENTA Y UN PESOS 54/100" tipoDoc="Factura" version="1.0" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd"/>
+  
+</cfdi:Addenda>
+</cfdi:Comprobante>

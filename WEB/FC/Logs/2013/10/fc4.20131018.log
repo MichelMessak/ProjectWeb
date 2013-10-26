@@ -1,0 +1,114 @@
+120156512: Inicializando envio de correos.
+120240755: Inicializando envio de correos.
+120418523: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+120424704: Iniciando sesión con usuario [Ángel García Alcántara]
+120633681: Inicializando envio de correos.
+120739655: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+120740986: Iniciando sesión con usuario [Ángel García Alcántara]
+121948458: Inicializando envio de correos.
+122146748: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+122150336: Iniciando sesión con usuario [Ángel García Alcántara]
+132658700: Inicializando envio de correos.
+132840917: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+132851546: Iniciando sesión con usuario [Ángel García Alcántara]
+133506597: Inicializando envio de correos.
+133547989: Inicializando envio de correos.
+133916834: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+133920310: Iniciando sesión con usuario [Ángel García Alcántara]
+133949551: com.itc.fc4.model.admin.EnterpriseDAO.add(EnterpriseDAO.java:228)
+           com.itc.fc4.tasks.admin.reports.enterprise.AltaEmpresaController.onSubmit(AltaEmpresaController.java:62)
+           org.springframework.web.servlet.mvc.SimpleFormController.processFormSubmission(SimpleFormController.java:267)
+           org.springframework.web.servlet.mvc.AbstractFormController.handleRequestInternal(AbstractFormController.java:265)
+           org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:50)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+134037784: Finalizando sesión con usuario [Ángel García Alcántara]
+134044171: Iniciando sesión con usuario [Admin]
+134057108: java.text.DateFormat.parse(DateFormat.java:335)
+           com.itc.fc4.tasks.admin.log.LogController.handleRequest(LogController.java:51)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:50)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+134153291: Finalizando sesión con usuario [Admin]
+134426719: Inicializando envio de correos.
+134443314: Inicializando envio de correos.
+134456722: Inicializando envio de correos.
+134634318: Inicializando envio de correos.
+134653097: Inicializando envio de correos.
+140349099: Inicializando envio de correos.
+140406620: Inicializando envio de correos.
+140458350: Inicializando envio de correos.
+140509781: Inicializando envio de correos.
+140521775: Inicializando envio de correos.
+140629550: Inicializando envio de correos.
+140645792: Inicializando envio de correos.
+140655126: Inicializando envio de correos.
+141226833: Inicializando envio de correos.
+141239554: Inicializando envio de correos.
+154633879: Inicializando envio de correos.
+154646408: Inicializando envio de correos.
+154901101: Inicializando envio de correos.
+154959970: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+155002065: Iniciando sesión con usuario [Ángel García Alcántara]
+170011918: Inicializando envio de correos.
+170037711: Inicializando envio de correos.
+170951794: Inicializando envio de correos.
+171026003: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+171028091: Iniciando sesión con usuario [Ángel García Alcántara]
+171217675: Inicializando envio de correos.
+171251374: Inicializando envio de correos.
+173104819: Inicializando envio de correos.
+173218950: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+173221392: Iniciando sesión con usuario [Admin]
+174036666: Inicializando envio de correos.
+174102350: Inicializando envio de correos.
+174230498: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+174231701: Iniciando sesión con usuario [Ángel García Alcántara]
+174240239: Finalizando sesión con usuario [Ángel García Alcántara]
+174247672: Iniciando sesión con usuario [Admin]
+174344280: Finalizando sesión con usuario [Admin]

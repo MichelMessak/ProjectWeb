@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LugarExpedicion="Temascalcingo, Mexico" Moneda="MXN" NumCtaPago="2079" certificado="MIIEjjCCA3agAwIBAgIUMDAwMDEwMDAwMDAyMDE1Mzg5MTUwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMDcxMjE1NDYzOFoXDTE2MDcxMjE1NDYzOFowgc8xIDAeBgNVBAMTF0xPR0lTVElDQSBCVVNPIFNBIERFIENWMSAwHgYDVQQpExdMT0dJU1RJQ0EgQlVTTyBTQSBERSBDVjEgMB4GA1UEChMXTE9HSVNUSUNBIEJVU08gU0EgREUgQ1YxJTAjBgNVBC0THExCVTEyMDMxMjdLNiAvIEJVT003NTEyMDVUNjAxHjAcBgNVBAUTFSAvIEJVT003NTEyMDVITUNTU0cwMjEgMB4GA1UECxMXTE9HSVNUSUNBIEJVU08gU0EgREUgQ1YwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALtY4e15WBUCOm6ht+pYySPYScXJh7BoVbNsri/hzCSet3cYx6hwrttcE10puptQN8jYjh9WE4nCNVAkCGUZt7Rcj+3KqUTeK4aHLAqw+PMzJl0JNGZmkkjtq6/gTjXAOJkcFdlpCDyNNLWhxFRQSuwKPYnKyh1fMfoQa3zICfVpAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQCGWW9kQaPPu7KJiDPJYC5ifnb7LA5nPTH9+ElzFZNUqRnPr5HCV/K6gCr3+39EEpb9LE43Wr+DNG36OgjOWTd7qJNU+GWMd0D2OOOQluY0AvexVZWdBWz8HMq6xLQHTROqpDd0z9mU/xCDIW/Hv11AkORiFMnvjmLCFpODTTUMVHEtjaoT1DfLxXySUJLG04u5Q5T2fPIM2Y4Xjb6LDcyCvyCVfgKYjiGp/9o0wW/FR5xPgtA4JXLdg7mVc2L2bgdC9CZF3mpdp8BwySAJuSWjCJhtBY7jos8nL5VgXyFVUBSEKh/j3NDAbxeE4Mxm2Z3bKOGBiYB7ZIgItVUYQgc/" condicionesDePago="15 dias" descuento="0.00" fecha="2012-08-23T10:22:28" folio="10" formaDePago="Pago en una sola exhibición" metodoDePago="Transferencia Electrónica HSBC" noCertificado="00001000000201538915" sello="CfsWZThAYWSPgA+WonD+XdJHrRkmrcQjPZ0xGEVb/szHIf3kLFsVq7Zzg1dbLARN9pRm6l0c6wG9rUaf2VwMM9IRK1x1UaTOgAMP/gyMOZ8YzB6CSgEWPMMdEK3ePvkc3/XeLh/6V8J4GZa5LQOCf/JDk2ujFOu9tQ8NY3BakVM=" serie="A" subTotal="1.00" tipoDeComprobante="ingreso" total="1.12" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+<cfdi:Emisor nombre="Logistica Buso, S.A. de C.V." rfc="XEXX010101000">
+<cfdi:DomicilioFiscal calle="Calzada del Molino" codigoPostal="50400" colonia="Temascalcingo de Jose Maria Velasco" estado="Mexico" municipio="Temascalcingo" noExterior="32" pais="Mexico"/>
+    
+<cfdi:RegimenFiscal Regimen="REGIMEN SIMPLIFICADO DE LEY PERSONAS MORALES"/>
+</cfdi:Emisor>
+
+<cfdi:Receptor nombre="MABE SA DE CV" rfc="XEXX010101000">
+<cfdi:Domicilio calle="Paseo de las Palmas" codigoPostal="11000" colonia="Lomas de Chapultepec" estado="D.F." localidad="México" municipio="México" noExterior="100" pais="México"/>
+</cfdi:Receptor>
+
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="1.000000" descripcion="SERVICIO DE FLETE" importe="1.00" noIdentificacion="01" unidad="VJE" valorUnitario="1.000000">
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosRetenidos="0.04" totalImpuestosTrasladados="0.16">
+<cfdi:Retenciones>
+<cfdi:Retencion importe="0.04" impuesto="IVA"/>
+</cfdi:Retenciones>
+<cfdi:Traslados>
+
+<cfdi:Traslado importe="0.16" impuesto="IVA" tasa="16.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="COUCOU" FechaTimbrado="2012-08-23T10:42:06" selloCFD="CfsWZThAYWSPgA+WonD+XdJHrRkmrcQjPZ0xGEVb/szHIf3kLFsVq7Zzg1dbLARN9pRm6l0c6wG9rUaf2VwMM9IRK1x1UaTOgAMP/gyMOZ8YzB6CSgEWPMMdEK3ePvkc3/XeLh/6V8J4GZa5LQOCf/JDk2ujFOu9tQ8NY3BakVM=" noCertificadoSAT="00001000000102574483" selloSAT="G9wW8FuprxGOjI75pn2D0mXBYZHnGtlyVI7tLiBjN14kNkI+SDRH1NmgXd/4OZdfLJ8KEuv5ecU4/OvNRcpkkUhzd2huj/DPH/HOEp2PC5vx08yrsxUvg4TIAbYZeugksMFYSy+R+yBuUn7TxrdeU1cUV7HtEztsayvEe5IwZzg="  />
+</cfdi:Complemento>
+
+<cfdi:Addenda>
+<fa:Datos conLetra="UN PESOS 12/100" tipoDoc="Factura" version="1.0" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd"/>
+  
+</cfdi:Addenda>
+</cfdi:Comprobante>

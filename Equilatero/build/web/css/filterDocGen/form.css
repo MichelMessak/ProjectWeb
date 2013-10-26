@@ -1,0 +1,46 @@
+#mainContainer{
+    background: url("../../images/backgeneral.jpg") repeat-x scroll left bottom #F8FDEF;
+    border: 1px solid #DFDCDC;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 350px;
+}
+#mainContainer .fieldgroup{
+    background: url("../../images/form-divider.gif") repeat-x scroll left top transparent;
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+#mainContainer .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 110px;
+}
+#mainContainer .fieldgroup input, #mainContainer .fieldgroup textarea, #mainContainer .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+#mainContainer .submit {
+    padding: 10px;
+    width: 220px;
+    height: 40px !important;
+}
+.errorBlock {
+    color: #D4763F;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+input:focus
+{
+  border: 2px solid #000;
+  background: #F3F3F3;
+}

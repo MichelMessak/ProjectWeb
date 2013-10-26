@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws.fc4.itc.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.fc4.itc.com/">
+
+<xs:element name="ImportarCFD" type="tns:ImportarCFD" />
+
+<xs:element name="ImportarCFDError" type="tns:ImportarCFDError" />
+
+<xs:element name="ImportarCFDErrorResponse" type="tns:ImportarCFDErrorResponse" />
+
+<xs:element name="ImportarCFDResponse" type="tns:ImportarCFDResponse" />
+
+<xs:complexType name="ImportarCFD">
+<xs:sequence>
+<xs:element name="xmlContent" type="xs:string" minOccurs="0" />
+<xs:element name="userId" type="xs:string" minOccurs="0" />
+<xs:element name="userPass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ImportarCFDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ImportarCFDError">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ImportarCFDErrorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

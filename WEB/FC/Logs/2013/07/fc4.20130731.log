@@ -1,0 +1,104 @@
+174206064: Iniciando sesión con usuario [admin] y periodo [2012]
+174358244: Iniciando sesión con usuario [admin] y periodo [2012]
+174808865: Iniciando sesión con usuario [admin] y periodo [2012]
+175359959: Iniciando sesión con usuario [admin] y periodo [2012]
+175950170: Iniciando sesión con usuario [admin] y periodo [2012]
+180338941: Iniciando sesión con usuario [admin] y periodo [2012]
+180439780: Iniciando sesión con usuario [admin] y periodo [2012]
+180632273: Iniciando sesión con usuario [admin] y periodo [2012]
+180840342: Iniciando sesión con usuario [admin] y periodo [2012]
+181213954: Iniciando sesión con usuario [admin] y periodo [2012]
+181323456: Iniciando sesión con usuario [admin] y periodo [2012]
+181418868: Iniciando sesión con usuario [admin] y periodo [2012]
+181743668: Iniciando sesión con usuario [admin] y periodo [2012]
+182016666: Iniciando sesión con usuario [admin] y periodo [2012]
+182128306: Iniciando sesión con usuario [admin] y periodo [2012]
+182730690: Iniciando sesión con usuario [admin] y periodo [2012]
+183054766: Iniciando sesión con usuario [admin] y periodo [2012]
+183502312: Iniciando sesión con usuario [admin] y periodo [2012]
+183652886: Iniciando sesión con usuario [admin] y periodo [2012]
+184225260: Iniciando sesión con usuario [admin] y periodo [2012]
+184340518: Iniciando sesión con usuario [admin] y periodo [2012]
+184411008: Iniciando sesión con usuario [admin] y periodo [2012]
+184710425: Iniciando sesión con usuario [admin] y periodo [2012]
+185155332: Iniciando sesión con usuario [admin] y periodo [2012]
+185305388: Iniciando sesión con usuario [admin] y periodo [2012]
+185529562: Iniciando sesión con usuario [admin] y periodo [2012]
+190107848: Iniciando sesión con usuario [admin] y periodo [2012]
+190521977: Iniciando sesión con usuario [admin] y periodo [2012]
+190745242: Iniciando sesión con usuario [admin] y periodo [2012]
+190851461: Iniciando sesión con usuario [admin] y periodo [2012]
+190956911: Iniciando sesión con usuario [admin] y periodo [2012]
+191138472: Iniciando sesión con usuario [admin] y periodo [2012]
+191449338: Iniciando sesión con usuario [admin] y periodo [2012]
+192207765: Iniciando sesión con usuario [admin] y periodo [2012]
+193536048: Iniciando sesión con usuario [admin] y periodo [2012]
+193855878: Iniciando sesión con usuario [admin] y periodo [2012]
+194103281: Iniciando sesión con usuario [admin] y periodo [2012]
+194227000: Iniciando sesión con usuario [admin] y periodo [2012]
+194354876: Iniciando sesión con usuario [admin] y periodo [2012]
+194659237: Iniciando sesión con usuario [admin] y periodo [2012]
+194923788: Iniciando sesión con usuario [admin] y periodo [2012]
+195134349: Iniciando sesión con usuario [admin] y periodo [2012]
+195350627: Iniciando sesión con usuario [admin] y periodo [2012]
+195528385: Iniciando sesión con usuario [admin] y periodo [2012]
+200123996: Iniciando sesión con usuario [admin] y periodo [2012]
+200606933: Iniciando sesión con usuario [admin] y periodo [2012]
+201054291: Iniciando sesión con usuario [admin] y periodo [2012]
+201233751: Iniciando sesión con usuario [admin] y periodo [2012]
+202038634: Iniciando sesión con usuario [admin] y periodo [2012]
+202154401: Iniciando sesión con usuario [admin] y periodo [2012]
+202328169: Iniciando sesión con usuario [admin] y periodo [2012]
+202440708: Iniciando sesión con usuario [admin] y periodo [2012]
+202617449: Iniciando sesión con usuario [admin] y periodo [2012]
+202733237: Iniciando sesión con usuario [admin] y periodo [2012]
+202843856: Iniciando sesión con usuario [admin] y periodo [2012]
+202853947: com.itc.fc4.tasks.admin.log.LogController.handleRequest(LogController.java:46)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:60)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+203234276: Iniciando sesión con usuario [admin] y periodo [2012]
+203805990: Iniciando sesión con usuario [admin] y periodo [2012]
+205024383: Iniciando sesión con usuario [admin] y periodo [2012]
+205313584: Iniciando sesión con usuario [admin] y periodo [2012]
+205650095: Iniciando sesión con usuario [admin] y periodo [2012]
+205925106: Iniciando sesión con usuario [admin] y periodo [2012]
+210157140: Iniciando sesión con usuario [admin] y periodo [2012]
+210436352: Iniciando sesión con usuario [admin] y periodo [2012]
+210903163: Iniciando sesión con usuario [admin] y periodo [2012]
+211102715: Iniciando sesión con usuario [admin] y periodo [2012]
+211728228: Iniciando sesión con usuario [admin] y periodo [2012]
+212010124: Iniciando sesión con usuario [admin] y periodo [2012]
+224440716: Iniciando sesión con usuario [admin] y periodo [2012]
+224634394: Iniciando sesión con usuario [admin] y periodo [2012]
+224953028: Iniciando sesión con usuario [admin] y periodo [2012]
+230954668: Iniciando sesión con usuario [admin] y periodo [2012]
+231105007: Iniciando sesión con usuario [admin] y periodo [2012]
+231615903: Iniciando sesión con usuario [admin] y periodo [2012]
+231832879: Iniciando sesión con usuario [admin] y periodo [2012]
+232839326: Iniciando sesión con usuario [admin] y periodo [2012]
+233157456: Iniciando sesión con usuario [admin] y periodo [2012]
+233440548: Iniciando sesión con usuario [admin] y periodo [2012]
+235200743: Iniciando sesión con usuario [admin] y periodo [2012]

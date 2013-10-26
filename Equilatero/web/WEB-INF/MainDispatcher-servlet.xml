@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+
+    <bean id="handlerMapping"
+          class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="index.htm">indexController</prop>
+                <prop key="indexBasic.htm">indexBasicController</prop>
+                <prop key="auth.do">authController</prop>
+                <prop key="logout.do">logoutController</prop>
+                <prop key="home.do">homeController</prop>
+                <prop key="view.do">viewController</prop>
+                <prop key="docFiles.do">docFilesController</prop>
+                <prop key="reporteDocumentos.do">/reportDocument.task</prop>
+                <prop key="*.do">pluginController</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp"
+          />
+
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+
+    <bean name="indexBasicController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="indexBasic" />
+
+    <bean name="eddyController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="filterActividades" />
+
+    <bean name="authController"
+          class="fr.esiea.fc.control.security.AuthController"/>
+
+    <bean name="pluginController"
+          class="fr.esiea.fc.control.plugins.PluginsController"/>
+
+    <bean name="logoutController"
+          class="fr.esiea.fc.control.security.LogoutController"/>
+
+    <bean name="homeController"
+          class="fr.esiea.fc.control.security.HomeController"/>
+
+    <bean name="docFilesController"
+          class="fr.esiea.fc.control.document.DocFilesController"/>
+          
+    <bean name="viewController"
+          class="fr.esiea.fc.control.fileview.ViewController"/>
+
+    <bean name="/addUser.form" class="fr.esiea.fc.tasks.security.users.add.AddUserController">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="addUser"/>
+        <property name="successView" value="addUserSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.security.users.add.AddUserValidator" />
+        </property>
+    </bean>
+
+    <bean name="/setPassword.form" class="fr.esiea.fc.tasks.security.users.add.ChangePassword">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="setPassword"/>
+        <property name="successView" value="setPasswordSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.security.users.add.ChangePasswordValidator" />
+        </property>
+    </bean>
+
+    <bean name="/forgetPassword.form" class="fr.esiea.fc.tasks.security.users.add.ForgetPassword">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="forgetPassword"/>
+        <property name="successView" value="forgetPasswordSuccess"/>
+    </bean>
+
+    <bean name="/deleteUser.form" class="fr.esiea.fc.tasks.security.users.reports.DeleteUserController">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="deleteUser"/>
+        <property name="successView" value="deleteUserSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.security.users.reports.DeleteUserValidator" />
+        </property>
+    </bean>
+
+    <bean name="/modifyUser.form" class="fr.esiea.fc.tasks.security.users.reports.ModifyUserController">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="modifyUser"/>
+        <property name="successView" value="modifyUserSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.security.users.reports.ModifyUserValidator" />
+        </property>
+    </bean>
+
+    <bean name="/addEnterprise.form" class="fr.esiea.fc.tasks.admin.reports.enterprise.AddEnterpriseController">
+        <property name="commandClass" value="fr.esiea.fc.model.admin.Enterprise"/>
+        <property name="formView" value="addEnterprise"/>
+        <property name="successView" value="addEnterpriseSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.admin.reports.enterprise.AddEnterpriseValidator" />
+        </property>
+    </bean>
+
+    <bean name="/deleteEnterprise.form" class="fr.esiea.fc.tasks.admin.reports.enterprise.DeleteEnterpriseController">
+        <property name="commandClass" value="fr.esiea.fc.model.admin.Enterprise"/>
+        <property name="formView" value="deleteEnterprise"/>
+        <property name="successView" value="deleteEnterpriseSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.admin.reports.enterprise.DeleteEnterpriseValidator" />
+        </property>
+    </bean>
+
+    <bean name="/modifyEnterprise.form" class="fr.esiea.fc.tasks.admin.reports.enterprise.ModifyEnterpriseController">
+        <property name="commandClass" value="fr.esiea.fc.model.admin.Enterprise"/>
+        <property name="formView" value="modifyEnterprise"/>
+        <property name="successView" value="modifyEnterpriseSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.admin.reports.enterprise.ModifyEnterpriseValidator" />
+        </property>
+    </bean>
+
+    
+    <bean name="/changePassword.form" class="fr.esiea.fc.tasks.security.users.add.ChangePasswordUserController">
+        <property name="commandClass" value="fr.esiea.fc.model.security.User"/>
+        <property name="formView" value="setPassword"/>
+        <property name="successView" value="setPasswordSuccess"/>
+        <property name="validator">
+            <bean class="fr.esiea.fc.tasks.security.users.add.ChangePasswordUserValidator" />
+        </property>
+    </bean>
+
+
+    <bean name="/reportExcel.form" class="fr.esiea.fc.tasks.security.users.reports.ReportExcelController"></bean>
+    <bean name="/reportPDF.form" class="fr.esiea.fc.tasks.security.users.reports.ReportPDFController"></bean>
+
+
+    <bean name="/reportDocument.task" class="fr.esiea.fc.tasks.document.reports.generic.DocumentReportController"/>
+    <bean name="/reportEnterprise.task" class="fr.esiea.fc.tasks.admin.reports.enterprise.EnterpriseReportController"/>
+    <bean name="/reportUser.task" class="fr.esiea.fc.tasks.security.users.reports.UserReportController"/>
+    <bean name="/log.task" class="fr.esiea.fc.tasks.admin.log.LogController"/>
+    <bean name="/activity.task" class="fr.esiea.fc.control.auditor.ActivityController"/>
+    
+</beans>

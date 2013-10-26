@@ -1,0 +1,99 @@
+184920442: Inicializando envio de correos.
+185727883: Inicializando envio de correos.
+185750553: Inicializando envio de correos.
+190026863: Inicializando envio de correos.
+190052488: Inicializando envio de correos.
+190151174: Inicializando envio de correos.
+190217179: Inicializando envio de correos.
+190258616: Inicializando envio de correos.
+190343631: Inicializando envio de correos.
+190400835: Inicializando envio de correos.
+190412555: Inicializando envio de correos.
+191046948: Inicializando envio de correos.
+191101613: Inicializando envio de correos.
+191125099: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+191133645: Iniciando sesión con usuario [admin] y periodo [2013]
+191244248: Inicializando envio de correos.
+191254502: Inicializando envio de correos.
+191405577: Inicializando envio de correos.
+191418228: Inicializando envio de correos.
+191432015: Inicializando envio de correos.
+191447917: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+191449043: Iniciando sesión con usuario [admin] y periodo [2013]
+191507120: Inicializando envio de correos.
+191521210: Inicializando envio de correos.
+191540687: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+191542166: Iniciando sesión con usuario [admin] y periodo [2013]
+191642393: Inicializando envio de correos.
+191724517: Inicializando envio de correos.
+191812511: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+191823742: org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:254)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1641)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1659)
+           com.itc.fc4.notification.mail.SimpleMail.loadTemplate(SimpleMail.java:185)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:193)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+192138645: Inicializando envio de correos.
+192424859: Inicializando envio de correos.
+192444099: Inicializando envio de correos.
+192506748: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+192508536: Autentificación incorrecta para usuario [admin]
+192515944: Autentificación incorrecta para usuario [admin]
+192524984: Autentificación incorrecta para usuario [admin]
+192531971: org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:254)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1641)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1659)
+           com.itc.fc4.notification.mail.SimpleMail.loadTemplate(SimpleMail.java:185)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:193)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:52)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+192551772: Finalizando sesión con usuario [admin]
+192600531: Autentificación incorrecta para usuario [admin]
+192642904: Iniciando sesión con usuario [Ángel García Alcántara] y periodo [2013]
+192810845: Inicializando envio de correos.
+192822300: Inicializando envio de correos.
+192833733: Inicializando envio de correos.
+192859695: Inicializando el pool de conexiones de Equilátero con 10 a un maximo de 100
+193033279: Inicializando envio de correos.
+210919142: Inicializando envio de correos.

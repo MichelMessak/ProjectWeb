@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/TimbreFiscalDigital ftp://ftp2.sat.gob.mx/asistencia_servicio_ftp/publicaciones/solcedi/TimbreFiscalDigital.xsd" version="3.2" serie="A" folio="8" fecha="2013-08-16T09:50:13" sello="pUC518cekPaImwDXDbju0N7B9LHji7bra+Rm4wsKyywPgdV9JJUgpveiRYjY0orDe381ICIN10+xKeJaZKkFaHV5jVkJm70CUyX+LC10GtvQWoy4UT1+pTou6KcTRgiYFfwkxqUB9erG4hjL5PT+KABnx7wFqTbwE6JH11CgWtk=" formaDePago="Pago en una sola exhibicion" noCertificado="00001000000203050032" certificado="MIIEdTCCA12gAwIBAgIUMjAwMDEwMDAwMDAxMDAwMDU4NzYwDQYJKoZIhvcNAQEFBQAwggFvMRgwFgYDVQQDDA9BLkMuIGRlIHBydWViYXMxLzAtBgNVBAoMJlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhMTgwNgYDVQQLDC9BZG1pbmlzdHJhY2nDs24gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjacOzbjEpMCcGCSqGSIb3DQEJARYaYXNpc25ldEBwcnVlYmFzLnNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEjAQBgNVBAcMCUNveW9hY8OhbjEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTIwMAYJKoZIhvcNAQkCDCNSZXNwb25zYWJsZTogSMOpY3RvciBPcm5lbGFzIEFyY2lnYTAeFw0xMjA3MjcxNzAyMjZaFw0xNjA3MjcxNzAyMjZaMIHcMSkwJwYDVQQDEyBBQ0NFTSBTRVJWSUNJT1MgRU1QUkVTQVJJQUxFUyBTQzEpMCcGA1UEKRMgQUNDRU0gU0VSVklDSU9TIEVNUFJFU0FSSUFMRVMgU0MxKTAnBgNVBAoTIEFDQ0VNIFNFUlZJQ0lPUyBFTVBSRVNBUklBTEVTIFNDMSUwIwYDVQQtExxBQUEwMTAxMDFBQUEgLyBIRUdUNzYxMDAzNFMyMR4wHAYDVQQFExUgLyBIRUdUNzYxMDAzTURGUk5OMDkxEjAQBgNVBAsTCVVuaWRhZCAxMDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuV/D53jWllewr8uPCOZmPAAU1CZkrQt9Ha+vLIf1n5tMEku8TxjpTmDnpgv5woSEbqHCrMZ8OCZtUixZWQmaViZFwo5aXD0YmBCicE++enBlpqbwMSHN/kvdtiQU6PowF44w+/bIuBf3Z5yMsmTuj39nfuoD04oPnvt+4Ebayv0CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAHpGBj9KLYe5wNTyvnCKTcTfWUu1R+KwCOkvNi3sAB067Y56PMxBGLaWJyr0Hb/ElRqdhpFeo1yCVa1POBQcKCfOGzQXaR0x/89cUkoruPyrlRO7LOFmCOc/OhwZkSQik96d+2xqM8JUUH6AG8DP3HfdTxR+43JVA1v1QgqSYLhqChj65NEV1vfDNJQesI0qIRcaE9wIcr746zS0pCd+ixWVrhPLWRn3yVV160uXxVlA23QJf5n2i//B7ejjCsa1bh+T2jVYYJtrTdm5bppE2s2AMjDFvWpGzw7YH9GNZ/F5w0v0KZMgnwPB3ABzhcTanAJq1+zQ3vsGMBePc3805JU=" condicionesDePago="CONTADO" subTotal="105.00" total="121.80" metodoDePago="Transferencia" tipoDeComprobante="ingreso" Moneda="MXN" TipoCambio="1.0000" LugarExpedicion="Naucalpan de Juárez, México" NumCtaPago="No identificado">
+     <cfdi:Emisor rfc="AAA010101AAA" nombre="EMPRESA DE PRUEBA , S.A DE C.V.">
+         <cfdi:DomicilioFiscal calle="Plasticos" noExterior="88" colonia="San Francisco Cuautlalpan" municipio="Naucalpan de Juárez" estado="México" pais="México" codigoPostal="53560"/><cfdi:RegimenFiscal Regimen="Regimen General de Ley Personas Morales"/>
+     </cfdi:Emisor>
+     <cfdi:Receptor rfc="DMA850716ER5" nombre="DEPORTES MARTI SA DE CV">
+         <cfdi:Domicilio municipio="TLALPAN" estado="DISTRITO FEDERAL" pais="MEXICO"/>
+     </cfdi:Receptor>
+     <cfdi:Conceptos>       
+     <cfdi:Concepto cantidad="1" unidad="PZ" descripcion="ERROR EN CAPTURA" valorUnitario="105.00" importe="105.00"/>
+</cfdi:Conceptos>
+	 <cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="16.80">
+         <cfdi:Retenciones>
+         <cfdi:Retencion impuesto="IVA" importe="0.00"/>
+</cfdi:Retenciones>
+	     <cfdi:Traslados>
+         <cfdi:Traslado impuesto="IVA" tasa="16.00" importe="16.80"/>
+</cfdi:Traslados>
+	 </cfdi:Impuestos>
+	 <cfdi:Complemento>
+        </cfdi:Complemento>
+     <cfdi:Addenda>
+         <fa:Datos xmlns:fa="http://www.itcomplements.com/cfd/v1" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd" version="1.0" tipoDocumento="Nota de Cargo" mail="" impresora1="FELEC5" impresora2="SIN RUTA" noCopias1="1" noCopias2="0" fechaFactura="" pedidoInterno="" noOrdenCompra="" fechaOrdenCompra="" noContraRecibo="" fechaContraRecibo="" glnComprador="" glnVendedor="" glnEntregado="" totalPartidas="" moneda="MXN" tipoCambio="1.0000" cantidadConLetra="CIENTO VEINTIUN PESOS 80/100 M.N." status="1" IvaMx="" totalMX="" subTotalMX="" noProveedor="" numCliente="" Fondo="" refefol="35741" fecha="" usuario="">
+	         <fa:hfd version="1.0">
+	         </fa:hfd>
+	         <fa:Detalle>
+	         <fa:Detalles descripcion="ERROR EN CAPTURA" unidad="PZ" cantidad="1" valorUnitario="105.00" importe="105.00"/>
+</fa:Detalle>	
+             <fa:CadenaOriginal>
+	         ||3.2|2013-08-16T09:50:13|ingreso|Pago en una sola exhibicion|CONTADO|105.00|1.0000|MXN|121.80|Transferencia|Naucalpan de Juárez, México|No identificado|AAA010101AAA|EMPRESA DE PRUEBA , S.A DE C.V.|Plasticos|88|San Francisco Cuautlalpan|Naucalpan de Juárez|México|México|53560|Regimen General de Ley Personas Morales|DMA850716ER5|DEPORTES MARTI SA DE CV|TLALPAN|DISTRITO FEDERAL|MEXICO|1|PZ|ERROR EN CAPTURA|105.00|105.00|IVA|0.00|0.00|IVA|16.00|16.80|16.80||</fa:CadenaOriginal>
+	         <fa:AddendaComercial>      
+		         <fa:EntregadoEn consig1="" consig2="" consig3="" consig4="" consig5="" consig6=""/>    
+      		     <fa:DetalleCom>
+     		     </fa:DetalleCom>
+      		     <fa:Detalle2>
+      		     </fa:Detalle2>
+      		     <fa:Impresion calleynumero="FRANCISCO I MADERO # 12" colonia="SANTA URSULA XITLA," codigopostal="14420" nocliente="90093" vendedor="GRISSEL CASTILLO" ordencliente="0111021543" pedidoF="124943" viaemb="NUESTRO TRANSPORTE FINESA" lugarexp="Naucalpan de Juárez, México" coment2="" fechletra=""/>
+	         </fa:AddendaComercial>
+         </fa:Datos>
+     </cfdi:Addenda>
+</cfdi:Comprobante>

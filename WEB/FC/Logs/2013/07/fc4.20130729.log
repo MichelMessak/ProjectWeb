@@ -1,0 +1,119 @@
+164348013: Iniciando sesión con usuario [admin] y periodo [2012]
+164540353: Iniciando sesión con usuario [admin] y periodo [2012]
+165113968: Iniciando sesión con usuario [admin] y periodo [2012]
+165523186: Iniciando sesión con usuario [admin] y periodo [2012]
+170057483: Iniciando sesión con usuario [admin] y periodo [2012]
+171432088: Iniciando sesión con usuario [admin] y periodo [2012]
+171721869: Iniciando sesión con usuario [admin] y periodo [2012]
+171911972: Iniciando sesión con usuario [admin] y periodo [2012]
+172725946: Iniciando sesión con usuario [admin] y periodo [2012]
+172915854: Iniciando sesión con usuario [admin] y periodo [2012]
+173846762: Iniciando sesión con usuario [admin] y periodo [2012]
+173958477: Iniciando sesión con usuario [admin] y periodo [2012]
+175135266: Iniciando sesión con usuario [admin] y periodo [2012]
+175259897: Iniciando sesión con usuario [admin] y periodo [2012]
+175528983: Iniciando sesión con usuario [admin] y periodo [2012]
+175740704: Iniciando sesión con usuario [admin] y periodo [2012]
+180558364: Iniciando sesión con usuario [admin] y periodo [2012]
+180947231: Iniciando sesión con usuario [admin] y periodo [2012]
+181200833: Iniciando sesión con usuario [admin] y periodo [2012]
+181912215: Iniciando sesión con usuario [admin] y periodo [2012]
+183402330: Iniciando sesión con usuario [admin] y periodo [2012]
+183633138: Iniciando sesión con usuario [admin] y periodo [2012]
+183800875: Iniciando sesión con usuario [admin] y periodo [2012]
+184425219: Iniciando sesión con usuario [admin] y periodo [2012]
+184530024: org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:254)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1641)
+           org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1659)
+           com.itc.fc4.notification.mail.SimpleMail.loadTemplate(SimpleMail.java:180)
+           com.itc.fc4.control.security.AuthController.handleRequest(AuthController.java:187)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:60)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+184628938: Intento de inicio de sesión usuario INACTIVO [admin]
+184701634: Iniciando sesión con usuario [admin] y periodo [2012]
+185117304: Iniciando sesión con usuario [admin] y periodo [2012]
+185941723: Iniciando sesión con usuario [admin] y periodo [2012]
+190212380: Iniciando sesión con usuario [admin] y periodo [2012]
+190544248: Iniciando sesión con usuario [admin] y periodo [2012]
+190903173: Iniciando sesión con usuario [admin] y periodo [2012]
+191022456: Iniciando sesión con usuario [admin] y periodo [2012]
+192046265: Iniciando sesión con usuario [admin] y periodo [2012]
+194009659: Iniciando sesión con usuario [admin] y periodo [2012]
+194243791: Iniciando sesión con usuario [admin] y periodo [2012]
+194456865: Iniciando sesión con usuario [admin] y periodo [2012]
+194655417: Iniciando sesión con usuario [admin] y periodo [2012]
+194704561: java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+           java.lang.Integer.parseInt(Integer.java:468)
+           java.lang.Integer.parseInt(Integer.java:497)
+           com.itc.fc4.tasks.document.reports.folio.ReporteFolioController.setFilterCallParameters(ReporteFolioController.java:157)
+           com.itc.fc4.tasks.document.reports.folio.ReporteFolioController.handleRequest(ReporteFolioController.java:86)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:60)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+194932198: Iniciando sesión con usuario [admin] y periodo [2012]
+195435613: Iniciando sesión con usuario [admin] y periodo [2012]
+195830567: Iniciando sesión con usuario [admin] y periodo [2012]
+201238002: Iniciando sesión con usuario [admin] y periodo [2012]
+201420326: Iniciando sesión con usuario [admin] y periodo [2012]
+201619366: Iniciando sesión con usuario [admin] y periodo [2012]
+201825057: Iniciando sesión con usuario [admin] y periodo [2012]
+202056231: Iniciando sesión con usuario [admin] y periodo [2012]
+202207785: Iniciando sesión con usuario [admin] y periodo [2012]
+202729074: Iniciando sesión con usuario [admin] y periodo [2012]
+202806172: Iniciando sesión con usuario [admin] y periodo [2012]
+202935636: Iniciando sesión con usuario [admin] y periodo [2012]
+203039859: Iniciando sesión con usuario [admin] y periodo [2012]
+203327292: Iniciando sesión con usuario [admin] y periodo [2012]
+204223232: Iniciando sesión con usuario [admin] y periodo [2012]
+204345684: Iniciando sesión con usuario [admin] y periodo [2012]
+204649773: Iniciando sesión con usuario [admin] y periodo [2012]
+204824460: Iniciando sesión con usuario [admin] y periodo [2012]
+205015861: Iniciando sesión con usuario [admin] y periodo [2012]
+205128760: Iniciando sesión con usuario [admin] y periodo [2012]
+205221359: Iniciando sesión con usuario [admin] y periodo [2012]
+205745276: Iniciando sesión con usuario [admin] y periodo [2012]
+210258235: Iniciando sesión con usuario [admin] y periodo [2012]
+224359630: Iniciando sesión con usuario [admin] y periodo [2012]
+224902363: Iniciando sesión con usuario [admin] y periodo [2012]

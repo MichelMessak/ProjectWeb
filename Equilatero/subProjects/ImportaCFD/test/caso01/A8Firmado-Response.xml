@@ -1,0 +1,2 @@
+<xml version="1.0" encoding="UTF-8"><equilatero version="1.0"><ImportarCFDRespuesta><codigo>2204</codigo><descripcion>Error: En SQL.org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «pk_dtype_cfd»
+  Detail: Ya existe la llave (doc_id, emp_id, dty_id, dst_id)=(null, AAA010101AAA, CFD, 3.2).</descripcion></ImportarCFDRespuesta></equilatero>

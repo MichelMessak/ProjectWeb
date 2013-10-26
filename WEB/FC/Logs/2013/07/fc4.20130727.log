@@ -1,0 +1,103 @@
+000020195: Iniciando sesión con usuario [admin] y periodo [2012]
+000105672: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+           sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+           sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+           sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+           java.lang.reflect.Method.invoke(Method.java:592)
+           org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:234)
+           $Proxy1.executeQuery(Unknown Source)
+           com.itc.fc4.control.Report.ExecuteQueryForTotals(Report.java:182)
+           com.itc.fc4.control.Report.ExecuteQuery(Report.java:81)
+           com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:117)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:60)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+000215657: Iniciando sesión con usuario [admin] y periodo [2012]
+000708892: Iniciando sesión con usuario [admin] y periodo [2012]
+002054337: Iniciando sesión con usuario [admin] y periodo [2012]
+002612174: Iniciando sesión con usuario [admin] y periodo [2012]
+003244365: Iniciando sesión con usuario [admin] y periodo [2012]
+003308974: org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+           org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+           org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+           org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:273)
+           sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+           sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+           sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+           java.lang.reflect.Method.invoke(Method.java:592)
+           org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:234)
+           $Proxy10.executeQuery(Unknown Source)
+           com.itc.fc4.control.Report.ExecuteQueryForTotals(Report.java:182)
+           com.itc.fc4.control.Report.ExecuteQuery(Report.java:81)
+           com.itc.fc4.tasks.document.reports.generic.ReporteGenericoDocumentosController.handleRequest(ReporteGenericoDocumentosController.java:117)
+           org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+           org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:874)
+           org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:808)
+           org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:476)
+           org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:441)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:643)
+           javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.UrlFilter.doFilter(UrlFilter.java:37)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           com.itc.fc4.control.EncodingFilter.doFilter(EncodingFilter.java:60)
+           org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+           org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+           org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+           org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+           org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+           org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+           org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+           org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+           org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:879)
+           org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:617)
+           org.apache.tomcat.util.net.AprEndpoint$Worker.run(AprEndpoint.java:1760)
+           java.lang.Thread.run(Thread.java:595)
+003443019: Iniciando sesión con usuario [admin] y periodo [2012]
+003903755: Iniciando sesión con usuario [admin] y periodo [2012]
+004005117: Iniciando sesión con usuario [admin] y periodo [2012]
+004047205: Iniciando sesión con usuario [admin] y periodo [2012]
+004252143: Iniciando sesión con usuario [admin] y periodo [2012]
+004409159: Iniciando sesión con usuario [admin] y periodo [2012]
+004504149: Iniciando sesión con usuario [admin] y periodo [2012]
+004611595: Iniciando sesión con usuario [admin] y periodo [2012]
+004747657: Iniciando sesión con usuario [admin] y periodo [2012]
+004933724: Iniciando sesión con usuario [admin] y periodo [2012]
+005045469: Iniciando sesión con usuario [admin] y periodo [2012]
+005122393: Iniciando sesión con usuario [admin] y periodo [2012]
+005237532: Iniciando sesión con usuario [admin] y periodo [2012]
+005523788: Iniciando sesión con usuario [admin] y periodo [2012]
+005739180: Iniciando sesión con usuario [admin] y periodo [2012]
+010028942: Iniciando sesión con usuario [admin] y periodo [2012]
+010808940: Iniciando sesión con usuario [admin] y periodo [2012]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LugarExpedicion="Puebla, Puebla" Moneda="MXN" NumCtaPago="0008" certificado="MIIEuTCCA6GgAwIBAgIUMDAwMDEwMDAwMDAyMDE2MTQzMTAwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMDcyMzIzMjI0NFoXDTE2MDcyMzIzMjI0NFowgfoxNDAyBgNVBAMTK1RSQU5TUE9SVEVTICBST0RSSUdVRVogU1VSLVNVUkVTVEUgU0EgREUgQ1YxNDAyBgNVBCkTK1RSQU5TUE9SVEVTICBST0RSSUdVRVogU1VSLVNVUkVTVEUgU0EgREUgQ1YxNDAyBgNVBAoTK1RSQU5TUE9SVEVTICBST0RSSUdVRVogU1VSLVNVUkVTVEUgU0EgREUgQ1YxJTAjBgNVBC0THFRSUzExMDEzMTdUMCAvIFJPR004MDA2MDU3WTgxHjAcBgNVBAUTFSAvIFJPR004MDA2MDVIUExETk4wMjEPMA0GA1UECxMGVW5pZGFkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQmETmkAt8rTldc6WpazuVvKOJpvMoK/9CpQ5esA0sTWiI9I9Z508IN0/+6qfLYu61NbDrFVEKDBWlbZyIVi2tBpEkwMTNQ5wQrrkDMwLWKnh6Lm3jpF3vYq92zJvMC3s/cfjVGOu0xtz8uzpo3h7cLMotgfZ6Wgv6Azw2KKHl1QIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAbFbS2YM/XchvtRXJlKi6t8/bU0Uie7JrBVUw7+XBkOqNtV+5F8vnu57+GAw1JMR+MtJ01JmVEVIugf7dj+cpVsuKqIPQIiSZ+9Y7IomPz6wMoCqJdNm1T0l/GL9dYSNPrmCosjfycrTeDzoSvzYb5sqQaANGNvjVACbWxNEooe3HsRVO69HO+8CxkzWkA0ejzUx4eBK/VANblFwd2OhDgqExsk9npRWa0RRTN4iOvm1/0PK7sCvM6R4X9J5Hjb1gyw+fNLoAv9lXQvle+2qqZxveVuwMHaBY9dgckRGB03uCZgXNEBcAbnyvI4UqjP1wq5nDdfhO1w1HvLhnsfmwPw==" condicionesDePago="CREDITO" descuento="0.00" fecha="2012-09-10T18:37:06" folio="100" formaDePago="Pago en una sola exhibición" metodoDePago="TRANSFERENCIA" noCertificado="00001000000201614310" sello="YvqOilegdqNeC4cglpCHOc7ChZOWk/4Lds5JE/e510QQ7TCuFFTxHm16XhLVgCSX059fbQ67OPZiR88jTDfe3s52pNQP63t9uV+cEDC3dYjhIcRCQ1xKpjHAuNM68L4f9p25pwMiCy7PSTAnb627peY9QmpifN0YHFKO3EOK+7E=" serie="A" subTotal="19000.00" tipoDeComprobante="ingreso" total="21280.00" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+<cfdi:Emisor nombre="TRANSPORTES RODRIGUEZ SUR-SURESTE, S.A. DE C.V." rfc="XEXX010101000">
+<cfdi:DomicilioFiscal calle="Violetas" codigoPostal="72580" colonia="Bugambilias" estado="Puebla" localidad="Puebla" municipio="Puebla" noExterior="211" pais="Mexico"/>
+    
+<cfdi:RegimenFiscal Regimen="PERSONA MORAL CON REGIMEN SIMPLIFICADO"/>
+</cfdi:Emisor>
+
+<cfdi:Receptor nombre="INDUSTRIAL DE ALAMBRES, S.A. DE C.V." rfc="IAL830622P68">
+<cfdi:Domicilio calle="BLVD. CAPITAN CARLOS CAMACHO ESPIRITU" codigoPostal="72960" colonia="B. LA ASUNCION" estado="PUEBLA" localidad="SAN FCO. TOTIMEHUACAN" municipio="PUEBLA" noExterior="1501" pais="MEXICO"/>
+</cfdi:Receptor>
+
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="1.000000" descripcion="ARTICULOS VARIOS.&#10;SEGUN FACTURA A24736 (COMITAN,CHIS.)" importe="19000.00" noIdentificacion="T-01" unidad="KGS" valorUnitario="19000.000000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="1.000000" descripcion="100 ROLLO ELECTROMALLA 6 X 6 X 10 X 10" importe="0.00" noIdentificacion="T-02" unidad="8800" valorUnitario="0.000000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="1.000000" descripcion="1800 PZAS. CASTILLO EN HOJA 15-20-4" importe="0.00" noIdentificacion="T-03" unidad="12320" valorUnitario="0.000000">
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosRetenidos="760.00" totalImpuestosTrasladados="3040.00">
+<cfdi:Retenciones>
+<cfdi:Retencion importe="760.00" impuesto="IVA"/>
+</cfdi:Retenciones>
+<cfdi:Traslados>
+
+
+<cfdi:Traslado importe="3040.00" impuesto="IVA" tasa="16.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="D3BB2BD9-6D8A-44FF-ADEA-6F79F78FBE51" FechaTimbrado="2012-09-10T18:54:40" selloCFD="YvqOilegdqNeC4cglpCHOc7ChZOWk/4Lds5JE/e510QQ7TCuFFTxHm16XhLVgCSX059fbQ67OPZiR88jTDfe3s52pNQP63t9uV+cEDC3dYjhIcRCQ1xKpjHAuNM68L4f9p25pwMiCy7PSTAnb627peY9QmpifN0YHFKO3EOK+7E=" noCertificadoSAT="00001000000102574483" selloSAT="KnP7wYPd1bg4DYimm1ilxKzdgd8LhaZlps/ekH+x4iA1lxRPl+YUvenWVAWu3LWto+8TIe/0uTpSt5ChU87n8wf5yxMCJEcZ2Dg/snCNElI1GWfNxqj0nOe1aT69C/uzHmygeafwoux9pdaaSTzOZyo6olSH2lvTtecUkOtEfAg="  />
+</cfdi:Complemento>
+
+<cfdi:Addenda>
+<fa:Datos conLetra="VEINTIUN MIL DOSCIENTOS OCHENTA PESOS 00/100" tipoDoc="Factura" version="1.0" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd"/>
+  
+</cfdi:Addenda>
+</cfdi:Comprobante>

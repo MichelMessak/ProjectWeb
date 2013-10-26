@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:fa="http://www.itcomplements.com/cfd/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LugarExpedicion="Mixquiahuala, Hidalgo" Moneda="MXN" NumCtaPago="5029" certificado="MIIESDCCAzCgAwIBAgIUMDAwMDEwMDAwMDAxMDI1ODA5ODQwDQYJKoZIhvcNAQEFBQAwggE2MTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExHzAdBgkqhkiG9w0BCQEWEGFjb2RzQHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEzARBgNVBAcMCkN1YXVodGVtb2MxMzAxBgkqhkiG9w0BCQIMJFJlc3BvbnNhYmxlOiBGZXJuYW5kbyBNYXJ0w61uZXogQ29zczAeFw0xMTAxMDUwMzM5MDhaFw0xMzAxMDQwMzM5MDhaMIHoMS4wLAYDVQQDEyVSRVNPUlRFUyBJTkRVU1RSSUFMRVMgVE9MTEFOIFNBIERFIENWMS4wLAYDVQQpEyVSRVNPUlRFUyBJTkRVU1RSSUFMRVMgVE9MTEFOIFNBIERFIENWMS4wLAYDVQQKEyVSRVNPUlRFUyBJTkRVU1RSSUFMRVMgVE9MTEFOIFNBIERFIENWMSUwIwYDVQQtExxSSVQ4NzA4MDRMVTcgLyBIRU1GNTYwMzAxRlA4MR4wHAYDVQQFExUgLyBIRU1GNTYwMzAxSEhHUk5MMDMxDzANBgNVBAsTBm1hdHJpejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0If8SDquZ4srOnoYYQcUQby3MbevUfGAf+2/l7l/FRbn217xQc1x7yaturT7CyBSYFZhqH0NY8g8UpvkSL5xnyud45o2LObHNYfJvDmhQxqjVSF8LEQfSOFS+qCJRAlngug2BFS9o4lmdfbt61WLqV6B5bb2QXsnJgzvobnMXfUCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBALexy/MYcUFfp9HIo36v165D+2rVLc+7X3c30/FW9bpHzglANWT8FewIGwr1RiBHTJoalyC/OxhfDurIMLibSc2cBSG1pUEWipOx6q77mgNrhaRXzx4fyW5Wmy8T90Ljzeg33coOD0eAxDmeK551sQGGXxD9kXBAwAy2/K3mv+oi77ioJ+6hdJHdmu6WaZnzN3+bXgvmB0r0t645xeEtDAKv7+arr1sq96GgxLK835DAIkF9XNz84kohHAgv2cRjzt5E9nu+on4Xsj48Mwr/wwqNPRZL8JWrygB+at7PAZFt4aaFkuyOUok8g2P6lk7YQf0e9F932pEWCAaeccMbnU4=" condicionesDePago="CREDITO" descuento="0.00" fecha="2012-08-09T08:38:29" folio="101" formaDePago="Pago en una sola exhibición" metodoDePago="TRANSFERENCIA" noCertificado="00001000000102580984" sello="m00KZ6EVFiALy7fgx9Gp+mAChdvBrDc8COMQZDu3bXSoPJHGt2p46udZuhEA+vpSetF0QqElsAbz7fJgeR6aCl9819NmC50JiF326AAPdZ5njgvGLlH7P7JsFi568Cd+cfIdkigeFPap5gqImdM9L3GbheBbEvZJw3NCOEwoS0M=" serie="A" subTotal="6399.00" tipoDeComprobante="ingreso" total="7422.84" version="3.2" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+<cfdi:Emisor nombre="Resortes Industriales Tollan, S.A. de C.V." rfc="XEXX010101000">
+<cfdi:DomicilioFiscal calle="Lerdo de Tejada" codigoPostal="42700" colonia="Centro" estado="Hidalgo" municipio="Mixquiahuala" noExterior="10" pais="México"/>
+    
+<cfdi:RegimenFiscal Regimen="GENERAL DE LA LEY PERSONAS MORALES"/>
+</cfdi:Emisor>
+
+<cfdi:Receptor nombre="LEISER S DE RL DE CV" rfc="LEI870520PG8">
+<cfdi:Domicilio calle="MANZANA 10 EJE 128" codigoPostal="78395" colonia="ZONA INDUSTRIAL" estado="SAN LUIS POTOSI" noExterior="SN" pais="MEXICO"/>
+</cfdi:Receptor>
+
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="2000.000000" descripcion="ALAMBRE SUJ. AISLA. 20" importe="1420.00" noIdentificacion="263B7144P001" unidad="PZA" valorUnitario="0.710000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="1000.000000" descripcion="ALAMBRE SUJ. AISLA. 24" importe="777.00" noIdentificacion="263B7144P002" unidad="PZA" valorUnitario="0.777000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="1000.000000" descripcion="ALAMBRE CHIMENEA 7.5" importe="230.00" noIdentificacion="317B7743P001" unidad="PZA" valorUnitario="0.230000">
+</cfdi:Concepto>
+<cfdi:Concepto cantidad="4000.000000" descripcion="VARILLA SOPORTE ASN 10002916" importe="3972.00" noIdentificacion="223C3307P003" unidad="PIEZAS" valorUnitario="0.993000">
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="1023.84">
+<cfdi:Traslados>
+
+<cfdi:Traslado importe="1023.84" impuesto="IVA" tasa="16.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd" version="1.0" UUID="09575604-C44F-439D-A78C-DB2C837CF4AC" FechaTimbrado="2012-08-09T08:59:48" selloCFD="m00KZ6EVFiALy7fgx9Gp+mAChdvBrDc8COMQZDu3bXSoPJHGt2p46udZuhEA+vpSetF0QqElsAbz7fJgeR6aCl9819NmC50JiF326AAPdZ5njgvGLlH7P7JsFi568Cd+cfIdkigeFPap5gqImdM9L3GbheBbEvZJw3NCOEwoS0M=" noCertificadoSAT="00001000000102574483" selloSAT="EOG1uHqfRYTVa+0cCiwG7G/EfcUp0JmCyzLW9P6/vDwMkegoCLCLnXWJW/4Ya6G0Dth5TvVWivfz3uHagLJ4rZTm17XEHU+4aAb9HbxAIs1Ea8Qdtn/N6pzPPfRBVr8ORoltb1/xxeaEw10/ZvCQEZar77s6W83oZUp5Ir1Q3OU="  />
+</cfdi:Complemento>
+
+<cfdi:Addenda>
+<fa:Datos conLetra="SIETE MIL CUATROCIENTOS VEINTIDOS PESOS 84/100" tipoDoc="Factura" version="1.0" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd"/>
+  
+</cfdi:Addenda>
+</cfdi:Comprobante>

@@ -1,0 +1,17 @@
+=====================================================================
+CONFIGURACION
+=====================================================================
+1. Directorio de Instalacion de FC4
+
+1.1 Usando una variable de ambiente: FC4_HOME
+
+Ejemplo:
+set FC4_HOME = C:\ITC\FC4
+
+1.2 Usando una propiedad de java
+Desde la configuracion de la llamada a la JVM de Apache, se debe configurar la variable FC4_HOME con la ruta de instalacion del FC4
+
+Ejemplo:
+
+java ... -DFC4_HOME=C:\ITC\FC4
+
