@@ -5,7 +5,6 @@
     <head>
         <%@ page language="java"%>
         <link rel="shortcut icon" type="image/ico" href="images/FileControl.ico">
-        <meta name="Keywords" content="File, Control, 4, www.itcomplements.com, itcomplements, gestor, documental" >
         <meta name="Robots" content="all" >
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>

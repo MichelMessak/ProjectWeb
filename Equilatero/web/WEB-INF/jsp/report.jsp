@@ -208,20 +208,6 @@ function fnGetSelected( oTableLocal )
     </div>
 <script type="text/javascript" src="js/login/popup.js" ></script><script type="text/javascript"> function openDialog() {Avgrund.show( "#default-popup" );}function closeDialog() {Avgrund.hide();}</script><script type="text/javascript">function body(){document.body.style.backgroundImage = "url(images/backgeneral2.jpg)"; document.body.style.backgroundRepeat = "repeat-x";document.body.backgroundPosition = "top";document.body.style.top = "80px";document.body.style.opacity = "1";}</script>
 <script type="text/javascript" language="javascript" src="js/ExportDocuments/ExportDocuments.js"></script>
-<script type="text/javascript">
-    window.onload = function ocultaAyudas()
-    {
-        var taskTitle = document.getElementById("titleTask").innerHTML;
-        
-        if (taskTitle == "Rapport d'activité")
-            {
-                document.getElementById("documents").style.display="none";
-                document.getElementById("historyActivity").style.display="";
-            }
-
-
-    }
-</script>
 
 </body>
 </html>
